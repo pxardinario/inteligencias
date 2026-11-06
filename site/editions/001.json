@@ -1,0 +1,329 @@
+{
+ "numero": 1,
+ "data": "2026-11-06",
+ "minutos": 9,
+ "pecas": [
+  {
+   "id": "gif",
+   "tipo": "Notícia",
+   "categoria": "Imagem",
+   "produto": "ChatGPT Images 2.6",
+   "data_anuncio": "2026-11-04",
+   "kicker_data": "4 nov.",
+   "titulo": "O ChatGPT já faz GIFs e lembra-se das tuas fotografias",
+   "lead": "Com o Images 2.6, uma foto de produto passa a animação curta em loop sem saíres da conversa. E se guardares uma imagem de referência, deixas de ter de carregar a mesma foto vezes sem conta.",
+   "svg": "<svg viewBox=\"0 0 640 232\" role=\"img\" aria-label=\"Uma fotografia estática de uma chávena transforma-se em três fotogramas com vapor em movimento, repetidos em ciclo.\">\n          <g font-family=\"IBM Plex Mono, monospace\" font-size=\"12\" fill=\"var(--muted)\">\n            <text x=\"20\" y=\"22\">FOTO ESTÁTICA</text>\n            <text x=\"250\" y=\"22\">GIF EM LOOP · 3 FOTOGRAMAS</text>\n          </g>\n          <!-- foto -->\n          <rect x=\"20\" y=\"36\" width=\"150\" height=\"130\" rx=\"8\" fill=\"var(--paper)\" stroke=\"var(--line)\"/>\n          <g transform=\"translate(95,128)\">\n            <path d=\"M-32 -30 h56 v24 a28 28 0 0 1 -56 0 z\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"2\"/>\n            <path d=\"M24 -24 a12 12 0 0 1 0 22\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2\"/>\n            <line x1=\"-44\" y1=\"26\" x2=\"36\" y2=\"26\" stroke=\"var(--ink)\" stroke-width=\"2\"/>\n          </g>\n          <!-- seta -->\n          <path d=\"M182 101 h48\" stroke=\"var(--accent)\" stroke-width=\"2.5\" marker-end=\"url(#ah)\"/>\n          <defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n          <!-- fotogramas -->\n          <g>\n            <g transform=\"translate(250,36)\">\n              <rect width=\"110\" height=\"130\" rx=\"8\" fill=\"var(--paper)\" stroke=\"var(--line)\"/>\n              <g transform=\"translate(55,92)\"><path d=\"M-24 -22 h42 v18 a21 21 0 0 1 -42 0 z\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"2\"/><path d=\"M-12 -32 q-6 -8 0 -16\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"2\"/></g>\n            </g>\n            <g transform=\"translate(375,36)\">\n              <rect width=\"110\" height=\"130\" rx=\"8\" fill=\"var(--paper)\" stroke=\"var(--line)\"/>\n              <g transform=\"translate(55,92)\"><path d=\"M-24 -22 h42 v18 a21 21 0 0 1 -42 0 z\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"2\"/><path d=\"M-12 -36 q-6 -8 0 -16 q6 -8 0 -14\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"2\"/><path d=\"M2 -32 q-6 -8 0 -16\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"2\"/></g>\n            </g>\n            <g transform=\"translate(500,36)\">\n              <rect width=\"110\" height=\"130\" rx=\"8\" fill=\"var(--paper)\" stroke=\"var(--line)\"/>\n              <g transform=\"translate(55,92)\" class=\"steam\"><path d=\"M-24 -22 h42 v18 a21 21 0 0 1 -42 0 z\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"2\"/><path d=\"M-12 -40 q-6 -8 0 -16 q6 -8 0 -16\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"2\"/><path d=\"M2 -36 q-6 -8 0 -16 q6 -8 0 -12\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"2\"/></g>\n            </g>\n          </g>\n          <path d=\"M555 176 q0 22 -150 22 q-150 0 -150 -22\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\" marker-end=\"url(#ah)\"/>\n          <text x=\"404\" y=\"226\" text-anchor=\"middle\" font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\">repete · velocidade ajustável · fotogramas editáveis</text>\n        </svg>",
+   "legenda": "Esquema ilustrativo do processo, não é uma imagem gerada pelo ChatGPT.",
+   "o_que_e": "A atualização Images 2.6, lançada a 4 de novembro, deixa-te pedir ao ChatGPT um GIF a partir de uma descrição, de uma fotografia ou de um esboço. Depois de gerado, podes mexer na velocidade e corrigir fotogramas um a um. A segunda novidade são as imagens de referência guardadas: gravas uma fotografia (um produto, o logótipo, uma pessoa que deu autorização) com um nome e passas a chamá-la noutras conversas com «@nome», sem a voltar a carregar.",
+   "porque": "Um GIF curto (vapor numa chávena, uma etiqueta de promoção a piscar) chama mais a atenção numa newsletter ou numa história de Instagram do que uma imagem parada, e até agora obrigava-te a abrir outra ferramenta. A referência guardada resolve o problema mais irritante das imagens geradas por IA, a falta de consistência: o mesmo produto saía diferente a cada pedido.",
+   "passos": [
+    "Abre uma conversa no ChatGPT (web, computador ou telemóvel) e carrega uma fotografia de produto.",
+    "Pede a animação com o texto abaixo. Diz claramente o que não deve mexer.",
+    "Se a opção de GIF ainda não te aparecer, atualiza a app e tenta outra vez daqui a uns dias: está a chegar aos utilizadores aos poucos."
+   ],
+   "prompt_titulo": "Prompt · copiar e adaptar",
+   "prompt": "Transforma esta fotografia num GIF em loop de cerca de 2 segundos. Anima apenas o vapor a subir da chávena, com movimento lento e subtil. Mantém tudo o resto exatamente igual: enquadramento, cores, luz e fundo. Formato quadrado, para Instagram.",
+   "nota": {
+    "tipo": "Atenção",
+    "texto": "só guardes uma imagem de referência de uma pessoa se ela concordar. Antes de publicares, confirma que o GIF não alterou rótulos, preços ou texto da imagem original."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "ChatGPT (web, computador, telemóvel)",
+     null
+    ],
+    [
+     "Custo",
+     "Todos os planos, incluindo o gratuito",
+     "ok"
+    ],
+    [
+     "Em Portugal",
+     "Sim, lançamento global",
+     "ok"
+    ],
+    [
+     "Estado",
+     "GIF a chegar aos poucos",
+     "warn"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Notas de versão do ChatGPT (OpenAI)",
+     "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    ],
+    [
+     "Unite.AI, 4 nov.",
+     "https://www.unite.ai/chatgpt-adds-animated-gif-creation-and-editing-with-images-2-6/"
+    ]
+   ],
+   "etiquetas": [
+    "chatgpt",
+    "imagem",
+    "redes sociais",
+    "grátis",
+    "prompt"
+   ]
+  },
+  {
+   "id": "ficheiros",
+   "tipo": "Notícia",
+   "categoria": "Documentos",
+   "produto": "App Gemini",
+   "data_anuncio": "2026-10-29",
+   "kicker_data": "29 out.",
+   "titulo": "O Gemini passa a editar os ficheiros que cria",
+   "lead": "Pedes um PDF, uma apresentação ou uma folha de cálculo, o ficheiro aparece dentro da conversa e corriges ali mesmo, à mão ou com instruções. É gratuito.",
+   "svg": "<svg viewBox=\"0 0 640 250\" role=\"img\" aria-label=\"Tabela de formatos: PDF editável na web e no telemóvel; Google Docs, Sheets, apresentações, Markdown, texto simples e código editáveis só na web.\">\n          <g font-family=\"IBM Plex Mono, monospace\" font-size=\"12\" fill=\"var(--muted)\">\n            <text x=\"20\" y=\"24\">FORMATO</text><text x=\"400\" y=\"24\" text-anchor=\"middle\">WEB</text><text x=\"540\" y=\"24\" text-anchor=\"middle\">TELEMÓVEL</text>\n          </g>\n          <line x1=\"20\" y1=\"34\" x2=\"620\" y2=\"34\" stroke=\"var(--line)\"/>\n          <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"15\" fill=\"var(--ink)\">\n            <text x=\"20\" y=\"62\">PDF</text>\n            <text x=\"20\" y=\"92\">Google Docs</text>\n            <text x=\"20\" y=\"122\">Google Sheets</text>\n            <text x=\"20\" y=\"152\">Apresentações</text>\n            <text x=\"20\" y=\"182\">Markdown e texto simples</text>\n            <text x=\"20\" y=\"212\">Código</text>\n          </g>\n          <g fill=\"var(--ok)\">\n            <circle cx=\"400\" cy=\"57\" r=\"8\"/><circle cx=\"540\" cy=\"57\" r=\"8\"/>\n            <circle cx=\"400\" cy=\"87\" r=\"8\"/><circle cx=\"400\" cy=\"117\" r=\"8\"/><circle cx=\"400\" cy=\"147\" r=\"8\"/><circle cx=\"400\" cy=\"177\" r=\"8\"/><circle cx=\"400\" cy=\"207\" r=\"8\"/>\n          </g>\n          <g fill=\"none\" stroke=\"var(--line)\" stroke-width=\"2\">\n            <circle cx=\"540\" cy=\"87\" r=\"7\"/><circle cx=\"540\" cy=\"117\" r=\"7\"/><circle cx=\"540\" cy=\"147\" r=\"7\"/><circle cx=\"540\" cy=\"177\" r=\"7\"/><circle cx=\"540\" cy=\"207\" r=\"7\"/>\n          </g>\n          <line x1=\"20\" y1=\"72\" x2=\"620\" y2=\"72\" stroke=\"var(--line)\" stroke-dasharray=\"2 4\"/>\n          <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\">\n            <circle cx=\"26\" cy=\"236\" r=\"5\" fill=\"var(--ok)\"/><text x=\"38\" y=\"240\">editável na conversa</text>\n            <circle cx=\"216\" cy=\"236\" r=\"5\" fill=\"none\" stroke=\"var(--line)\" stroke-width=\"2\"/><text x=\"228\" y=\"240\">ainda não (sem data anunciada)</text>\n          </g>\n        </svg>",
+   "legenda": "Onde cada formato pode ser editado dentro do Gemini, segundo o anúncio da Google de 29 de outubro.",
+   "o_que_e": "Desde abril que o Gemini já criava ficheiros a partir de um pedido, mas para os corrigires tinhas de os descarregar e abrir noutro programa. Agora o ficheiro abre numa pré-visualização dentro da conversa e há três formas de o alterar: abres em ecrã inteiro e escreves diretamente, selecionas um excerto e fazes uma pergunta sobre ele, ou pedes ao Gemini que afine uma parte.",
+   "porque": "Acaba com o ciclo gerar, descarregar, ver um erro e gerar tudo de novo. Num documento de uma página (uma ficha de serviço, um resumo para um cliente, uma ementa) chegas à versão final sem sair do Gemini e só exportas no fim. Segundo a Google, funciona para toda a gente e em todas as línguas em que a app existe, incluindo o português.",
+   "passos": [
+    "Em gemini.google.com (no computador, para teres todos os formatos), pede o ficheiro com o texto abaixo.",
+    "Quando aparecer a pré-visualização, seleciona o parágrafo que queres mudar e escreve a alteração, em vez de pedires o documento todo outra vez.",
+    "Exporta só no fim e abre o ficheiro descarregado para confirmar títulos, ligações e acentos."
+   ],
+   "prompt_titulo": "Prompt · copiar e adaptar",
+   "prompt": "Cria um PDF de uma página, em português de Portugal, a apresentar [serviço] a [tipo de cliente]. Estrutura: título, três benefícios concretos com uma frase cada, preços em tabela simples e contacto no rodapé. Tom profissional e direto, sem adjetivos promocionais.",
+   "nota": {
+    "tipo": "Por confirmar",
+    "texto": "o anúncio oficial fala de ficheiros gerados na conversa. Não diz se podes carregar um documento teu e editá-lo da mesma maneira."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "App Gemini (web e telemóvel)",
+     null
+    ],
+    [
+     "Custo",
+     "Gratuito",
+     "ok"
+    ],
+    [
+     "Em Portugal",
+     "Sim, também em português",
+     "ok"
+    ],
+    [
+     "Estado",
+     "Disponível",
+     "ok"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Blog da Google, 29 out.",
+     "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/"
+    ],
+    [
+     "Google Workspace Updates",
+     "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html"
+    ]
+   ],
+   "etiquetas": [
+    "gemini",
+    "documentos",
+    "grátis",
+    "prompt"
+   ]
+  },
+  {
+   "id": "sheets",
+   "tipo": "Notícia",
+   "categoria": "Folhas de cálculo",
+   "produto": "Google Sheets",
+   "data_anuncio": "2026-10-28",
+   "kicker_data": "28 out.",
+   "titulo": "Cada célula preenchida por IA traz a sua fonte",
+   "lead": "O «Preencher com o Gemini» do Google Sheets passa a mostrar, célula a célula, a página web de onde tirou cada valor, e aguenta pedidos até 3000 células.",
+   "svg": "<svg viewBox=\"0 0 640 250\" role=\"img\" aria-label=\"Folha de cálculo com uma lista de empresas; a coluna preenchida pela IA mostra, para a célula selecionada, uma janela com as fontes web usadas.\">\n          <g font-family=\"IBM Plex Mono, monospace\" font-size=\"12\">\n            <rect x=\"20\" y=\"20\" width=\"600\" height=\"30\" fill=\"var(--paper)\" stroke=\"var(--line)\"/>\n            <text x=\"34\" y=\"40\" fill=\"var(--muted)\">A · EMPRESA</text>\n            <text x=\"230\" y=\"40\" fill=\"var(--muted)\">B · SETOR</text>\n            <text x=\"400\" y=\"40\" fill=\"var(--accent)\">C · PREENCHIDA PELO GEMINI</text>\n          </g>\n          <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"14\" fill=\"var(--ink)\">\n            <rect x=\"20\" y=\"50\" width=\"600\" height=\"32\" fill=\"var(--surface)\" stroke=\"var(--line)\"/>\n            <text x=\"34\" y=\"71\">Empresa A</text><text x=\"230\" y=\"71\">Hotelaria</text><text x=\"400\" y=\"71\">1987</text>\n            <rect x=\"20\" y=\"82\" width=\"600\" height=\"32\" fill=\"var(--surface)\" stroke=\"var(--line)\"/>\n            <text x=\"34\" y=\"103\">Empresa B</text><text x=\"230\" y=\"103\">Restauração</text>\n            <rect x=\"388\" y=\"84\" width=\"232\" height=\"28\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\" stroke-width=\"2\"/>\n            <text x=\"400\" y=\"103\">2004</text>\n            <rect x=\"20\" y=\"114\" width=\"600\" height=\"32\" fill=\"var(--surface)\" stroke=\"var(--line)\"/>\n            <text x=\"34\" y=\"135\">Empresa C</text><text x=\"230\" y=\"135\">Turismo</text><text x=\"400\" y=\"135\">2011</text>\n          </g>\n          <!-- popover -->\n          <g>\n            <path d=\"M470 112 l10 -10 l10 10\" fill=\"var(--surface)\" stroke=\"var(--accent)\"/>\n            <rect x=\"330\" y=\"150\" width=\"290\" height=\"88\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--accent)\" stroke-width=\"1.5\"/>\n            <line x1=\"480\" y1=\"112\" x2=\"480\" y2=\"150\" stroke=\"var(--accent)\" stroke-dasharray=\"3 3\"/>\n            <text x=\"346\" y=\"172\" font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\">FONTES DESTA CÉLULA</text>\n            <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--accent)\">\n              <text x=\"346\" y=\"196\">↗ empresa-b.pt/sobre-nos</text>\n              <text x=\"346\" y=\"220\">↗ registo-comercial.exemplo</text>\n            </g>\n          </g>\n          <text x=\"20\" y=\"180\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--muted)\">Clica na célula,</text>\n          <text x=\"20\" y=\"198\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--muted)\">vês de onde veio o valor</text>\n          <text x=\"20\" y=\"216\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--muted)\">e verificas antes de usar.</text>\n        </svg>",
+   "legenda": "Exemplo ilustrativo com dados fictícios. Não reproduz o ecrã real do Google Sheets.",
+   "o_que_e": "O «Preencher com o Gemini» completa uma coluna inteira a partir de um pedido: classificar 200 comentários de clientes, resumir descrições, ir buscar à web um dado sobre cada linha. A novidade é que, quando o valor vem da internet, cada célula mostra as páginas consultadas. A capacidade sobe para 3000 células por pedido e, segundo um estudo interno da Google com 95 participantes, a ferramenta foi até 55 vezes mais rápida do que fazer à mão uma tarefa de 500 células.",
+   "porque": "Até agora uma coluna preenchida por IA era uma caixa negra: ou confiavas em tudo, ou verificavas tudo à mão. Com a fonte em cada célula podes verificar por amostragem, como se faz com quaisquer dados de terceiros. Dá jeito para estudos de concorrência, listas de prospeção ou levantamentos de fornecedores.",
+   "passos": [
+    "No Google Sheets (versão web), abre uma lista com uma entidade por linha, por exemplo concorrentes ou fornecedores.",
+    "Abre o painel do Gemini (botão no canto superior direito) e pede para preencher uma coluna nova com o texto abaixo.",
+    "Abre a fonte de 5 células ao acaso. Se alguma não sustentar o valor, desconfia da coluna inteira."
+   ],
+   "prompt_titulo": "Prompt · copiar e adaptar",
+   "prompt": "Preenche a coluna C com o ano de fundação de cada empresa da coluna A, usando apenas o site oficial da empresa ou registos públicos. Se não encontrares uma fonte fiável, escreve «sem fonte» em vez de estimar.",
+   "nota": {
+    "tipo": "Atenção",
+    "texto": "uma fonte citada não prova que o valor está certo, só que veio de algum lado. É o único recurso desta edição que pede plano pago."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "Google Sheets, só na web",
+     null
+    ],
+    [
+     "Custo",
+     "Pago: Google AI Pro ou Ultra; Workspace Business Standard, Plus ou Enterprise",
+     "warn"
+    ],
+    [
+     "Em Portugal",
+     "Sim, com esses planos",
+     "ok"
+    ],
+    [
+     "Estado",
+     "A chegar desde 20 out. (até 15 dias)",
+     "warn"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Google Workspace Updates, 28 out.",
+     "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html"
+    ],
+    [
+     "Android Authority",
+     "https://androidauthority.com/google-sheets-gemini-update-3729506"
+    ]
+   ],
+   "etiquetas": [
+    "gemini",
+    "folhas de cálculo",
+    "pesquisa",
+    "verificação",
+    "pago"
+   ]
+  },
+  {
+   "id": "elogios",
+   "tipo": "Notícia",
+   "categoria": "Hábitos",
+   "produto": "ChatGPT (GPT-6)",
+   "data_anuncio": "2026-10-29",
+   "kicker_data": "29 out.",
+   "titulo": "Menos elogios no ChatGPT, mas não para todos",
+   "lead": "A OpenAI afinou o GPT-6 para dar respostas mais curtas e menos lisonjeiras. Quem paga Plus ou Pro continua, no modelo principal, com o comportamento antigo. A solução que funciona para toda a gente é pedir.",
+   "svg": "<svg viewBox=\"0 0 640 200\" role=\"img\" aria-label=\"Quem recebe a mudança: planos Gratuito, Go e utilização sem sessão recebem; Plus e Pro só no modelo de recurso após atingirem o limite de mensagens; modelo principal Plus e Pro sem alteração.\">\n          <g font-family=\"IBM Plex Mono, monospace\" font-size=\"12\" fill=\"var(--muted)\"><text x=\"20\" y=\"22\">PLANO</text><text x=\"330\" y=\"22\">RECEBE A MUDANÇA?</text></g>\n          <line x1=\"20\" y1=\"32\" x2=\"620\" y2=\"32\" stroke=\"var(--line)\"/>\n          <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"15\" fill=\"var(--ink)\">\n            <text x=\"20\" y=\"62\">Gratuito · Go · sem sessão iniciada</text>\n            <text x=\"20\" y=\"108\">Plus · Pro, depois de atingir o limite</text>\n            <text x=\"20\" y=\"154\">Plus · Pro, modelo principal</text>\n          </g>\n          <rect x=\"330\" y=\"46\" width=\"290\" height=\"24\" rx=\"4\" fill=\"var(--ok)\"/>\n          <text x=\"342\" y=\"63\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--surface)\">Sim, de forma direta</text>\n          <rect x=\"330\" y=\"92\" width=\"200\" height=\"24\" rx=\"4\" fill=\"var(--warn)\"/>\n          <text x=\"342\" y=\"109\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--surface)\">Só no modelo de recurso</text>\n          <rect x=\"330\" y=\"138\" width=\"290\" height=\"24\" rx=\"4\" fill=\"none\" stroke=\"var(--line)\" stroke-width=\"2\"/>\n          <text x=\"342\" y=\"155\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--muted)\">Não, sem alteração</text>\n          <text x=\"20\" y=\"190\" font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\">Business e Enterprise: as notas de versão não especificam.</text>\n        </svg>",
+   "legenda": "Fonte: notas de versão dos modelos da OpenAI, 29 de outubro.",
+   "o_que_e": "Nas notas de versão de 29 de outubro, a OpenAI anunciou que o GPT-6 no ChatGPT passa a dar respostas mais concisas e a cortar na «linguagem excessivamente lisonjeira». A mudança vale para os planos Gratuito e Go e para quem usa o ChatGPT sem sessão iniciada. Nos planos Plus e Pro só chega ao modelo de recurso, o que entra quando esgotas o limite de mensagens. A OpenAI não publicou exemplos nem testes comparativos, por isso não se sabe bem quanto se nota a diferença.",
+   "porque": "Um assistente que elogia tudo não te serve para rever uma proposta, um orçamento ou um texto de campanha, porque esconde exatamente os problemas que precisas de ver. Esta mudança mostra que o tom do modelo depende de afinações do fabricante, que podem mudar sem aviso. Mais vale controlá-lo com instruções do que ficar à mercê do comportamento por omissão.",
+   "passos": [
+    "Sempre que pedires uma revisão, define o papel (editor, cliente desconfiado, auditor) e a ordem da resposta, com os problemas primeiro.",
+    "Para isto ficar permanente, cola o texto abaixo nas instruções personalizadas do ChatGPT (Definições → Personalização) ou no equivalente do Claude ou do Gemini."
+   ],
+   "prompt_titulo": "Instrução · funciona em qualquer assistente",
+   "prompt": "Quando eu pedir uma revisão ou opinião, começa pelos três problemas mais graves, por ordem de impacto, e explica porquê. Não elogies o que não for excecional; se algo estiver bem, diz numa linha. Se discordares de mim, diz diretamente.",
+   "nota": null,
+   "ficha": [
+    [
+     "Onde",
+     "ChatGPT, na conversa",
+     null
+    ],
+    [
+     "Custo",
+     "Afeta sobretudo os planos gratuitos",
+     "ok"
+    ],
+    [
+     "Em Portugal",
+     "Sim",
+     "ok"
+    ],
+    [
+     "Estado",
+     "Em vigor desde 29 out.",
+     "ok"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Notas de versão dos modelos (OpenAI)",
+     "https://help.openai.com/en/articles/9624314-model-release-notes"
+    ],
+    [
+     "The Decoder / Mixed",
+     "https://mixed-news.com/en/?p=39065"
+    ]
+   ],
+   "etiquetas": [
+    "chatgpt",
+    "revisão",
+    "prompt",
+    "grátis"
+   ]
+  }
+ ],
+ "fica_de_fora": {
+  "titulo": "Claude Personal Finance (Anthropic, 5 nov.)",
+  "texto": "Liga contas bancárias, cartões, empréstimos e investimentos ao Claude, através do serviço Plaid, para responder a perguntas como «para onde foi o meu dinheiro este mês?». Está em beta só nos EUA, nos planos Pro, Max e Ultra, e só com bancos norte-americanos. Fora dos EUA nem aparece, mesmo com VPN, e não há data para a Europa.",
+  "lead": "Ligação de contas bancárias ao Claude, em beta só nos EUA.",
+  "fonte": [
+   "Notebookcheck",
+   "https://notebookcheck.net/Claude-Personal-Finance-What-the-AI-sees-in-your-bank-account.1443926.0.html"
+  ],
+  "etiquetas": [
+   "claude",
+   "finanças",
+   "só EUA"
+  ]
+ },
+ "conceito": {
+  "nome": "Bajulação",
+  "sub": "em inglês, <i>sycophancy</i>",
+  "liga": "liga à peça 04",
+  "lead": "A tendência dos modelos para te dizerem o que queres ouvir, e três hábitos para a contrariar.",
+  "intro": "Bajulação é a tendência de um modelo de linguagem para te dizer o que queres ouvir: concordar com uma premissa errada, elogiar um texto fraco, recuar quando o contrarias mesmo tendo razão. Não é um defeito de personalidade. É um efeito secundário da forma como estes modelos são afinados.",
+  "svg": "<svg viewBox=\"0 0 640 190\" role=\"img\" aria-label=\"Ciclo: o modelo responde; uma pessoa avalia a resposta; as respostas que concordam com ela tendem a ser melhor avaliadas; o treino recompensa essas respostas; o modelo aprende a concordar.\">\n      <defs><marker id=\"ah2\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"currentColor\"/></marker></defs>\n      <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" style=\"color:inherit\">\n        <rect x=\"10\" y=\"40\" width=\"130\" height=\"64\" rx=\"8\"/>\n        <rect x=\"170\" y=\"40\" width=\"130\" height=\"64\" rx=\"8\"/>\n        <rect x=\"330\" y=\"40\" width=\"140\" height=\"64\" rx=\"8\"/>\n        <rect x=\"500\" y=\"40\" width=\"130\" height=\"64\" rx=\"8\"/>\n        <path d=\"M140 72 h26\" marker-end=\"url(#ah2)\"/>\n        <path d=\"M300 72 h26\" marker-end=\"url(#ah2)\"/>\n        <path d=\"M470 72 h26\" marker-end=\"url(#ah2)\"/>\n        <path d=\"M565 104 v30 q0 22 -22 22 h-446 q-22 0 -22 -22 v-26\" marker-end=\"url(#ah2)\" stroke-dasharray=\"4 4\"/>\n      </g>\n      <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"currentColor\" text-anchor=\"middle\">\n        <text x=\"75\" y=\"68\">O modelo</text><text x=\"75\" y=\"86\">dá uma resposta</text>\n        <text x=\"235\" y=\"68\">Uma pessoa</text><text x=\"235\" y=\"86\">avalia-a</text>\n        <text x=\"400\" y=\"62\">Concordar com ela</text><text x=\"400\" y=\"80\">tende a receber</text><text x=\"400\" y=\"96\">melhor nota</text>\n        <text x=\"565\" y=\"68\">O treino</text><text x=\"565\" y=\"86\">premeia isso</text>\n      </g>\n      <text x=\"320\" y=\"178\" text-anchor=\"middle\" font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"currentColor\" opacity=\".75\">o modelo aprende que concordar compensa · e o ciclo repete-se</text>\n    </svg>",
+  "corpo": "Os assistentes são afinados com avaliações humanas: várias respostas, uma pessoa escolhe a melhor e o modelo aprende a dar mais respostas do género escolhido. Só que as pessoas tendem a preferir respostas que confirmam o que já pensam. Um estudo da Anthropic de 2023 encontrou este padrão em vários assistentes comerciais, e em abril de 2025 a OpenAI retirou uma atualização do GPT-4o por ter ficado bajuladora ao ponto de validar más decisões dos utilizadores.",
+  "habitos": [
+   [
+    "Não reveles a tua opinião antes de pedires a dele.",
+    "«Este título é bom?» convida a concordar; «Dá-me três títulos melhores do que este e diz qual é o problema do original» não."
+   ],
+   [
+    "Pede o contraditório às claras:",
+    "«qual é o argumento mais forte contra esta decisão?»."
+   ],
+   [
+    "Desconfia quando o modelo muda de ideias só porque insististe.",
+    "Pede-lhe que diga o que mudou nos factos, e não só no tom."
+   ]
+  ],
+  "aprofundar": [
+   [
+    "Towards Understanding Sycophancy in Language Models (Anthropic, 2023)",
+    "https://arxiv.org/abs/2310.13548"
+   ],
+   [
+    "Sycophancy in GPT-4o (OpenAI, 2025)",
+    "https://openai.com/index/sycophancy-in-gpt-4o/"
+   ]
+  ],
+  "etiquetas": [
+   "conceito",
+   "revisão",
+   "prompt"
+  ]
+ }
+}

@@ -1,0 +1,259 @@
+{
+ "numero": 2,
+ "data": "2026-11-06",
+ "minutos": 8,
+ "pecas": [
+  {
+   "id": "powerpoint",
+   "tipo": "Notícia",
+   "categoria": "Apresentações",
+   "produto": "Copilot no PowerPoint",
+   "data_anuncio": "2026-11-04",
+   "kicker_data": "4 nov.",
+   "titulo": "O Copilot no PowerPoint passa a copiar o estilo de uma apresentação tua",
+   "lead": "Anexas a apresentação da marca e o Copilot cria a nova com o mesmo tema, cores e estilos. Até agora, tudo o que gerava saía com o tema por omissão.",
+   "svg": "<svg viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Uma apresentação existente com a identidade da marca é anexada ao Copilot, que gera uma nova apresentação com o mesmo tema.\">\n  <defs><marker id=\"a21\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"12\" fill=\"var(--muted)\"><text x=\"20\" y=\"22\">APRESENTAÇÃO ANEXADA</text><text x=\"250\" y=\"22\">COPILOT</text><text x=\"430\" y=\"22\">NOVA APRESENTAÇÃO</text></g>\n  <g>\n    <rect x=\"20\" y=\"40\" width=\"160\" height=\"96\" rx=\"6\" fill=\"var(--surface)\" stroke=\"var(--line)\"/>\n    <rect x=\"20\" y=\"40\" width=\"160\" height=\"18\" rx=\"6\" fill=\"var(--accent)\"/>\n    <rect x=\"34\" y=\"72\" width=\"90\" height=\"8\" rx=\"2\" fill=\"var(--ink)\"/><rect x=\"34\" y=\"88\" width=\"130\" height=\"5\" rx=\"2\" fill=\"var(--line)\"/><rect x=\"34\" y=\"100\" width=\"110\" height=\"5\" rx=\"2\" fill=\"var(--line)\"/>\n    <circle cx=\"160\" cy=\"118\" r=\"8\" fill=\"var(--use)\" stroke=\"var(--use-ink)\"/>\n    <text x=\"20\" y=\"156\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\">marca.pptx</text>\n    <text x=\"20\" y=\"174\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--muted)\">tema, cores, letra, logótipo</text>\n  </g>\n  <path d=\"M190 88 h46\" stroke=\"var(--accent)\" stroke-width=\"2.5\" marker-end=\"url(#a21)\"/>\n  <rect x=\"246\" y=\"62\" width=\"150\" height=\"52\" rx=\"26\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\"/>\n  <text x=\"321\" y=\"84\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\">«Cria 6 slides sobre</text>\n  <text x=\"321\" y=\"101\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\">a campanha de Natal»</text>\n  <path d=\"M404 88 h20\" stroke=\"var(--accent)\" stroke-width=\"2.5\" marker-end=\"url(#a21)\"/>\n  <g>\n    <g transform=\"translate(450,40)\"><rect width=\"120\" height=\"72\" rx=\"5\" fill=\"var(--surface)\" stroke=\"var(--line)\"/><rect width=\"120\" height=\"13\" rx=\"5\" fill=\"var(--accent)\"/><rect x=\"10\" y=\"26\" width=\"70\" height=\"7\" rx=\"2\" fill=\"var(--ink)\"/><rect x=\"10\" y=\"40\" width=\"96\" height=\"4\" rx=\"2\" fill=\"var(--line)\"/><circle cx=\"104\" cy=\"60\" r=\"6\" fill=\"var(--use)\" stroke=\"var(--use-ink)\"/></g>\n    <g transform=\"translate(436,54)\" opacity=\".55\"><rect width=\"120\" height=\"72\" rx=\"5\" fill=\"var(--surface)\" stroke=\"var(--line)\"/><rect width=\"120\" height=\"13\" rx=\"5\" fill=\"var(--accent)\"/></g>\n    <g transform=\"translate(464,96)\"><rect width=\"120\" height=\"72\" rx=\"5\" fill=\"var(--surface)\" stroke=\"var(--line)\"/><rect width=\"120\" height=\"13\" rx=\"5\" fill=\"var(--accent)\"/><rect x=\"10\" y=\"26\" width=\"56\" height=\"7\" rx=\"2\" fill=\"var(--ink)\"/><rect x=\"10\" y=\"40\" width=\"90\" height=\"4\" rx=\"2\" fill=\"var(--line)\"/><rect x=\"10\" y=\"50\" width=\"70\" height=\"4\" rx=\"2\" fill=\"var(--line)\"/><circle cx=\"104\" cy=\"60\" r=\"6\" fill=\"var(--use)\" stroke=\"var(--use-ink)\"/></g>\n  </g>\n  <text x=\"430\" y=\"196\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--muted)\">mesmo tema, conteúdo novo</text>\n</svg>",
+   "legenda": "Esquema ilustrativo do processo. Não reproduz o ecrã do PowerPoint.",
+   "o_que_e": "Segundo as notas de versão da Microsoft de 4 de novembro, o Copilot no PowerPoint para Windows e Mac aceita agora uma apresentação existente como referência quando cria ou edita uma nova. Em vez do tema por omissão, aplica o tema e os estilos do ficheiro anexado: cores, tipos de letra, disposição dos diapositivos.",
+   "porque": "O grande custo escondido das apresentações feitas com IA era a reformatação: o conteúdo saía em minutos e depois ias meia hora a enfiá-lo na identidade da marca. Se preparas propostas, relatórios para clientes ou apresentações internas com modelo próprio, este passo desaparece e o risco de sair algo «fora da marca» baixa muito.",
+   "passos": [
+    "No PowerPoint (Windows ou Mac), cria uma apresentação nova com o Copilot.",
+    "Usa a opção de anexar ficheiro e escolhe uma apresentação que já tenha a identidade certa. A última proposta aprovada serve.",
+    "Pede os diapositivos com o texto abaixo e revê-os um a um: o estilo vem do ficheiro, mas o conteúdo continua a ser teu."
+   ],
+   "prompt_titulo": "Prompt · copiar e adaptar",
+   "prompt": "Usando o estilo da apresentação anexada, cria 6 diapositivos sobre [tema] para [público]. Um diapositivo de abertura, quatro com uma ideia cada (título curto e no máximo 3 pontos) e um de próximos passos. Português de Portugal, sem frases promocionais.",
+   "nota": {
+    "tipo": "Por confirmar",
+    "texto": "a nota da Microsoft não diz que licença é precisa nem se já funciona na versão web. O mais provável é exigir o Copilot no Microsoft 365."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "PowerPoint para Windows e Mac",
+     null
+    ],
+    [
+     "Custo",
+     "Pago: Copilot no Microsoft 365",
+     "warn"
+    ],
+    [
+     "Em Portugal",
+     "Sim, com a licença",
+     "ok"
+    ],
+    [
+     "Estado",
+     "Nas notas de versão de 4 nov.",
+     "ok"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Notas de versão do Microsoft 365 Copilot",
+     "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+    ]
+   ],
+   "etiquetas": [
+    "copilot",
+    "apresentações",
+    "marca",
+    "pago",
+    "prompt"
+   ]
+  },
+  {
+   "id": "kapwing",
+   "tipo": "Notícia",
+   "categoria": "Vídeo",
+   "produto": "Kapwing MCP (ChatGPT e Claude)",
+   "data_anuncio": "2026-10-27",
+   "kicker_data": "out.",
+   "titulo": "Legendar, traduzir e dobrar vídeos a partir do ChatGPT ou do Claude",
+   "lead": "O editor de vídeo Kapwing ligou-se aos assistentes de IA. Pedes numa conversa a versão legendada ou dobrada noutra língua e recebes um projeto que ainda podes editar.",
+   "svg": "<svg viewBox=\"0 0 640 220\" role=\"img\" aria-label=\"Um pedido feito no assistente de IA passa pelo conector do Kapwing, que gera legendas, tradução ou dobragem e devolve um projeto editável.\">\n  <defs><marker id=\"a22\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"12\" fill=\"var(--muted)\"><text x=\"20\" y=\"22\">NO ASSISTENTE</text><text x=\"250\" y=\"22\">CONECTOR</text><text x=\"430\" y=\"22\">NO KAPWING</text></g>\n  <rect x=\"20\" y=\"40\" width=\"190\" height=\"86\" rx=\"10\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\"><text x=\"34\" y=\"64\">«Legenda este vídeo</text><text x=\"34\" y=\"82\">e cria uma versão</text><text x=\"34\" y=\"100\">dobrada em espanhol»</text></g>\n  <path d=\"M218 83 h30\" stroke=\"var(--accent)\" stroke-width=\"2.5\" marker-end=\"url(#a22)\"/>\n  <rect x=\"256\" y=\"58\" width=\"120\" height=\"50\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.5\"/>\n  <text x=\"316\" y=\"80\" text-anchor=\"middle\" font-family=\"IBM Plex Mono, monospace\" font-size=\"13\" fill=\"var(--ink)\">MCP</text>\n  <text x=\"316\" y=\"97\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"11\" fill=\"var(--muted)\">com a tua conta</text>\n  <path d=\"M384 83 h40\" stroke=\"var(--accent)\" stroke-width=\"2.5\" marker-end=\"url(#a22)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\">\n    <rect x=\"432\" y=\"36\" width=\"188\" height=\"28\" rx=\"6\" fill=\"var(--surface)\" stroke=\"var(--line)\"/><text x=\"444\" y=\"55\">Legendas na imagem</text>\n    <rect x=\"432\" y=\"70\" width=\"188\" height=\"28\" rx=\"6\" fill=\"var(--surface)\" stroke=\"var(--line)\"/><text x=\"444\" y=\"89\">Tradução das legendas</text>\n    <rect x=\"432\" y=\"104\" width=\"188\" height=\"28\" rx=\"6\" fill=\"var(--surface)\" stroke=\"var(--line)\"/><text x=\"444\" y=\"123\">Dobragem com a mesma voz</text>\n  </g>\n  <path d=\"M526 140 v20 q0 14 -14 14 h-376 q-14 0 -14 -14 v-24\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\" marker-end=\"url(#a22)\"/>\n  <text x=\"320\" y=\"206\" text-anchor=\"middle\" font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\">devolve uma ligação para um projeto editável no Kapwing</text>\n</svg>",
+   "legenda": "Esquema ilustrativo do fluxo. Não reproduz os ecrãs do Kapwing nem dos assistentes.",
+   "o_que_e": "O Kapwing é um editor de vídeo no navegador com ferramentas de legendas, tradução e dobragem por IA. Desde 12 de outubro, o conector MCP dele está aberto a toda a gente (antes era só para testadores escolhidos) e a 15 de outubro entrou na biblioteca de plugins do ChatGPT. Com o conector ativo, pedes ao ChatGPT ou ao Claude que carregue um vídeo, gere e traduza legendas, faça a dobragem para outra língua ou exporte o resultado. Cada operação cria um projeto no Kapwing que podes abrir e corrigir à mão.",
+   "porque": "Se geres redes sociais ou a comunicação de uma empresa com clientes lá fora, fazer a versão legendada e a versão em inglês ou espanhol de cada vídeo era trabalho repetitivo de editor. Passa a ser um pedido numa conversa e, como no fim tens um projeto editável, corriges os erros de transcrição antes de publicar.",
+   "passos": [
+    "Cria conta no Kapwing (kapwing.com), se ainda não tiveres.",
+    "No ChatGPT, procura «Kapwing» no separador de plugins. No Claude, adiciona um conector personalizado com o endereço https://www.kapwing.com/mcp. Nos dois casos, inicia sessão no Kapwing quando to pedirem.",
+    "Faz o pedido com o texto abaixo e abre a ligação do projeto para rever as legendas antes de exportar."
+   ],
+   "prompt_titulo": "Prompt · copiar e adaptar",
+   "prompt": "No Kapwing, carrega o vídeo [nome ou ligação], transcreve o áudio em português e adiciona legendas na parte de baixo. Depois cria uma segunda versão com as legendas traduzidas para inglês. Devolve-me a ligação dos dois projetos para eu rever antes de exportar.",
+   "nota": {
+    "tipo": "Atenção",
+    "texto": "o conector tem o mesmo acesso que a tua conta Kapwing, incluindo todos os espaços de trabalho. Segundo o próprio Kapwing, a dobragem troca só o áudio, sem sincronização labial, e as funções de IA gastam os créditos da conta. Nas contas gratuitas há exportações bloqueadas, por exemplo vídeos com mais de 4 minutos."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "ChatGPT (plugin) ou Claude (conector)",
+     null
+    ],
+    [
+     "Custo",
+     "Gasta créditos do Kapwing; conta gratuita limitada",
+     "warn"
+    ],
+    [
+     "Em Portugal",
+     "Sim",
+     "ok"
+    ],
+    [
+     "Estado",
+     "Aberto a todos desde 12 out.",
+     "ok"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Notas de versão do Kapwing MCP",
+     "https://www.kapwing.com/help/release-notes-kapwing-mcp/"
+    ],
+    [
+     "Kapwing: sobre o MCP",
+     "https://www.kapwing.com/help/about-the-kapwing-mcp/"
+    ]
+   ],
+   "etiquetas": [
+    "chatgpt",
+    "claude",
+    "vídeo",
+    "legendas",
+    "redes sociais"
+   ]
+  },
+  {
+   "id": "regressao",
+   "tipo": "Técnica",
+   "categoria": "Técnica",
+   "produto": "Teste de regressão para prompts",
+   "data_anuncio": "2026-11-06",
+   "kicker_data": "método",
+   "titulo": "Antes de mexeres num prompt que funciona, testa-o como um programador",
+   "lead": "Reescrever uma instrução até «soar melhor» pode estragar o que já funcionava. A solução: guardas uma tarefa de teste e voltas a corrê-la depois de cada alteração.",
+   "svg": "<svg viewBox=\"0 0 640 200\" role=\"img\" aria-label=\"Ciclo do teste de regressão: tarefa fixa com critérios, correr a versão atual, avaliar, mudar uma única instrução, correr a mesma tarefa e comparar; fica a versão que passa.\">\n  <defs><marker id=\"a23\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\">\n    <rect x=\"10\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\"/><rect x=\"170\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\"/><rect x=\"330\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\"/><rect x=\"490\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\" stroke=\"var(--accent)\"/>\n  </g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\" text-anchor=\"middle\">\n    <text x=\"80\" y=\"68\">1. Tarefa fixa</text><text x=\"80\" y=\"86\">+ critérios</text>\n    <text x=\"240\" y=\"68\">2. Corre e</text><text x=\"240\" y=\"86\">avalia</text>\n    <text x=\"400\" y=\"68\">3. Muda UMA</text><text x=\"400\" y=\"86\">instrução</text>\n    <text x=\"560\" y=\"68\">4. Mesma tarefa,</text><text x=\"560\" y=\"86\">compara</text>\n  </g>\n  <g stroke=\"var(--accent)\" stroke-width=\"2\"><path d=\"M150 75 h16\" marker-end=\"url(#a23)\"/><path d=\"M310 75 h16\" marker-end=\"url(#a23)\"/><path d=\"M470 75 h16\" marker-end=\"url(#a23)\"/></g>\n  <path d=\"M560 112 v26 q0 16 -16 16 h-448 q-16 0 -16 -16 v-22\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\" marker-end=\"url(#a23)\"/>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\"><text x=\"320\" y=\"176\" text-anchor=\"middle\">repete até passar em todos os critérios · fica a versão que passa, não a que lê melhor</text></g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"12\"><text x=\"200\" y=\"128\" fill=\"var(--ok)\">✓ 4 de 5</text><text x=\"520\" y=\"128\" fill=\"var(--ok)\">✓ 5 de 5</text></g>\n</svg>",
+   "legenda": "Esquema do método, com resultados ilustrativos.",
+   "o_que_e": "Um teste de regressão é uma verificação que se repete depois de cada alteração, para confirmar que não partiste o que já funcionava. A newsletter The Neuron adaptou a ideia aos prompts a partir de uma ferramenta de código aberto para programadores (Gauge). A versão sem ferramentas é simples: escolhes uma tarefa representativa, escreves o que um bom resultado tem de ter e, sempre que mudas a instrução, voltas a correr exatamente a mesma tarefa e comparas.",
+   "porque": "Quem usa prompts recorrentes (resumo semanal, resposta a clientes, briefing de conteúdos) costuma afiná-los a olho. Uma frase acrescentada para corrigir um erro pode criar outro noutro sítio, e só dás por isso semanas depois. Com uma tarefa de teste e critérios escritos, a decisão passa a ser «passou ou não passou», e não «parece-me melhor».",
+   "passos": [
+    "Escolhe um prompt que usas todas as semanas e guarda um exemplo real de entrada como tarefa de teste.",
+    "Escreve 4 ou 5 critérios verificáveis do resultado (ex.: «menos de 150 palavras», «indica sempre o prazo», «sem jargão»).",
+    "Quando um resultado falhar, usa o prompt abaixo, aplica só a alteração proposta e volta a correr a tarefa de teste."
+   ],
+   "prompt_titulo": "Prompt · depois de um resultado fraco",
+   "prompt": "Avalia o resultado contra estes critérios de aceitação: [critérios]. Identifica a primeira instrução do meu prompt que estava em falta, ambígua ou foi ignorada. Propõe uma única alteração mínima a essa instrução e mostra como mudaria a parte que falhou, sem reescrever as regras que não têm relação com o problema.",
+   "nota": null,
+   "ficha": [
+    [
+     "Onde",
+     "Qualquer assistente de IA",
+     null
+    ],
+    [
+     "Custo",
+     "Gratuito",
+     "ok"
+    ],
+    [
+     "Em Portugal",
+     "Sim",
+     "ok"
+    ],
+    [
+     "Estado",
+     "Método, não depende de produto",
+     "ok"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "The Neuron, 6 nov. (AI Skill of the Day)",
+     "https://www.theneurondaily.com/p/openai-released-gpt-6-cyber-a-hacking-ai"
+    ],
+    [
+     "Gauge, repositório",
+     "https://github.com/gauge-sh/gauge-cli"
+    ]
+   ],
+   "etiquetas": [
+    "técnica",
+    "prompt",
+    "qualidade",
+    "automação"
+   ]
+  }
+ ],
+ "fica_de_fora": {
+  "titulo": "Muse for Small Business (Meta, 29 set.)",
+  "texto": "O agente de IA da Meta para pequenas empresas liga-se às páginas de Facebook e Instagram, às contas de anúncios e a ferramentas como Shopify, Canva ou Notion, e trata de tarefas recorrentes: vigiar os anúncios da concorrência, preparar respostas a comentários (que só saem com a tua aprovação). É gratuito com limites semanais. Só existe nos EUA, no Canadá, no Japão e em Singapura, e a Meta não deu data para a Europa.",
+  "lead": "Agente da Meta para pequenas empresas, só nos EUA, Canadá, Japão e Singapura.",
+  "fonte": [
+   "Meta Newsroom",
+   "https://about.fb.com/news/2026/09/introducing-muse-small-business/"
+  ],
+  "etiquetas": [
+   "meta",
+   "agentes",
+   "marketing",
+   "só EUA"
+  ]
+ },
+ "conceito": {
+  "nome": "MCP",
+  "sub": "Model Context Protocol, «protocolo de contexto do modelo»",
+  "liga": "liga à peça 02",
+  "lead": "A norma aberta que liga os assistentes de IA a programas externos, e o que deves ver antes de autorizar um conector.",
+  "intro": "O MCP é uma norma aberta que define como um assistente de IA se liga a programas externos: um editor de vídeo, as tuas notas, o email, uma base de dados. Antes do MCP, cada ligação era feita à medida para cada assistente. Com o MCP, um serviço cria um único conector e passa a funcionar com qualquer assistente compatível.",
+  "svg": "<svg viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Um assistente de IA ao centro liga-se, através de conectores MCP, a quatro serviços externos: vídeo, notas, email e ficheiros.\">\n  <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\">\n    <rect x=\"250\" y=\"80\" width=\"140\" height=\"56\" rx=\"10\"/>\n    <rect x=\"20\" y=\"20\" width=\"150\" height=\"44\" rx=\"8\"/><rect x=\"470\" y=\"20\" width=\"150\" height=\"44\" rx=\"8\"/>\n    <rect x=\"20\" y=\"150\" width=\"150\" height=\"44\" rx=\"8\"/><rect x=\"470\" y=\"150\" width=\"150\" height=\"44\" rx=\"8\"/>\n    <path d=\"M170 42 L250 96\"/><path d=\"M470 42 L390 96\"/><path d=\"M170 172 L250 122\"/><path d=\"M470 172 L390 122\"/>\n  </g>\n  <g fill=\"currentColor\"><circle cx=\"210\" cy=\"69\" r=\"5\"/><circle cx=\"430\" cy=\"69\" r=\"5\"/><circle cx=\"210\" cy=\"147\" r=\"5\"/><circle cx=\"430\" cy=\"147\" r=\"5\"/></g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"currentColor\" text-anchor=\"middle\">\n    <text x=\"320\" y=\"104\">Assistente de IA</text><text x=\"320\" y=\"122\" font-size=\"11\" opacity=\".75\">ChatGPT, Claude…</text>\n    <text x=\"95\" y=\"47\">Editor de vídeo</text><text x=\"545\" y=\"47\">Notas e documentos</text>\n    <text x=\"95\" y=\"177\">Email e calendário</text><text x=\"545\" y=\"177\">Ficheiros na nuvem</text>\n  </g>\n  <text x=\"320\" y=\"38\" text-anchor=\"middle\" font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"currentColor\" opacity=\".75\">cada ponto = um conector MCP</text>\n</svg>",
+  "corpo": "A Anthropic apresentou o MCP em novembro de 2024 e publicou-o como norma aberta. Desde então foi adotado pela OpenAI, pela Google e pela Microsoft, e hoje é por ele que passam muitos dos «conectores» e «plugins» destes assistentes. A comparação habitual é com a ficha USB-C: uma ficha comum em vez de um cabo diferente para cada aparelho. Na prática, quando autorizas um conector, o assistente passa a poder ler e, muitas vezes, fazer coisas nesse serviço em teu nome.",
+  "habitos": [
+   [
+    "Lê o que estás a autorizar.",
+    "O ecrã de ligação diz a que dados e ações o assistente fica com acesso. Um conector com acesso a «todos os espaços de trabalho» vê tudo o que a tua conta vê."
+   ],
+   [
+    "Usa contas ou espaços separados",
+    "para o trabalho de clientes, para que um conector não misture dados que não devia."
+   ],
+   [
+    "Desliga o que não usas.",
+    "Nas definições de conectores ou plugins do assistente podes revogar o acesso quando quiseres."
+   ]
+  ],
+  "aprofundar": [
+   [
+    "Anúncio original do MCP (Anthropic, 2024)",
+    "https://www.anthropic.com/news/model-context-protocol"
+   ],
+   [
+    "Documentação oficial",
+    "https://modelcontextprotocol.io"
+   ]
+  ],
+  "etiquetas": [
+   "conceito",
+   "conectores",
+   "privacidade"
+  ]
+ }
+}
