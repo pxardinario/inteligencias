@@ -3,7 +3,7 @@
 Lê isto antes de qualquer edição. O projeto não depende da memória de nenhuma conversa: tudo o que precisas está aqui e no próprio repositório.
 
 ## O que é
-Revista digital pública e gratuita (site próprio, servido pela Cloudflare a partir deste repositório) sobre **IA prática**, para profissionais não técnicos em Portugal. Sai à **2.ª e à 5.ª, por volta das 14h00 (Europe/Lisbon)**. A edição de 2.ª cobre de 5.ª a domingo; a de 5.ª cobre de 2.ª a 4.ª. Responsável: Pedro Silva (só aparece no rodapé e na página «Como é feita», nunca como autor das peças). Todas as páginas mostram a etiqueta «Feito por IA».
+Sebenta digital, pública e gratuita (site próprio, servido pela Cloudflare a partir deste repositório) sobre **IA prática**, para profissionais não técnicos em Portugal. Sai à **2.ª e à 5.ª, por volta das 14h00 (Europe/Lisbon)**. A edição de 2.ª cobre de 5.ª a domingo; a de 5.ª cobre de 2.ª a 4.ª. Responsável: Pedro Silva (só aparece no rodapé e na página «Como é feita», nunca como autor das peças). Todas as páginas mostram a etiqueta «Feito por IA».
 
 ## Papéis (a redação pública em /redacao/)
 Combina-os se não houver multiagente; a verificação final é sempre uma passagem separada.
@@ -41,6 +41,7 @@ O tema claro é o padrão. O escuro só se ativa pelo botão de tema na barra de
 - Nunca afirmes que testaste: a ficha diz sempre «Testado: Não pela redação».
 
 ## Tom e escrita
+- O Inteligências descreve-se como **«sebenta»** (nunca «revista» nem «newsletter»): «a sebenta», «nesta edição da sebenta». O nome é «o Inteligências».
 - **Português de Portugal, tom informal e próximo, tratando o leitor por «tu»** («Abre o Flow…», «Se publicas…», «a tua conta»). Nunca «você» nem formas de 3.ª pessoa de cortesia («Abra», «Assuma», «a sua conta»).
 - Direto, sucinto, educativo, sem hype, sem emojis, sem CTA juvenil («Experimenta já!»). Público adulto e informado. Voz ativa.
 - Separa factos de afirmações das empresas («segundo a Google»). Parafraseia sempre; no máximo uma citação curta (menos de 15 palavras) por fonte.
