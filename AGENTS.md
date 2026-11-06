@@ -20,7 +20,7 @@ Combina-os se não houver multiagente; a verificação final é sempre uma passa
 O site tem humor nas margens: página «A redação», rodapé, 404, mensagens da interface (ex.: arquivo sem resultados). **As peças não têm piadas**: títulos, textos, prompts, fichas, notas e conceito do dia são informais mas sérios. Nunca humor à custa de pessoas, nem na etiqueta «Feito por IA». Se mudares a equipa ou as manias, faz-o em `site/redacao.html`.
 
 ## Tema
-O tema claro é o padrão. O escuro só se ativa pelo botão «◐» e fica guardado no navegador do leitor. Os diagramas têm de funcionar nos dois (usa só as variáveis CSS).
+O tema claro é o padrão. O escuro só se ativa pelo botão de tema na barra de navegação e fica guardado no navegador do leitor. Os diagramas têm de funcionar nos dois (usa só as variáveis CSS).
 
 ## Estrutura de cada edição
 - **2 a 3 NOTÍCIAS + 1 TÉCNICA + CONCEITO DO DIA.** Opcional: 1 caixa «Anunciado, mas não para nós» (`fica_de_fora`).

@@ -16,16 +16,22 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{if(localStorage.getItem('tema')==='escuro')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
-<link rel="stylesheet" href="/assets/site.css?v=879f13fd">
+<link rel="stylesheet" href="/assets/site.css?v=86d37a7a">
 
 </head>
 <body>
-<header class="wrap mast">
-  <div class="mast-top"><span>3 edições · desde segunda-feira, 2 de novembro de 2026</span><nav class="topnav" aria-label="Principal"><a href="/">Última edição</a><a href="/arquivo/">Arquivo</a><a href="/sobre/">Como é feita</a><a href="/redacao/">A redação</a><button class="theme" id="tema" type="button" aria-label="Mudar o tema">◐ Escuro</button></nav></div>
-  <h1><a href="/" style="color:inherit;text-decoration:none">Arquivo<span>.</span></a></h1>
-  <p class="tagline">Todas as peças, técnicas e conceitos. Pesquisa por palavra, mês ou etiqueta.</p>
-  <a class="badge" href="/sobre/#feito-por-ia">Feito por IA</a>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="/">Inteligências<span>.</span></a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span aria-hidden="true">☰</span> Menu</button>
+    <nav class="menu" id="menu" aria-label="Principal"><a href="/">Última edição</a><a href="/arquivo/" aria-current="page">Arquivo</a><a href="/sobre/">Como é feita</a><a href="/redacao/">A redação</a><button class="theme" id="tema" type="button" aria-label="Mudar o tema"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" style="vertical-align:-2px;margin-right:6px"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg>Escuro</button></nav>
+  </div>
 </header>
+<div class="wrap mast">
+  <h1>Arquivo<span>.</span></h1>
+  <p class="tagline">Todas as peças, técnicas e conceitos. Pesquisa por palavra, mês ou etiqueta.</p>
+  <div class="stamps"><span class="stamp">3 edições · desde segunda-feira, 2 de novembro de 2026</span><a class="badge" href="/sobre/#feito-por-ia">Feito por IA</a></div>
+</div>
 <main class="wrap">
   <section class="tools" aria-label="Pesquisa e filtros">
     <div class="row">
@@ -52,7 +58,7 @@
   <p class="wink">A palavra «revolucionário» não entrou nesta redação. <a href="/redacao/">Conhece a equipa</a>.</p>
   <p>Um projeto de <a href="https://pedroxaviersilva.eu/">Pedro Silva</a>.</p>
 </footer>
-<script src="/assets/site.js?v=faefb86b" defer></script>
+<script src="/assets/site.js?v=e4c55a2b" defer></script>
 <script src="/assets/arquivo.js?v=39988059" defer></script>
 </body>
 </html>

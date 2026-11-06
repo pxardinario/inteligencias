@@ -1,6 +1,6 @@
 # Inteligências
 
-*A IA que dá para usar esta semana, explicada sem rodeios.*
+*A IA explicada a quem tem mais que fazer.*
 
 Revista digital gratuita sobre inteligência artificial prática, em português de Portugal. Sai à segunda e à quinta, por volta das 14h00 (hora de Lisboa): duas ou três novidades, uma técnica e um conceito do dia. **Feito por IA**: cada edição é escolhida, escrita e ilustrada por agentes de inteligência artificial (Claude, da Anthropic). Um projeto de Pedro Silva.
 

@@ -142,15 +142,27 @@ def head(title, desc, path, extra=""):
 <body>'''
 
 
-def masthead(left, h1="Inteligências", tag=None):
+MENU = [("edicao", "/", "Última edição"), ("arquivo", "/arquivo/", "Arquivo"), ("sobre", "/sobre/", "Como é feita"), ("redacao", "/redacao/", "A redação")]
+
+
+def masthead(stamp, h1="Inteligências", tag=None, active=None):
     tag = tag or CFG["slogan"]
+    cur = ' aria-current="page"'
+    links = "".join(f'<a href="{u}"{cur if k == active else ""}>{t}</a>' for k, u, t in MENU)
+    stamp_html = f'<span class="stamp">{stamp}</span>' if stamp else ""
     return f'''
-<header class="wrap mast">
-  <div class="mast-top"><span>{left}</span><nav class="topnav" aria-label="Principal"><a href="/">Última edição</a><a href="/arquivo/">Arquivo</a><a href="/sobre/">Como é feita</a><a href="/redacao/">A redação</a><button class="theme" id="tema" type="button" aria-label="Mudar o tema">◐ Escuro</button></nav></div>
-  <h1><a href="/" style="color:inherit;text-decoration:none">{e(h1)}<span>.</span></a></h1>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="/">Inteligências<span>.</span></a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span aria-hidden="true">☰</span> Menu</button>
+    <nav class="menu" id="menu" aria-label="Principal">{links}<button class="theme" id="tema" type="button" aria-label="Mudar o tema"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" style="vertical-align:-2px;margin-right:6px"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg>Escuro</button></nav>
+  </div>
+</header>
+<div class="wrap mast">
+  <h1>{e(h1)}<span>.</span></h1>
   <p class="tagline">{e(tag)}</p>
-  <a class="badge" href="/sobre/#feito-por-ia">Feito por IA</a>
-</header>'''
+  <div class="stamps">{stamp_html}<a class="badge" href="/sobre/#feito-por-ia">Feito por IA</a></div>
+</div>'''
 
 
 def footer(eds, current=None):
@@ -182,8 +194,9 @@ def edition_page(ed, eds):
     body = "".join(piece(i, p) for i, p in enumerate(ed["pecas"], 1))
     title = f'Inteligências N.º {ed["numero"]} · {data_ext(ed["data"], False)}'
     desc = " · ".join(p["titulo"] for p in ed["pecas"])
-    left = f'N.º {ed["numero"]} · {e(data_ext(ed["data"]))} · {CFG["periodicidade"]} · {n} peças · {ed["minutos"]} min'
-    return (head(title, desc, f'/edicoes/{ed["numero"]:03d}', toc_style(n)) + masthead(left) +
+    left = f'N.º {ed["numero"]} · {e(data_ext(ed["data"]))} · {n} peças · {ed["minutos"]} min de leitura'
+    active = "edicao" if ed["numero"] == eds[-1]["numero"] else None
+    return (head(title, desc, f'/edicoes/{ed["numero"]:03d}', toc_style(n)) + masthead(left, active=active) +
             f'\n<nav class="wrap toc" aria-label="Nesta edição">{toc}</nav>\n<main class="wrap">{body}{fora(ed.get("fica_de_fora"))}{conceito(ed["conceito"])}\n</main>' +
             footer(eds, ed["numero"]) + '\n<script src="/assets/site.js?v=' + V['site.js'] + '" defer></script>\n</body>\n</html>\n')
 
@@ -205,7 +218,7 @@ def registo(eds):
 def archive_page(eds):
     left = f'{len(eds)} edições · desde {e(data_ext(eds[0]["data"], False))}'
     return (head("Arquivo · Inteligências", "Todas as peças, técnicas e conceitos do Inteligências, com pesquisa por palavra, mês e etiqueta.", "/arquivo/") +
-            masthead(left, "Arquivo", "Todas as peças, técnicas e conceitos. Pesquisa por palavra, mês ou etiqueta.") + '''
+            masthead(left, "Arquivo", "Todas as peças, técnicas e conceitos. Pesquisa por palavra, mês ou etiqueta.", "arquivo") + '''
 <main class="wrap">
   <section class="tools" aria-label="Pesquisa e filtros">
     <div class="row">
@@ -229,17 +242,17 @@ def about_page(eds):
     left = "Como é feita"
     body = (SITE / "sobre.html").read_text()
     return (head("Como é feita · Inteligências", "Como o Inteligências é escolhido, escrito e verificado.", "/sobre/") +
-            masthead(left, "Como é feita") + f'\n<main class="wrap prose">{body}</main>' + footer(eds) + '\n<script src="/assets/site.js?v=' + V['site.js'] + '" defer></script>\n</body>\n</html>\n')
+            masthead(None, "Como é feita", "O critério, as fontes e o que quer dizer «Feito por IA».", "sobre") + f'\n<main class="wrap prose">{body}</main>' + footer(eds) + '\n<script src="/assets/site.js?v=' + V['site.js'] + '" defer></script>\n</body>\n</html>\n')
 
 
 def redacao_page(eds):
     body = (SITE / "redacao.html").read_text()
     return (head("A redação · Inteligências", "Quem faz o Inteligências: uma redação de agentes de IA e um humano.", "/redacao/") +
-            masthead("A redação", "A redação", "Oito agentes de IA, um humano e nenhuma reunião de pauta.") + f'\n<main class="wrap">{body}</main>' + footer(eds) + '\n<script src="/assets/site.js?v=' + V['site.js'] + '" defer></script>\n</body>\n</html>\n')
+            masthead(None, "A redação", "Oito agentes de IA, um humano e nenhuma reunião de pauta.", "redacao") + f'\n<main class="wrap">{body}</main>' + footer(eds) + '\n<script src="/assets/site.js?v=' + V['site.js'] + '" defer></script>\n</body>\n</html>\n')
 
 
 def page_404(eds):
-    return (head("Página não encontrada · Inteligências", "Página não encontrada.", "/404") + masthead("Erro 404", "Não está cá") +
+    return (head("Página não encontrada · Inteligências", "Página não encontrada.", "/404") + masthead(None, "Não está cá") +
             '\n<main class="wrap prose"><p>Pedimos ao Vasco que procurasse esta página nas notas de versão e à Inês que a procurasse nas newsletters. Nenhum dos dois a encontrou. Pode ter mudado de sítio ou nunca ter existido.</p><p>Tenta a <a href="/">última edição</a> ou procura no <a href="/arquivo/">arquivo</a>.</p></main>' +
             footer(eds) + '\n<script src="/assets/site.js?v=' + V['site.js'] + '" defer></script>\n</body>\n</html>\n')
 

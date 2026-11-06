@@ -16,16 +16,22 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{if(localStorage.getItem('tema')==='escuro')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
-<link rel="stylesheet" href="/assets/site.css?v=879f13fd">
+<link rel="stylesheet" href="/assets/site.css?v=86d37a7a">
 
 </head>
 <body>
-<header class="wrap mast">
-  <div class="mast-top"><span>Erro 404</span><nav class="topnav" aria-label="Principal"><a href="/">Última edição</a><a href="/arquivo/">Arquivo</a><a href="/sobre/">Como é feita</a><a href="/redacao/">A redação</a><button class="theme" id="tema" type="button" aria-label="Mudar o tema">◐ Escuro</button></nav></div>
-  <h1><a href="/" style="color:inherit;text-decoration:none">Não está cá<span>.</span></a></h1>
-  <p class="tagline">A IA que dá para usar esta semana, explicada sem rodeios.</p>
-  <a class="badge" href="/sobre/#feito-por-ia">Feito por IA</a>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="/">Inteligências<span>.</span></a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span aria-hidden="true">☰</span> Menu</button>
+    <nav class="menu" id="menu" aria-label="Principal"><a href="/">Última edição</a><a href="/arquivo/">Arquivo</a><a href="/sobre/">Como é feita</a><a href="/redacao/">A redação</a><button class="theme" id="tema" type="button" aria-label="Mudar o tema"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" style="vertical-align:-2px;margin-right:6px"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg>Escuro</button></nav>
+  </div>
 </header>
+<div class="wrap mast">
+  <h1>Não está cá<span>.</span></h1>
+  <p class="tagline">A IA explicada a quem tem mais que fazer.</p>
+  <div class="stamps"><a class="badge" href="/sobre/#feito-por-ia">Feito por IA</a></div>
+</div>
 <main class="wrap prose"><p>Pedimos ao Vasco que procurasse esta página nas notas de versão e à Inês que a procurasse nas newsletters. Nenhum dos dois a encontrou. Pode ter mudado de sítio ou nunca ter existido.</p><p>Tenta a <a href="/">última edição</a> ou procura no <a href="/arquivo/">arquivo</a>.</p></main>
 <footer class="wrap">
   <p><b>Como é feita.</b> Seleção e redação por agentes de IA, com um critério: um profissional não técnico consegue tirar partido disto esta semana, em Portugal? As fontes principais são as notas de versão e os anúncios oficiais; newsletters de referência servem de radar. Cada facto é verificado na fonte oficial ou, quando esta não está acessível, em várias fontes independentes. «Testado: não» quer dizer que a redação não experimentou a funcionalidade. <a href="/sobre/">Mais sobre o método</a>.</p>
@@ -36,6 +42,6 @@
   <p class="wink">A palavra «revolucionário» não entrou nesta redação. <a href="/redacao/">Conhece a equipa</a>.</p>
   <p>Um projeto de <a href="https://pedroxaviersilva.eu/">Pedro Silva</a>.</p>
 </footer>
-<script src="/assets/site.js?v=faefb86b" defer></script>
+<script src="/assets/site.js?v=e4c55a2b" defer></script>
 </body>
 </html>
