@@ -153,12 +153,13 @@ def masthead(stamp, h1="Inteligências", tag=None, active=None):
     return f'''
 <header class="topbar">
   <div class="wrap topbar-in">
-    <a class="brand" href="/">Inteligências<span>.</span></a>
     <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span aria-hidden="true">☰</span> Menu</button>
-    <nav class="menu" id="menu" aria-label="Principal">{links}<button class="theme" id="tema" type="button" aria-label="Mudar o tema"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" style="vertical-align:-2px;margin-right:6px"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg>Escuro</button></nav>
+    <nav class="menu" id="menu" aria-label="Principal">{links}</nav>
+    <button class="theme" id="tema" type="button" aria-label="Mudar o tema"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" style="vertical-align:-2px;margin-right:6px"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg>Escuro</button>
   </div>
 </header>
 <div class="wrap mast">
+  {'' if h1 == "Inteligências" else '<a class="eyebrow" href="/">Inteligências</a>'}
   <h1>{e(h1)}<span>.</span></h1>
   <p class="tagline">{e(tag)}</p>
   <div class="stamps">{stamp_html}<a class="badge" href="/sobre/#feito-por-ia">Feito por IA</a></div>
