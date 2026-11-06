@@ -4,7 +4,7 @@
 Uso:  python3 tools/build.py
 Sem dependências externas. Não editar public/ à mão: é sempre regenerado.
 """
-import html, json, shutil
+import hashlib, html, json, shutil
 from datetime import date, datetime, timezone
 from email.utils import format_datetime
 from pathlib import Path
@@ -15,6 +15,14 @@ PUB = ROOT / "public"
 CFG = json.loads((SITE / "config.json").read_text())
 URL = CFG.get("site_url", "").rstrip("/")
 e = html.escape
+
+
+def _v(name):
+    """Impressão digital do ficheiro, para obrigar o navegador a carregar a versão nova."""
+    return hashlib.sha1((SITE / "assets" / name).read_bytes()).hexdigest()[:8]
+
+
+V = {n: _v(n) for n in ("site.css", "site.js", "arquivo.js")}
 
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 DIAS = ["segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado", "domingo"]
@@ -128,7 +136,7 @@ def head(title, desc, path, extra=""):
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{{if(localStorage.getItem('tema')==='escuro')document.documentElement.setAttribute('data-theme','dark')}}catch(e){{}}</script>
-<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/site.css?v={V['site.css']}">
 {extra}
 </head>
 <body>'''
@@ -177,7 +185,7 @@ def edition_page(ed, eds):
     left = f'N.º {ed["numero"]} · {e(data_ext(ed["data"]))} · {CFG["periodicidade"]} · {n} peças · {ed["minutos"]} min'
     return (head(title, desc, f'/edicoes/{ed["numero"]:03d}', toc_style(n)) + masthead(left) +
             f'\n<nav class="wrap toc" aria-label="Nesta edição">{toc}</nav>\n<main class="wrap">{body}{fora(ed.get("fica_de_fora"))}{conceito(ed["conceito"])}\n</main>' +
-            footer(eds, ed["numero"]) + '\n<script src="/assets/site.js" defer></script>\n</body>\n</html>\n')
+            footer(eds, ed["numero"]) + '\n<script src="/assets/site.js?v=' + V['site.js'] + '" defer></script>\n</body>\n</html>\n')
 
 
 # ------------------------------------------------------------------ outras páginas
@@ -214,26 +222,26 @@ def archive_page(eds):
     <div class="status"><span id="contagem" aria-live="polite">A carregar…</span><button class="clear" id="limpar" type="button">Limpar filtros</button></div>
   </section>
   <div id="lista"></div>
-</main>''' + footer(eds) + '\n<script src="/assets/site.js" defer></script>\n<script src="/assets/arquivo.js" defer></script>\n</body>\n</html>\n')
+</main>''' + footer(eds) + '\n<script src="/assets/site.js?v=' + V['site.js'] + '" defer></script>\n<script src="/assets/arquivo.js?v=' + V['arquivo.js'] + '" defer></script>\n</body>\n</html>\n')
 
 
 def about_page(eds):
     left = "Como é feita"
     body = (SITE / "sobre.html").read_text()
     return (head("Como é feita · Inteligências", "Como o Inteligências é escolhido, escrito e verificado.", "/sobre/") +
-            masthead(left, "Como é feita") + f'\n<main class="wrap prose">{body}</main>' + footer(eds) + '\n<script src="/assets/site.js" defer></script>\n</body>\n</html>\n')
+            masthead(left, "Como é feita") + f'\n<main class="wrap prose">{body}</main>' + footer(eds) + '\n<script src="/assets/site.js?v=' + V['site.js'] + '" defer></script>\n</body>\n</html>\n')
 
 
 def redacao_page(eds):
     body = (SITE / "redacao.html").read_text()
     return (head("A redação · Inteligências", "Quem faz o Inteligências: uma redação de agentes de IA e um humano.", "/redacao/") +
-            masthead("A redação", "A redação", "Oito agentes de IA, um humano e nenhuma reunião de pauta.") + f'\n<main class="wrap">{body}</main>' + footer(eds) + '\n<script src="/assets/site.js" defer></script>\n</body>\n</html>\n')
+            masthead("A redação", "A redação", "Oito agentes de IA, um humano e nenhuma reunião de pauta.") + f'\n<main class="wrap">{body}</main>' + footer(eds) + '\n<script src="/assets/site.js?v=' + V['site.js'] + '" defer></script>\n</body>\n</html>\n')
 
 
 def page_404(eds):
     return (head("Página não encontrada · Inteligências", "Página não encontrada.", "/404") + masthead("Erro 404", "Não está cá") +
             '\n<main class="wrap prose"><p>Pedimos ao Vasco que procurasse esta página nas notas de versão e à Inês que a procurasse nas newsletters. Nenhum dos dois a encontrou. Pode ter mudado de sítio ou nunca ter existido.</p><p>Tenta a <a href="/">última edição</a> ou procura no <a href="/arquivo/">arquivo</a>.</p></main>' +
-            footer(eds) + '\n<script src="/assets/site.js" defer></script>\n</body>\n</html>\n')
+            footer(eds) + '\n<script src="/assets/site.js?v=' + V['site.js'] + '" defer></script>\n</body>\n</html>\n')
 
 
 def rss(eds):
