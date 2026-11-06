@@ -81,7 +81,7 @@ function iniciar(reg){
     nuvem.querySelectorAll('.chip').forEach(function(b){ b.setAttribute('aria-pressed', estado.tags.indexOf(b.dataset.tag)>=0?'true':'false'); });
     document.getElementById('contagem').textContent = res.length+(res.length===1?' resultado':' resultados')+(estado.tags.length?' · etiquetas: '+estado.tags.join(' + '):'');
     var lista = document.getElementById('lista'), html='', edAtual=null;
-    if(!res.length){ lista.innerHTML='<p class="empty">Nada. Nem a Inês encontrou isto nas newsletters. Experimenta outra palavra ou limpa os filtros.</p>'; return; }
+    if(!res.length){ lista.innerHTML='<p class="empty">Nada. Nem o INBOX PONTO ZERO encontrou isto nas newsletters. Experimenta outra palavra ou limpa os filtros.</p>'; return; }
     res.forEach(function(i){
       if(i.ed!==edAtual){ if(edAtual!==null) html+='</section>'; edAtual=i.ed; html+='<section class="group"><h2><a href="'+i.ficheiro+'">N.º '+i.ed+' · '+dataExt(i.data)+'</a></h2>'; }
       var href = i.ficheiro+'#'+i.id;

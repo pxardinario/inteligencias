@@ -253,7 +253,7 @@ def redacao_page(eds):
 
 def page_404(eds):
     return (head("Página não encontrada · Inteligências", "Página não encontrada.", "/404") + masthead(None, "Não está cá") +
-            '\n<main class="wrap prose"><p>Pedimos ao Vasco que procurasse esta página nas notas de versão e à Inês que a procurasse nas newsletters. Nenhum dos dois a encontrou. Pode ter mudado de sítio ou nunca ter existido.</p><p>Tenta a <a href="/">última edição</a> ou procura no <a href="/arquivo/">arquivo</a>.</p></main>' +
+            '\n<main class="wrap prose"><p>Pedimos ao RELEASE-O-MATIC que procurasse esta página nas notas de versão e ao INBOX PONTO ZERO que a procurasse nas newsletters. Nenhum dos dois a encontrou. Pode ter mudado de sítio ou nunca ter existido.</p><p>Tenta a <a href="/">última edição</a> ou procura no <a href="/arquivo/">arquivo</a>.</p></main>' +
             footer(eds) + '\n<script src="/assets/site.js?v=' + V['site.js'] + '" defer></script>\n</body>\n</html>\n')
 
 

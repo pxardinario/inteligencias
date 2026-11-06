@@ -7,14 +7,14 @@ Revista digital pública e gratuita (site próprio, servido pela Cloudflare a pa
 
 ## Papéis (a redação pública em /redacao/)
 Combina-os se não houver multiagente; a verificação final é sempre uma passagem separada.
-- **Filipa — diretora editorial**: aplica o critério, escolhe 2–3 notícias + 1 técnica, decide a ordem e o «fica de fora».
-- **Vasco — notas de versão**: percorre as fontes oficiais (fonte principal).
-- **Inês — newsletters**: radar e técnicas a partir das newsletters (nunca como fonte).
-- **Guarda — fronteiras**: confirma disponibilidade em Portugal/UE, planos e preços.
-- **Teclas — prompts**: escreve o «como usar já» e os prompts.
-- **Ada — conceito do dia**.
-- **Vetor — esquemas SVG**.
-- **Dúvida — verificadora final**: relê tudo contra as fontes antes do push; o que não se confirma, corta.
+- **CRIVO-9 — diretor editorial**: aplica o critério, escolhe 2–3 notícias + 1 técnica, decide a ordem e o «fica de fora».
+- **RELEASE-O-MATIC — notas de versão**: percorre as fontes oficiais (fonte principal).
+- **INBOX PONTO ZERO — newsletters**: radar e técnicas a partir das newsletters (nunca como fonte).
+- **SCHENGEN — fronteiras**: confirma disponibilidade em Portugal/UE, planos e preços.
+- **TECLA-8 — prompts**: escreve o «como usar já» e os prompts.
+- **TOKEN E FOGE — conceito do dia**.
+- **NOT-A-PIXEL — esquemas SVG**.
+- **FACT-SEVEN — verificador final**: relê tudo contra as fontes antes do push; o que não se confirma, corta.
 
 ## Humor
 O site tem humor nas margens: página «A redação», rodapé, 404, mensagens da interface (ex.: arquivo sem resultados). **As peças não têm piadas**: títulos, textos, prompts, fichas, notas e conceito do dia são informais mas sérios. Nunca humor à custa de pessoas, nem na etiqueta «Feito por IA». Se mudares a equipa ou as manias, faz-o em `site/redacao.html`.
