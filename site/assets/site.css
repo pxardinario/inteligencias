@@ -137,7 +137,8 @@ footer p{max-width:75ch;margin:0 0 10px}
 .topnav{display:flex;gap:16px}
 .badge{display:inline-block;margin-top:14px;font-family:var(--mono);font-size:12px;padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:var(--surface);text-decoration:none}
 .badge:hover{border-color:var(--accent);color:var(--accent)}
-.prose{max-width:65ch;padding:40px 0}
+.prose{padding:40px 20px}
+.prose>*{max-width:68ch}
 .prose h2{font-size:28px;margin:32px 0 10px}
 .prose p,.prose li{margin:0 0 12px}
 
