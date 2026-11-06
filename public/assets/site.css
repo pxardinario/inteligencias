@@ -30,13 +30,6 @@
   --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
   color-scheme:light;
 }
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --paper:#111318; --surface:#1A1D24; --ink:#ECEEF2; --muted:#A3A9B4; --line:#2E333D;
-    --accent:#8FA2FF; --accent-soft:#232B4D; --use:#2E2812; --use-ink:#F2D98A;
-    --ok:#5FC98D; --warn:#E6A653; --no:#EE8484; color-scheme:dark;
-  }
-}
 :root[data-theme="dark"]{
   --paper:#111318; --surface:#1A1D24; --ink:#ECEEF2; --muted:#A3A9B4; --line:#2E333D;
   --accent:#8FA2FF; --accent-soft:#232B4D; --use:#2E2812; --use-ink:#F2D98A;
@@ -184,3 +177,15 @@ select{font:inherit;font-size:15px;padding:11px 12px;border:1px solid var(--line
 mark{background:var(--use);color:var(--use-ink);border-radius:2px;padding:0 1px}
 .empty{padding:40px 0;color:var(--muted)}
 @media (max-width:600px){.tools{position:static}.item{grid-template-columns:1fr}.item .type{padding-top:0}}
+
+/* Botão de tema e redação */
+.theme{font:inherit;font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:.06em;background:none;border:0;color:inherit;cursor:pointer;padding:0}
+.theme:hover{color:var(--accent)}
+.team{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin:28px 0}
+.member{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px}
+.member h3{font-family:var(--display);font-size:24px;margin:0}
+.member .role{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin:2px 0 10px}
+.member p{margin:0 0 8px;font-size:15px}
+.member .quirk{color:var(--muted);font-style:italic}
+.member.human{border-color:var(--ink)}
+.wink{font-style:italic}

@@ -9,3 +9,17 @@ document.querySelectorAll('.copy').forEach(function (btn) {
     catch (e) { selectText(); done(false); }
   });
 });
+
+// Tema claro (por omissão) / escuro, lembrado neste navegador
+(function () {
+  var b = document.getElementById('tema');
+  if (!b) return;
+  function rotulo() { b.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? '◐ Claro' : '◐ Escuro'; }
+  rotulo();
+  b.addEventListener('click', function () {
+    var escuro = document.documentElement.getAttribute('data-theme') !== 'dark';
+    if (escuro) document.documentElement.setAttribute('data-theme', 'dark'); else document.documentElement.removeAttribute('data-theme');
+    try { localStorage.setItem('tema', escuro ? 'escuro' : 'claro'); } catch (e) {}
+    rotulo();
+  });
+})();

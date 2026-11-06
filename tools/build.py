@@ -127,6 +127,7 @@ def head(title, desc, path, extra=""):
 {rss}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{{if(localStorage.getItem('tema')==='escuro')document.documentElement.setAttribute('data-theme','dark')}}catch(e){{}}</script>
 <link rel="stylesheet" href="/assets/site.css">
 {extra}
 </head>
@@ -137,7 +138,7 @@ def masthead(left, h1="Inteligências", tag=None):
     tag = tag or CFG["slogan"]
     return f'''
 <header class="wrap mast">
-  <div class="mast-top"><span>{left}</span><nav class="topnav" aria-label="Principal"><a href="/">Última edição</a><a href="/arquivo/">Arquivo</a><a href="/sobre/">Como é feita</a></nav></div>
+  <div class="mast-top"><span>{left}</span><nav class="topnav" aria-label="Principal"><a href="/">Última edição</a><a href="/arquivo/">Arquivo</a><a href="/sobre/">Como é feita</a><a href="/redacao/">A redação</a><button class="theme" id="tema" type="button" aria-label="Mudar o tema">◐ Escuro</button></nav></div>
   <h1><a href="/" style="color:inherit;text-decoration:none">{e(h1)}<span>.</span></a></h1>
   <p class="tagline">{e(tag)}</p>
   <a class="badge" href="/sobre/#feito-por-ia">Feito por IA</a>
@@ -156,6 +157,7 @@ def footer(eds, current=None):
     <p><b>Arquivo.</b> <a href="/arquivo/">Pesquisar todas as peças por palavra, mês ou etiqueta →</a></p>
     <ul>{items}</ul>
   </nav>
+  <p class="wink">A palavra «revolucionário» não entrou nesta redação. <a href="/redacao/">Conhece a equipa</a>.</p>
   <p>Um projeto de <a href="https://pedroxaviersilva.eu/">Pedro Silva</a>.</p>
 </footer>'''
 
@@ -212,20 +214,26 @@ def archive_page(eds):
     <div class="status"><span id="contagem" aria-live="polite">A carregar…</span><button class="clear" id="limpar" type="button">Limpar filtros</button></div>
   </section>
   <div id="lista"></div>
-</main>''' + footer(eds) + '\n<script src="/assets/arquivo.js" defer></script>\n</body>\n</html>\n')
+</main>''' + footer(eds) + '\n<script src="/assets/site.js" defer></script>\n<script src="/assets/arquivo.js" defer></script>\n</body>\n</html>\n')
 
 
 def about_page(eds):
     left = "Como é feita"
     body = (SITE / "sobre.html").read_text()
     return (head("Como é feita · Inteligências", "Como o Inteligências é escolhido, escrito e verificado.", "/sobre/") +
-            masthead(left, "Como é feita") + f'\n<main class="wrap prose">{body}</main>' + footer(eds) + "\n</body>\n</html>\n")
+            masthead(left, "Como é feita") + f'\n<main class="wrap prose">{body}</main>' + footer(eds) + '\n<script src="/assets/site.js" defer></script>\n</body>\n</html>\n')
+
+
+def redacao_page(eds):
+    body = (SITE / "redacao.html").read_text()
+    return (head("A redação · Inteligências", "Quem faz o Inteligências: uma redação de agentes de IA e um humano.", "/redacao/") +
+            masthead("A redação", "A redação", "Oito agentes de IA, um humano e nenhuma reunião de pauta.") + f'\n<main class="wrap">{body}</main>' + footer(eds) + '\n<script src="/assets/site.js" defer></script>\n</body>\n</html>\n')
 
 
 def page_404(eds):
     return (head("Página não encontrada · Inteligências", "Página não encontrada.", "/404") + masthead("Erro 404", "Não está cá") +
-            '\n<main class="wrap prose"><p>Esta página não existe, ou mudou de sítio. Tenta a <a href="/">última edição</a> ou procura no <a href="/arquivo/">arquivo</a>.</p></main>' +
-            footer(eds) + "\n</body>\n</html>\n")
+            '\n<main class="wrap prose"><p>Pedimos ao Vasco que procurasse esta página nas notas de versão e à Inês que a procurasse nas newsletters. Nenhum dos dois a encontrou. Pode ter mudado de sítio ou nunca ter existido.</p><p>Tenta a <a href="/">última edição</a> ou procura no <a href="/arquivo/">arquivo</a>.</p></main>' +
+            footer(eds) + '\n<script src="/assets/site.js" defer></script>\n</body>\n</html>\n')
 
 
 def rss(eds):
@@ -239,7 +247,7 @@ def rss(eds):
 
 
 def sitemap(eds):
-    urls = ["/", "/arquivo/", "/sobre/"] + [f'/edicoes/{x["numero"]:03d}' for x in eds]
+    urls = ["/", "/arquivo/", "/sobre/", "/redacao/"] + [f'/edicoes/{x["numero"]:03d}' for x in eds]
     return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{URL}{u}</loc></url>" for u in urls) + "</urlset>\n"
 
 
@@ -260,6 +268,8 @@ def main():
     (PUB / "arquivo" / "index.html").write_text(archive_page(eds))
     (PUB / "sobre").mkdir()
     (PUB / "sobre" / "index.html").write_text(about_page(eds))
+    (PUB / "redacao").mkdir()
+    (PUB / "redacao" / "index.html").write_text(redacao_page(eds))
     (PUB / "404.html").write_text(page_404(eds))
     (PUB / "data").mkdir()
     (PUB / "data" / "registo.json").write_text(json.dumps(registo(eds), ensure_ascii=False, indent=1))

@@ -5,6 +5,23 @@ Lê isto antes de qualquer edição. O projeto não depende da memória de nenhu
 ## O que é
 Revista digital pública e gratuita (site próprio, servido pela Cloudflare a partir deste repositório) sobre **IA prática**, para profissionais não técnicos em Portugal. Sai à **2.ª e à 5.ª, por volta das 14h00 (Europe/Lisbon)**. A edição de 2.ª cobre de 5.ª a domingo; a de 5.ª cobre de 2.ª a 4.ª. Responsável: Pedro Silva (só aparece no rodapé e na página «Como é feita», nunca como autor das peças). Todas as páginas mostram a etiqueta «Feito por IA».
 
+## Papéis (a redação pública em /redacao/)
+Combina-os se não houver multiagente; a verificação final é sempre uma passagem separada.
+- **Filipa — diretora editorial**: aplica o critério, escolhe 2–3 notícias + 1 técnica, decide a ordem e o «fica de fora».
+- **Vasco — notas de versão**: percorre as fontes oficiais (fonte principal).
+- **Inês — newsletters**: radar e técnicas a partir das newsletters (nunca como fonte).
+- **Guarda — fronteiras**: confirma disponibilidade em Portugal/UE, planos e preços.
+- **Teclas — prompts**: escreve o «como usar já» e os prompts.
+- **Ada — conceito do dia**.
+- **Vetor — esquemas SVG**.
+- **Dúvida — verificadora final**: relê tudo contra as fontes antes do push; o que não se confirma, corta.
+
+## Humor
+O site tem humor nas margens: página «A redação», rodapé, 404, mensagens da interface (ex.: arquivo sem resultados). **As peças não têm piadas**: títulos, textos, prompts, fichas, notas e conceito do dia são informais mas sérios. Nunca humor à custa de pessoas, nem na etiqueta «Feito por IA». Se mudares a equipa ou as manias, faz-o em `site/redacao.html`.
+
+## Tema
+O tema claro é o padrão. O escuro só se ativa pelo botão «◐» e fica guardado no navegador do leitor. Os diagramas têm de funcionar nos dois (usa só as variáveis CSS).
+
 ## Estrutura de cada edição
 - **2 a 3 NOTÍCIAS + 1 TÉCNICA + CONCEITO DO DIA.** Opcional: 1 caixa «Anunciado, mas não para nós» (`fica_de_fora`).
 - Se não houver 3 notícias que passem o filtro, publica 2. **Nunca forces.**
