@@ -1,8 +1,77 @@
 {
  "numero": 2,
- "data": "2026-11-06",
- "minutos": 8,
+ "data": "2026-11-04",
+ "minutos": 10,
  "pecas": [
+  {
+   "id": "gif",
+   "tipo": "Notícia",
+   "categoria": "Imagem",
+   "produto": "ChatGPT Images 2.6",
+   "data_anuncio": "2026-11-04",
+   "kicker_data": "4 nov.",
+   "titulo": "O ChatGPT já faz GIFs e lembra-se das tuas fotografias",
+   "lead": "Com o Images 2.6, uma foto de produto passa a animação curta em loop sem saíres da conversa. E se guardares uma imagem de referência, deixas de ter de carregar a mesma foto vezes sem conta.",
+   "svg": "<svg viewBox=\"0 0 640 232\" role=\"img\" aria-label=\"Uma fotografia estática de uma chávena transforma-se em três fotogramas com vapor em movimento, repetidos em ciclo.\">\n          <g font-family=\"IBM Plex Mono, monospace\" font-size=\"12\" fill=\"var(--muted)\">\n            <text x=\"20\" y=\"22\">FOTO ESTÁTICA</text>\n            <text x=\"250\" y=\"22\">GIF EM LOOP · 3 FOTOGRAMAS</text>\n          </g>\n          <!-- foto -->\n          <rect x=\"20\" y=\"36\" width=\"150\" height=\"130\" rx=\"8\" fill=\"var(--paper)\" stroke=\"var(--line)\"/>\n          <g transform=\"translate(95,128)\">\n            <path d=\"M-32 -30 h56 v24 a28 28 0 0 1 -56 0 z\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"2\"/>\n            <path d=\"M24 -24 a12 12 0 0 1 0 22\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"2\"/>\n            <line x1=\"-44\" y1=\"26\" x2=\"36\" y2=\"26\" stroke=\"var(--ink)\" stroke-width=\"2\"/>\n          </g>\n          <!-- seta -->\n          <path d=\"M182 101 h48\" stroke=\"var(--accent)\" stroke-width=\"2.5\" marker-end=\"url(#ah)\"/>\n          <defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n          <!-- fotogramas -->\n          <g>\n            <g transform=\"translate(250,36)\">\n              <rect width=\"110\" height=\"130\" rx=\"8\" fill=\"var(--paper)\" stroke=\"var(--line)\"/>\n              <g transform=\"translate(55,92)\"><path d=\"M-24 -22 h42 v18 a21 21 0 0 1 -42 0 z\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"2\"/><path d=\"M-12 -32 q-6 -8 0 -16\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"2\"/></g>\n            </g>\n            <g transform=\"translate(375,36)\">\n              <rect width=\"110\" height=\"130\" rx=\"8\" fill=\"var(--paper)\" stroke=\"var(--line)\"/>\n              <g transform=\"translate(55,92)\"><path d=\"M-24 -22 h42 v18 a21 21 0 0 1 -42 0 z\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"2\"/><path d=\"M-12 -36 q-6 -8 0 -16 q6 -8 0 -14\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"2\"/><path d=\"M2 -32 q-6 -8 0 -16\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"2\"/></g>\n            </g>\n            <g transform=\"translate(500,36)\">\n              <rect width=\"110\" height=\"130\" rx=\"8\" fill=\"var(--paper)\" stroke=\"var(--line)\"/>\n              <g transform=\"translate(55,92)\" class=\"steam\"><path d=\"M-24 -22 h42 v18 a21 21 0 0 1 -42 0 z\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"2\"/><path d=\"M-12 -40 q-6 -8 0 -16 q6 -8 0 -16\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"2\"/><path d=\"M2 -36 q-6 -8 0 -16 q6 -8 0 -12\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"2\"/></g>\n            </g>\n          </g>\n          <path d=\"M555 176 q0 22 -150 22 q-150 0 -150 -22\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\" marker-end=\"url(#ah)\"/>\n          <text x=\"404\" y=\"226\" text-anchor=\"middle\" font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\">repete · velocidade ajustável · fotogramas editáveis</text>\n        </svg>",
+   "legenda": "Esquema ilustrativo do processo, não é uma imagem gerada pelo ChatGPT.",
+   "o_que_e": "A atualização Images 2.6, lançada a 4 de novembro, deixa-te pedir ao ChatGPT um GIF a partir de uma descrição, de uma fotografia ou de um esboço. Depois de gerado, podes mexer na velocidade e corrigir fotogramas um a um. A segunda novidade são as imagens de referência guardadas: gravas uma fotografia (um produto, o logótipo, uma pessoa que deu autorização) com um nome e passas a chamá-la noutras conversas com «@nome», sem a voltar a carregar.",
+   "porque": "Um GIF curto (vapor numa chávena, uma etiqueta de promoção a piscar) chama mais a atenção numa newsletter ou numa história de Instagram do que uma imagem parada, e até agora obrigava-te a abrir outra ferramenta. A referência guardada resolve o problema mais irritante das imagens geradas por IA, a falta de consistência: o mesmo produto saía diferente a cada pedido.",
+   "passos": [
+    "Abre uma conversa no ChatGPT (web, computador ou telemóvel) e carrega uma fotografia de produto.",
+    "Pede a animação com o texto abaixo. Diz claramente o que não deve mexer.",
+    "Se a opção de GIF ainda não te aparecer, atualiza a app e tenta outra vez daqui a uns dias: está a chegar aos utilizadores aos poucos."
+   ],
+   "prompt_titulo": "Prompt · copiar e adaptar",
+   "prompt": "Transforma esta fotografia num GIF em loop de cerca de 2 segundos. Anima apenas o vapor a subir da chávena, com movimento lento e subtil. Mantém tudo o resto exatamente igual: enquadramento, cores, luz e fundo. Formato quadrado, para Instagram.",
+   "nota": {
+    "tipo": "Atenção",
+    "texto": "só guardes uma imagem de referência de uma pessoa se ela concordar. Antes de publicares, confirma que o GIF não alterou rótulos, preços ou texto da imagem original."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "ChatGPT (web, computador, telemóvel)",
+     null
+    ],
+    [
+     "Custo",
+     "Todos os planos, incluindo o gratuito",
+     "ok"
+    ],
+    [
+     "Em Portugal",
+     "Sim, lançamento global",
+     "ok"
+    ],
+    [
+     "Estado",
+     "GIF a chegar aos poucos",
+     "warn"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Notas de versão do ChatGPT (OpenAI)",
+     "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    ],
+    [
+     "Unite.AI, 4 nov.",
+     "https://www.unite.ai/chatgpt-adds-animated-gif-creation-and-editing-with-images-2-6/"
+    ]
+   ],
+   "etiquetas": [
+    "chatgpt",
+    "imagem",
+    "redes sociais",
+    "grátis",
+    "prompt"
+   ]
+  },
   {
    "id": "powerpoint",
    "tipo": "Notícia",
@@ -69,104 +138,34 @@
    ]
   },
   {
-   "id": "kapwing",
+   "id": "elogios",
    "tipo": "Notícia",
-   "categoria": "Vídeo",
-   "produto": "Kapwing MCP (ChatGPT e Claude)",
-   "data_anuncio": "2026-10-27",
-   "kicker_data": "out.",
-   "titulo": "Legendar, traduzir e dobrar vídeos a partir do ChatGPT ou do Claude",
-   "lead": "O editor de vídeo Kapwing ligou-se aos assistentes de IA. Pedes numa conversa a versão legendada ou dobrada noutra língua e recebes um projeto que ainda podes editar.",
-   "svg": "<svg viewBox=\"0 0 640 220\" role=\"img\" aria-label=\"Um pedido feito no assistente de IA passa pelo conector do Kapwing, que gera legendas, tradução ou dobragem e devolve um projeto editável.\">\n  <defs><marker id=\"a22\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"12\" fill=\"var(--muted)\"><text x=\"20\" y=\"22\">NO ASSISTENTE</text><text x=\"250\" y=\"22\">CONECTOR</text><text x=\"430\" y=\"22\">NO KAPWING</text></g>\n  <rect x=\"20\" y=\"40\" width=\"190\" height=\"86\" rx=\"10\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\"><text x=\"34\" y=\"64\">«Legenda este vídeo</text><text x=\"34\" y=\"82\">e cria uma versão</text><text x=\"34\" y=\"100\">dobrada em espanhol»</text></g>\n  <path d=\"M218 83 h30\" stroke=\"var(--accent)\" stroke-width=\"2.5\" marker-end=\"url(#a22)\"/>\n  <rect x=\"256\" y=\"58\" width=\"120\" height=\"50\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.5\"/>\n  <text x=\"316\" y=\"80\" text-anchor=\"middle\" font-family=\"IBM Plex Mono, monospace\" font-size=\"13\" fill=\"var(--ink)\">MCP</text>\n  <text x=\"316\" y=\"97\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"11\" fill=\"var(--muted)\">com a tua conta</text>\n  <path d=\"M384 83 h40\" stroke=\"var(--accent)\" stroke-width=\"2.5\" marker-end=\"url(#a22)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\">\n    <rect x=\"432\" y=\"36\" width=\"188\" height=\"28\" rx=\"6\" fill=\"var(--surface)\" stroke=\"var(--line)\"/><text x=\"444\" y=\"55\">Legendas na imagem</text>\n    <rect x=\"432\" y=\"70\" width=\"188\" height=\"28\" rx=\"6\" fill=\"var(--surface)\" stroke=\"var(--line)\"/><text x=\"444\" y=\"89\">Tradução das legendas</text>\n    <rect x=\"432\" y=\"104\" width=\"188\" height=\"28\" rx=\"6\" fill=\"var(--surface)\" stroke=\"var(--line)\"/><text x=\"444\" y=\"123\">Dobragem com a mesma voz</text>\n  </g>\n  <path d=\"M526 140 v20 q0 14 -14 14 h-376 q-14 0 -14 -14 v-24\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\" marker-end=\"url(#a22)\"/>\n  <text x=\"320\" y=\"206\" text-anchor=\"middle\" font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\">devolve uma ligação para um projeto editável no Kapwing</text>\n</svg>",
-   "legenda": "Esquema ilustrativo do fluxo. Não reproduz os ecrãs do Kapwing nem dos assistentes.",
-   "o_que_e": "O Kapwing é um editor de vídeo no navegador com ferramentas de legendas, tradução e dobragem por IA. Desde 12 de outubro, o conector MCP dele está aberto a toda a gente (antes era só para testadores escolhidos) e a 15 de outubro entrou na biblioteca de plugins do ChatGPT. Com o conector ativo, pedes ao ChatGPT ou ao Claude que carregue um vídeo, gere e traduza legendas, faça a dobragem para outra língua ou exporte o resultado. Cada operação cria um projeto no Kapwing que podes abrir e corrigir à mão.",
-   "porque": "Se geres redes sociais ou a comunicação de uma empresa com clientes lá fora, fazer a versão legendada e a versão em inglês ou espanhol de cada vídeo era trabalho repetitivo de editor. Passa a ser um pedido numa conversa e, como no fim tens um projeto editável, corriges os erros de transcrição antes de publicar.",
+   "categoria": "Hábitos",
+   "produto": "ChatGPT (GPT-6)",
+   "data_anuncio": "2026-10-29",
+   "kicker_data": "29 out.",
+   "titulo": "Menos elogios no ChatGPT, mas não para todos",
+   "lead": "A OpenAI afinou o GPT-6 para dar respostas mais curtas e menos lisonjeiras. Quem paga Plus ou Pro continua, no modelo principal, com o comportamento antigo. A solução que funciona para toda a gente é pedir.",
+   "svg": "<svg viewBox=\"0 0 640 200\" role=\"img\" aria-label=\"Quem recebe a mudança: planos Gratuito, Go e utilização sem sessão recebem; Plus e Pro só no modelo de recurso após atingirem o limite de mensagens; modelo principal Plus e Pro sem alteração.\">\n          <g font-family=\"IBM Plex Mono, monospace\" font-size=\"12\" fill=\"var(--muted)\"><text x=\"20\" y=\"22\">PLANO</text><text x=\"330\" y=\"22\">RECEBE A MUDANÇA?</text></g>\n          <line x1=\"20\" y1=\"32\" x2=\"620\" y2=\"32\" stroke=\"var(--line)\"/>\n          <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"15\" fill=\"var(--ink)\">\n            <text x=\"20\" y=\"62\">Gratuito · Go · sem sessão iniciada</text>\n            <text x=\"20\" y=\"108\">Plus · Pro, depois de atingir o limite</text>\n            <text x=\"20\" y=\"154\">Plus · Pro, modelo principal</text>\n          </g>\n          <rect x=\"330\" y=\"46\" width=\"290\" height=\"24\" rx=\"4\" fill=\"var(--ok)\"/>\n          <text x=\"342\" y=\"63\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--surface)\">Sim, de forma direta</text>\n          <rect x=\"330\" y=\"92\" width=\"200\" height=\"24\" rx=\"4\" fill=\"var(--warn)\"/>\n          <text x=\"342\" y=\"109\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--surface)\">Só no modelo de recurso</text>\n          <rect x=\"330\" y=\"138\" width=\"290\" height=\"24\" rx=\"4\" fill=\"none\" stroke=\"var(--line)\" stroke-width=\"2\"/>\n          <text x=\"342\" y=\"155\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--muted)\">Não, sem alteração</text>\n          <text x=\"20\" y=\"190\" font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\">Business e Enterprise: as notas de versão não especificam.</text>\n        </svg>",
+   "legenda": "Fonte: notas de versão dos modelos da OpenAI, 29 de outubro.",
+   "o_que_e": "Nas notas de versão de 29 de outubro, a OpenAI anunciou que o GPT-6 no ChatGPT passa a dar respostas mais concisas e a cortar na «linguagem excessivamente lisonjeira». A mudança vale para os planos Gratuito e Go e para quem usa o ChatGPT sem sessão iniciada. Nos planos Plus e Pro só chega ao modelo de recurso, o que entra quando esgotas o limite de mensagens. A OpenAI não publicou exemplos nem testes comparativos, por isso não se sabe bem quanto se nota a diferença.",
+   "porque": "Um assistente que elogia tudo não te serve para rever uma proposta, um orçamento ou um texto de campanha, porque esconde exatamente os problemas que precisas de ver. Esta mudança mostra que o tom do modelo depende de afinações do fabricante, que podem mudar sem aviso. Mais vale controlá-lo com instruções do que ficar à mercê do comportamento por omissão.",
    "passos": [
-    "Cria conta no Kapwing (kapwing.com), se ainda não tiveres.",
-    "No ChatGPT, procura «Kapwing» no separador de plugins. No Claude, adiciona um conector personalizado com o endereço https://www.kapwing.com/mcp. Nos dois casos, inicia sessão no Kapwing quando to pedirem.",
-    "Faz o pedido com o texto abaixo e abre a ligação do projeto para rever as legendas antes de exportar."
+    "Sempre que pedires uma revisão, define o papel (editor, cliente desconfiado, auditor) e a ordem da resposta, com os problemas primeiro.",
+    "Para isto ficar permanente, cola o texto abaixo nas instruções personalizadas do ChatGPT (Definições → Personalização) ou no equivalente do Claude ou do Gemini."
    ],
-   "prompt_titulo": "Prompt · copiar e adaptar",
-   "prompt": "No Kapwing, carrega o vídeo [nome ou ligação], transcreve o áudio em português e adiciona legendas na parte de baixo. Depois cria uma segunda versão com as legendas traduzidas para inglês. Devolve-me a ligação dos dois projetos para eu rever antes de exportar.",
-   "nota": {
-    "tipo": "Atenção",
-    "texto": "o conector tem o mesmo acesso que a tua conta Kapwing, incluindo todos os espaços de trabalho. Segundo o próprio Kapwing, a dobragem troca só o áudio, sem sincronização labial, e as funções de IA gastam os créditos da conta. Nas contas gratuitas há exportações bloqueadas, por exemplo vídeos com mais de 4 minutos."
-   },
-   "ficha": [
-    [
-     "Onde",
-     "ChatGPT (plugin) ou Claude (conector)",
-     null
-    ],
-    [
-     "Custo",
-     "Gasta créditos do Kapwing; conta gratuita limitada",
-     "warn"
-    ],
-    [
-     "Em Portugal",
-     "Sim",
-     "ok"
-    ],
-    [
-     "Estado",
-     "Aberto a todos desde 12 out.",
-     "ok"
-    ],
-    [
-     "Testado",
-     "Não pela redação",
-     "no"
-    ]
-   ],
-   "fontes": [
-    [
-     "Notas de versão do Kapwing MCP",
-     "https://www.kapwing.com/help/release-notes-kapwing-mcp/"
-    ],
-    [
-     "Kapwing: sobre o MCP",
-     "https://www.kapwing.com/help/about-the-kapwing-mcp/"
-    ]
-   ],
-   "etiquetas": [
-    "chatgpt",
-    "claude",
-    "vídeo",
-    "legendas",
-    "redes sociais"
-   ]
-  },
-  {
-   "id": "regressao",
-   "tipo": "Técnica",
-   "categoria": "Técnica",
-   "produto": "Teste de regressão para prompts",
-   "data_anuncio": "2026-11-06",
-   "kicker_data": "método",
-   "titulo": "Antes de mexeres num prompt que funciona, testa-o como um programador",
-   "lead": "Reescrever uma instrução até «soar melhor» pode estragar o que já funcionava. A solução: guardas uma tarefa de teste e voltas a corrê-la depois de cada alteração.",
-   "svg": "<svg viewBox=\"0 0 640 200\" role=\"img\" aria-label=\"Ciclo do teste de regressão: tarefa fixa com critérios, correr a versão atual, avaliar, mudar uma única instrução, correr a mesma tarefa e comparar; fica a versão que passa.\">\n  <defs><marker id=\"a23\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\">\n    <rect x=\"10\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\"/><rect x=\"170\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\"/><rect x=\"330\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\"/><rect x=\"490\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\" stroke=\"var(--accent)\"/>\n  </g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\" text-anchor=\"middle\">\n    <text x=\"80\" y=\"68\">1. Tarefa fixa</text><text x=\"80\" y=\"86\">+ critérios</text>\n    <text x=\"240\" y=\"68\">2. Corre e</text><text x=\"240\" y=\"86\">avalia</text>\n    <text x=\"400\" y=\"68\">3. Muda UMA</text><text x=\"400\" y=\"86\">instrução</text>\n    <text x=\"560\" y=\"68\">4. Mesma tarefa,</text><text x=\"560\" y=\"86\">compara</text>\n  </g>\n  <g stroke=\"var(--accent)\" stroke-width=\"2\"><path d=\"M150 75 h16\" marker-end=\"url(#a23)\"/><path d=\"M310 75 h16\" marker-end=\"url(#a23)\"/><path d=\"M470 75 h16\" marker-end=\"url(#a23)\"/></g>\n  <path d=\"M560 112 v26 q0 16 -16 16 h-448 q-16 0 -16 -16 v-22\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\" marker-end=\"url(#a23)\"/>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\"><text x=\"320\" y=\"176\" text-anchor=\"middle\">repete até passar em todos os critérios · fica a versão que passa, não a que lê melhor</text></g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"12\"><text x=\"200\" y=\"128\" fill=\"var(--ok)\">✓ 4 de 5</text><text x=\"520\" y=\"128\" fill=\"var(--ok)\">✓ 5 de 5</text></g>\n</svg>",
-   "legenda": "Esquema do método, com resultados ilustrativos.",
-   "o_que_e": "Um teste de regressão é uma verificação que se repete depois de cada alteração, para confirmar que não partiste o que já funcionava. A newsletter The Neuron adaptou a ideia aos prompts a partir de uma ferramenta de código aberto para programadores (Gauge). A versão sem ferramentas é simples: escolhes uma tarefa representativa, escreves o que um bom resultado tem de ter e, sempre que mudas a instrução, voltas a correr exatamente a mesma tarefa e comparas.",
-   "porque": "Quem usa prompts recorrentes (resumo semanal, resposta a clientes, briefing de conteúdos) costuma afiná-los a olho. Uma frase acrescentada para corrigir um erro pode criar outro noutro sítio, e só dás por isso semanas depois. Com uma tarefa de teste e critérios escritos, a decisão passa a ser «passou ou não passou», e não «parece-me melhor».",
-   "passos": [
-    "Escolhe um prompt que usas todas as semanas e guarda um exemplo real de entrada como tarefa de teste.",
-    "Escreve 4 ou 5 critérios verificáveis do resultado (ex.: «menos de 150 palavras», «indica sempre o prazo», «sem jargão»).",
-    "Quando um resultado falhar, usa o prompt abaixo, aplica só a alteração proposta e volta a correr a tarefa de teste."
-   ],
-   "prompt_titulo": "Prompt · depois de um resultado fraco",
-   "prompt": "Avalia o resultado contra estes critérios de aceitação: [critérios]. Identifica a primeira instrução do meu prompt que estava em falta, ambígua ou foi ignorada. Propõe uma única alteração mínima a essa instrução e mostra como mudaria a parte que falhou, sem reescrever as regras que não têm relação com o problema.",
+   "prompt_titulo": "Instrução · funciona em qualquer assistente",
+   "prompt": "Quando eu pedir uma revisão ou opinião, começa pelos três problemas mais graves, por ordem de impacto, e explica porquê. Não elogies o que não for excecional; se algo estiver bem, diz numa linha. Se discordares de mim, diz diretamente.",
    "nota": null,
    "ficha": [
     [
      "Onde",
-     "Qualquer assistente de IA",
+     "ChatGPT, na conversa",
      null
     ],
     [
      "Custo",
-     "Gratuito",
+     "Afeta sobretudo os planos gratuitos",
      "ok"
     ],
     [
@@ -176,7 +175,7 @@
     ],
     [
      "Estado",
-     "Método, não depende de produto",
+     "Em vigor desde 29 out.",
      "ok"
     ],
     [
@@ -187,73 +186,127 @@
    ],
    "fontes": [
     [
-     "The Neuron, 6 nov. (AI Skill of the Day)",
-     "https://www.theneurondaily.com/p/openai-released-gpt-6-cyber-a-hacking-ai"
+     "Notas de versão dos modelos (OpenAI)",
+     "https://help.openai.com/en/articles/9624314-model-release-notes"
     ],
     [
-     "Gauge, repositório",
-     "https://github.com/gauge-sh/gauge-cli"
+     "The Decoder / Mixed",
+     "https://mixed-news.com/en/?p=39065"
     ]
    ],
    "etiquetas": [
-    "técnica",
+    "chatgpt",
+    "revisão",
     "prompt",
-    "qualidade",
-    "automação"
+    "grátis"
+   ]
+  },
+  {
+   "id": "flow",
+   "tipo": "Notícia",
+   "categoria": "Vídeo",
+   "produto": "Google Flow – Tools",
+   "data_anuncio": "2026-11-03",
+   "kicker_data": "dica",
+   "titulo": "Descreve a ferramenta de vídeo de que precisas e o Google Flow constrói-a",
+   "lead": "No Flow, o estúdio criativo da Google, crias por descrição uma pequena ferramenta que redimensiona cada vídeo para 16:9, 9:16 e 1:1, e reutiliza-la sempre que precisares.",
+   "svg": "<svg viewBox=\"0 0 640 200\" role=\"img\" aria-label=\"Uma descrição em linguagem natural gera uma ferramenta no Flow; um vídeo horizontal passa por ela e sai em três formatos: 16:9, 9:16 e 1:1.\">\n  <defs><marker id=\"a32\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"12\" fill=\"var(--muted)\"><text x=\"20\" y=\"22\">DESCRIÇÃO</text><text x=\"250\" y=\"22\">FERRAMENTA</text><text x=\"420\" y=\"22\">UM CLIQUE, TRÊS FORMATOS</text></g>\n  <rect x=\"20\" y=\"40\" width=\"200\" height=\"88\" rx=\"10\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\"><text x=\"32\" y=\"64\">«Redimensiona para 16:9,</text><text x=\"32\" y=\"82\">9:16 e 1:1, com</text><text x=\"32\" y=\"100\">pré-visualização e ajuste</text><text x=\"32\" y=\"118\">do enquadramento»</text></g>\n  <path d=\"M226 84 h22\" stroke=\"var(--accent)\" stroke-width=\"2.5\" marker-end=\"url(#a32)\"/>\n  <rect x=\"256\" y=\"58\" width=\"130\" height=\"52\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.5\"/>\n  <text x=\"321\" y=\"81\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\">Ferramenta</text>\n  <text x=\"321\" y=\"98\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"11\" fill=\"var(--muted)\">guardada no projeto</text>\n  <path d=\"M392 84 h22\" stroke=\"var(--accent)\" stroke-width=\"2.5\" marker-end=\"url(#a32)\"/>\n  <g fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.5\">\n    <rect x=\"424\" y=\"54\" width=\"80\" height=\"45\" rx=\"3\"/><rect x=\"516\" y=\"40\" width=\"40\" height=\"72\" rx=\"3\"/><rect x=\"568\" y=\"52\" width=\"50\" height=\"50\" rx=\"3\"/>\n  </g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\" text-anchor=\"middle\"><text x=\"464\" y=\"124\">16:9</text><text x=\"536\" y=\"124\">9:16</text><text x=\"593\" y=\"124\">1:1</text></g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\"><text x=\"424\" y=\"146\">YouTube · LinkedIn</text><text x=\"424\" y=\"162\">Reels · TikTok · Stories</text><text x=\"424\" y=\"178\">feed Instagram</text></g>\n</svg>",
+   "legenda": "Esquema ilustrativo do processo. Não reproduz o ecrã do Google Flow.",
+   "o_que_e": "O Flow é o estúdio de vídeo e imagem por IA da Google. Desde maio tem uma função chamada Tools: descreves por palavras uma pequena ferramenta (um redimensionador, um filtro, um gerador de grelhas) e o Flow constrói-a. Podes reutilizá-la, partilhá-la ou adaptar as da galeria pública, onde há um redimensionador de vídeo feito pela Google. A newsletter The Neuron recuperou a ideia esta semana como solução para o trabalho repetido de adaptar o mesmo vídeo a cada rede.",
+   "porque": "Se publicas o mesmo vídeo no YouTube, no Instagram, no TikTok e no LinkedIn, refazes o enquadramento três ou quatro vezes. Uma ferramenta tua, com os formatos certos e pré-visualização, transforma isso num clique, sem programar. É o género de automação que se paga ao fim de poucas utilizações.",
+   "passos": [
+    "Abre o Flow (labs.google/flow) com a tua conta Google e entra num projeto.",
+    "Vai a Tools e escolhe criar uma ferramenta. Cola a descrição abaixo.",
+    "Testa com um vídeo real, ajusta a descrição se o enquadramento falhar e guarda-a para os próximos projetos. Para usar só ferramentas que já existem, como o redimensionador da Google, chega a conta gratuita."
+   ],
+   "prompt_titulo": "Descrição da ferramenta · copiar e adaptar",
+   "prompt": "Cria uma ferramenta que redimensiona um vídeo para três formatos: 16:9, 9:16 e 1:1. Mantém o motivo principal centrado em cada formato, mostra uma pré-visualização lado a lado e permite ajustar o enquadramento de cada versão antes de exportar.",
+   "nota": {
+    "tipo": "Por confirmar",
+    "texto": "a página de preços do Flow diz que as funções variam de país para país. Criar ferramentas pede uma subscrição Google AI paga, a partir do plano Plus; usar as que já existem é gratuito. Confirma na tua conta se o Flow e o plano Plus estão disponíveis em Portugal."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "Google Flow (web)",
+     null
+    ],
+    [
+     "Custo",
+     "Criar: Google AI Plus ou superior. Usar: gratuito",
+     "warn"
+    ],
+    [
+     "Em Portugal",
+     "Por confirmar na conta",
+     "warn"
+    ],
+    [
+     "Estado",
+     "Disponível desde maio",
+     "ok"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Google Flow, planos e funções",
+     "https://labs.google/flow"
+    ],
+    [
+     "The Neuron, 3 nov. (Tuesday Tool Tip)",
+     "https://www.theneurondaily.com/p/proton-s-ai-staff-revolt"
+    ]
+   ],
+   "etiquetas": [
+    "google flow",
+    "vídeo",
+    "redes sociais",
+    "pago"
    ]
   }
  ],
- "fica_de_fora": {
-  "titulo": "Muse for Small Business (Meta, 29 set.)",
-  "texto": "O agente de IA da Meta para pequenas empresas liga-se às páginas de Facebook e Instagram, às contas de anúncios e a ferramentas como Shopify, Canva ou Notion, e trata de tarefas recorrentes: vigiar os anúncios da concorrência, preparar respostas a comentários (que só saem com a tua aprovação). É gratuito com limites semanais. Só existe nos EUA, no Canadá, no Japão e em Singapura, e a Meta não deu data para a Europa.",
-  "lead": "Agente da Meta para pequenas empresas, só nos EUA, Canadá, Japão e Singapura.",
-  "fonte": [
-   "Meta Newsroom",
-   "https://about.fb.com/news/2026/09/introducing-muse-small-business/"
-  ],
-  "etiquetas": [
-   "meta",
-   "agentes",
-   "marketing",
-   "só EUA"
-  ]
- },
+ "fica_de_fora": null,
  "conceito": {
-  "nome": "MCP",
-  "sub": "Model Context Protocol, «protocolo de contexto do modelo»",
-  "liga": "liga à peça 02",
-  "lead": "A norma aberta que liga os assistentes de IA a programas externos, e o que deves ver antes de autorizar um conector.",
-  "intro": "O MCP é uma norma aberta que define como um assistente de IA se liga a programas externos: um editor de vídeo, as tuas notas, o email, uma base de dados. Antes do MCP, cada ligação era feita à medida para cada assistente. Com o MCP, um serviço cria um único conector e passa a funcionar com qualquer assistente compatível.",
-  "svg": "<svg viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Um assistente de IA ao centro liga-se, através de conectores MCP, a quatro serviços externos: vídeo, notas, email e ficheiros.\">\n  <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\">\n    <rect x=\"250\" y=\"80\" width=\"140\" height=\"56\" rx=\"10\"/>\n    <rect x=\"20\" y=\"20\" width=\"150\" height=\"44\" rx=\"8\"/><rect x=\"470\" y=\"20\" width=\"150\" height=\"44\" rx=\"8\"/>\n    <rect x=\"20\" y=\"150\" width=\"150\" height=\"44\" rx=\"8\"/><rect x=\"470\" y=\"150\" width=\"150\" height=\"44\" rx=\"8\"/>\n    <path d=\"M170 42 L250 96\"/><path d=\"M470 42 L390 96\"/><path d=\"M170 172 L250 122\"/><path d=\"M470 172 L390 122\"/>\n  </g>\n  <g fill=\"currentColor\"><circle cx=\"210\" cy=\"69\" r=\"5\"/><circle cx=\"430\" cy=\"69\" r=\"5\"/><circle cx=\"210\" cy=\"147\" r=\"5\"/><circle cx=\"430\" cy=\"147\" r=\"5\"/></g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"currentColor\" text-anchor=\"middle\">\n    <text x=\"320\" y=\"104\">Assistente de IA</text><text x=\"320\" y=\"122\" font-size=\"11\" opacity=\".75\">ChatGPT, Claude…</text>\n    <text x=\"95\" y=\"47\">Editor de vídeo</text><text x=\"545\" y=\"47\">Notas e documentos</text>\n    <text x=\"95\" y=\"177\">Email e calendário</text><text x=\"545\" y=\"177\">Ficheiros na nuvem</text>\n  </g>\n  <text x=\"320\" y=\"38\" text-anchor=\"middle\" font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"currentColor\" opacity=\".75\">cada ponto = um conector MCP</text>\n</svg>",
-  "corpo": "A Anthropic apresentou o MCP em novembro de 2024 e publicou-o como norma aberta. Desde então foi adotado pela OpenAI, pela Google e pela Microsoft, e hoje é por ele que passam muitos dos «conectores» e «plugins» destes assistentes. A comparação habitual é com a ficha USB-C: uma ficha comum em vez de um cabo diferente para cada aparelho. Na prática, quando autorizas um conector, o assistente passa a poder ler e, muitas vezes, fazer coisas nesse serviço em teu nome.",
+  "nome": "Bajulação",
+  "sub": "em inglês, <i>sycophancy</i>",
+  "liga": "liga à peça 03",
+  "lead": "A tendência dos modelos para te dizerem o que queres ouvir, e três hábitos para a contrariar.",
+  "intro": "Bajulação é a tendência de um modelo de linguagem para te dizer o que queres ouvir: concordar com uma premissa errada, elogiar um texto fraco, recuar quando o contrarias mesmo tendo razão. Não é um defeito de personalidade. É um efeito secundário da forma como estes modelos são afinados.",
+  "svg": "<svg viewBox=\"0 0 640 190\" role=\"img\" aria-label=\"Ciclo: o modelo responde; uma pessoa avalia a resposta; as respostas que concordam com ela tendem a ser melhor avaliadas; o treino recompensa essas respostas; o modelo aprende a concordar.\">\n      <defs><marker id=\"ah2\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"currentColor\"/></marker></defs>\n      <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" style=\"color:inherit\">\n        <rect x=\"10\" y=\"40\" width=\"130\" height=\"64\" rx=\"8\"/>\n        <rect x=\"170\" y=\"40\" width=\"130\" height=\"64\" rx=\"8\"/>\n        <rect x=\"330\" y=\"40\" width=\"140\" height=\"64\" rx=\"8\"/>\n        <rect x=\"500\" y=\"40\" width=\"130\" height=\"64\" rx=\"8\"/>\n        <path d=\"M140 72 h26\" marker-end=\"url(#ah2)\"/>\n        <path d=\"M300 72 h26\" marker-end=\"url(#ah2)\"/>\n        <path d=\"M470 72 h26\" marker-end=\"url(#ah2)\"/>\n        <path d=\"M565 104 v30 q0 22 -22 22 h-446 q-22 0 -22 -22 v-26\" marker-end=\"url(#ah2)\" stroke-dasharray=\"4 4\"/>\n      </g>\n      <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"currentColor\" text-anchor=\"middle\">\n        <text x=\"75\" y=\"68\">O modelo</text><text x=\"75\" y=\"86\">dá uma resposta</text>\n        <text x=\"235\" y=\"68\">Uma pessoa</text><text x=\"235\" y=\"86\">avalia-a</text>\n        <text x=\"400\" y=\"62\">Concordar com ela</text><text x=\"400\" y=\"80\">tende a receber</text><text x=\"400\" y=\"96\">melhor nota</text>\n        <text x=\"565\" y=\"68\">O treino</text><text x=\"565\" y=\"86\">premeia isso</text>\n      </g>\n      <text x=\"320\" y=\"178\" text-anchor=\"middle\" font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"currentColor\" opacity=\".75\">o modelo aprende que concordar compensa · e o ciclo repete-se</text>\n    </svg>",
+  "corpo": "Os assistentes são afinados com avaliações humanas: várias respostas, uma pessoa escolhe a melhor e o modelo aprende a dar mais respostas do género escolhido. Só que as pessoas tendem a preferir respostas que confirmam o que já pensam. Um estudo da Anthropic de 2023 encontrou este padrão em vários assistentes comerciais, e em abril de 2025 a OpenAI retirou uma atualização do GPT-4o por ter ficado bajuladora ao ponto de validar más decisões dos utilizadores.",
   "habitos": [
    [
-    "Lê o que estás a autorizar.",
-    "O ecrã de ligação diz a que dados e ações o assistente fica com acesso. Um conector com acesso a «todos os espaços de trabalho» vê tudo o que a tua conta vê."
+    "Não reveles a tua opinião antes de pedires a dele.",
+    "«Este título é bom?» convida a concordar; «Dá-me três títulos melhores do que este e diz qual é o problema do original» não."
    ],
    [
-    "Usa contas ou espaços separados",
-    "para o trabalho de clientes, para que um conector não misture dados que não devia."
+    "Pede o contraditório às claras:",
+    "«qual é o argumento mais forte contra esta decisão?»."
    ],
    [
-    "Desliga o que não usas.",
-    "Nas definições de conectores ou plugins do assistente podes revogar o acesso quando quiseres."
+    "Desconfia quando o modelo muda de ideias só porque insististe.",
+    "Pede-lhe que diga o que mudou nos factos, e não só no tom."
    ]
   ],
   "aprofundar": [
    [
-    "Anúncio original do MCP (Anthropic, 2024)",
-    "https://www.anthropic.com/news/model-context-protocol"
+    "Towards Understanding Sycophancy in Language Models (Anthropic, 2023)",
+    "https://arxiv.org/abs/2310.13548"
    ],
    [
-    "Documentação oficial",
-    "https://modelcontextprotocol.io"
+    "Sycophancy in GPT-4o (OpenAI, 2025)",
+    "https://openai.com/index/sycophancy-in-gpt-4o/"
    ]
   ],
   "etiquetas": [
    "conceito",
-   "conectores",
-   "privacidade"
+   "revisão",
+   "prompt"
   ]
  }
 }

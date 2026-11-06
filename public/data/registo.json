@@ -1,29 +1,12 @@
 {
  "publicacao": "Inteligências",
- "gerado": "2026-11-06T16:38:16+00:00",
+ "gerado": "2026-11-06T16:50:17+00:00",
  "edicoes": [
   {
    "numero": 1,
-   "data": "2026-11-06",
+   "data": "2026-11-02",
    "url": "/edicoes/001",
    "pecas": [
-    {
-     "id": "gif",
-     "tipo": "Notícia",
-     "categoria": "Imagem",
-     "produto": "ChatGPT Images 2.6",
-     "data_anuncio": "2026-11-04",
-     "titulo": "O ChatGPT já faz GIFs e lembra-se das tuas fotografias",
-     "lead": "Com o Images 2.6, uma foto de produto passa a animação curta em loop sem saíres da conversa. E se guardares uma imagem de referência, deixas de ter de carregar a mesma foto vezes sem conta.",
-     "etiquetas": [
-      "chatgpt",
-      "imagem",
-      "redes sociais",
-      "grátis",
-      "prompt"
-     ],
-     "prompt": "Transforma esta fotografia num GIF em loop de cerca de 2 segundos. Anima apenas o vapor a subir da chávena, com movimento lento e subtil. Mantém tudo o resto exatamente igual: enquadramento, cores, luz e fundo. Formato quadrado, para Instagram."
-    },
     {
      "id": "ficheiros",
      "tipo": "Notícia",
@@ -58,68 +41,6 @@
      "prompt": "Preenche a coluna C com o ano de fundação de cada empresa da coluna A, usando apenas o site oficial da empresa ou registos públicos. Se não encontrares uma fonte fiável, escreve «sem fonte» em vez de estimar."
     },
     {
-     "id": "elogios",
-     "tipo": "Notícia",
-     "categoria": "Hábitos",
-     "produto": "ChatGPT (GPT-6)",
-     "data_anuncio": "2026-10-29",
-     "titulo": "Menos elogios no ChatGPT, mas não para todos",
-     "lead": "A OpenAI afinou o GPT-6 para dar respostas mais curtas e menos lisonjeiras. Quem paga Plus ou Pro continua, no modelo principal, com o comportamento antigo. A solução que funciona para toda a gente é pedir.",
-     "etiquetas": [
-      "chatgpt",
-      "revisão",
-      "prompt",
-      "grátis"
-     ],
-     "prompt": "Quando eu pedir uma revisão ou opinião, começa pelos três problemas mais graves, por ordem de impacto, e explica porquê. Não elogies o que não for excecional; se algo estiver bem, diz numa linha. Se discordares de mim, diz diretamente."
-    }
-   ],
-   "fica_de_fora": [
-    {
-     "id": "out-h",
-     "titulo": "Claude Personal Finance (Anthropic, 5 nov.)",
-     "lead": "Ligação de contas bancárias ao Claude, em beta só nos EUA.",
-     "etiquetas": [
-      "claude",
-      "finanças",
-      "só EUA"
-     ]
-    }
-   ],
-   "conceito": {
-    "id": "c-h",
-    "nome": "Bajulação",
-    "lead": "A tendência dos modelos para te dizerem o que queres ouvir, e três hábitos para a contrariar.",
-    "etiquetas": [
-     "conceito",
-     "revisão",
-     "prompt"
-    ]
-   }
-  },
-  {
-   "numero": 2,
-   "data": "2026-11-06",
-   "url": "/edicoes/002",
-   "pecas": [
-    {
-     "id": "powerpoint",
-     "tipo": "Notícia",
-     "categoria": "Apresentações",
-     "produto": "Copilot no PowerPoint",
-     "data_anuncio": "2026-11-04",
-     "titulo": "O Copilot no PowerPoint passa a copiar o estilo de uma apresentação tua",
-     "lead": "Anexas a apresentação da marca e o Copilot cria a nova com o mesmo tema, cores e estilos. Até agora, tudo o que gerava saía com o tema por omissão.",
-     "etiquetas": [
-      "copilot",
-      "apresentações",
-      "marca",
-      "pago",
-      "prompt"
-     ],
-     "prompt": "Usando o estilo da apresentação anexada, cria 6 diapositivos sobre [tema] para [público]. Um diapositivo de abertura, quatro com uma ideia cada (título curto e no máximo 3 pontos) e um de próximos passos. Português de Portugal, sem frases promocionais."
-    },
-    {
      "id": "kapwing",
      "tipo": "Notícia",
      "categoria": "Vídeo",
@@ -135,22 +56,6 @@
       "redes sociais"
      ],
      "prompt": "No Kapwing, carrega o vídeo [nome ou ligação], transcreve o áudio em português e adiciona legendas na parte de baixo. Depois cria uma segunda versão com as legendas traduzidas para inglês. Devolve-me a ligação dos dois projetos para eu rever antes de exportar."
-    },
-    {
-     "id": "regressao",
-     "tipo": "Técnica",
-     "categoria": "Técnica",
-     "produto": "Teste de regressão para prompts",
-     "data_anuncio": "2026-11-06",
-     "titulo": "Antes de mexeres num prompt que funciona, testa-o como um programador",
-     "lead": "Reescrever uma instrução até «soar melhor» pode estragar o que já funcionava. A solução: guardas uma tarefa de teste e voltas a corrê-la depois de cada alteração.",
-     "etiquetas": [
-      "técnica",
-      "prompt",
-      "qualidade",
-      "automação"
-     ],
-     "prompt": "Avalia o resultado contra estes critérios de aceitação: [critérios]. Identifica a primeira instrução do meu prompt que estava em falta, ambígua ou foi ignorada. Propõe uma única alteração mínima a essa instrução e mostra como mudaria a parte que falhou, sem reescrever as regras que não têm relação com o problema."
     }
    ],
    "fica_de_fora": [
@@ -178,6 +83,90 @@
    }
   },
   {
+   "numero": 2,
+   "data": "2026-11-04",
+   "url": "/edicoes/002",
+   "pecas": [
+    {
+     "id": "gif",
+     "tipo": "Notícia",
+     "categoria": "Imagem",
+     "produto": "ChatGPT Images 2.6",
+     "data_anuncio": "2026-11-04",
+     "titulo": "O ChatGPT já faz GIFs e lembra-se das tuas fotografias",
+     "lead": "Com o Images 2.6, uma foto de produto passa a animação curta em loop sem saíres da conversa. E se guardares uma imagem de referência, deixas de ter de carregar a mesma foto vezes sem conta.",
+     "etiquetas": [
+      "chatgpt",
+      "imagem",
+      "redes sociais",
+      "grátis",
+      "prompt"
+     ],
+     "prompt": "Transforma esta fotografia num GIF em loop de cerca de 2 segundos. Anima apenas o vapor a subir da chávena, com movimento lento e subtil. Mantém tudo o resto exatamente igual: enquadramento, cores, luz e fundo. Formato quadrado, para Instagram."
+    },
+    {
+     "id": "powerpoint",
+     "tipo": "Notícia",
+     "categoria": "Apresentações",
+     "produto": "Copilot no PowerPoint",
+     "data_anuncio": "2026-11-04",
+     "titulo": "O Copilot no PowerPoint passa a copiar o estilo de uma apresentação tua",
+     "lead": "Anexas a apresentação da marca e o Copilot cria a nova com o mesmo tema, cores e estilos. Até agora, tudo o que gerava saía com o tema por omissão.",
+     "etiquetas": [
+      "copilot",
+      "apresentações",
+      "marca",
+      "pago",
+      "prompt"
+     ],
+     "prompt": "Usando o estilo da apresentação anexada, cria 6 diapositivos sobre [tema] para [público]. Um diapositivo de abertura, quatro com uma ideia cada (título curto e no máximo 3 pontos) e um de próximos passos. Português de Portugal, sem frases promocionais."
+    },
+    {
+     "id": "elogios",
+     "tipo": "Notícia",
+     "categoria": "Hábitos",
+     "produto": "ChatGPT (GPT-6)",
+     "data_anuncio": "2026-10-29",
+     "titulo": "Menos elogios no ChatGPT, mas não para todos",
+     "lead": "A OpenAI afinou o GPT-6 para dar respostas mais curtas e menos lisonjeiras. Quem paga Plus ou Pro continua, no modelo principal, com o comportamento antigo. A solução que funciona para toda a gente é pedir.",
+     "etiquetas": [
+      "chatgpt",
+      "revisão",
+      "prompt",
+      "grátis"
+     ],
+     "prompt": "Quando eu pedir uma revisão ou opinião, começa pelos três problemas mais graves, por ordem de impacto, e explica porquê. Não elogies o que não for excecional; se algo estiver bem, diz numa linha. Se discordares de mim, diz diretamente."
+    },
+    {
+     "id": "flow",
+     "tipo": "Notícia",
+     "categoria": "Vídeo",
+     "produto": "Google Flow – Tools",
+     "data_anuncio": "2026-11-03",
+     "titulo": "Descreve a ferramenta de vídeo de que precisas e o Google Flow constrói-a",
+     "lead": "No Flow, o estúdio criativo da Google, crias por descrição uma pequena ferramenta que redimensiona cada vídeo para 16:9, 9:16 e 1:1, e reutiliza-la sempre que precisares.",
+     "etiquetas": [
+      "google flow",
+      "vídeo",
+      "redes sociais",
+      "pago"
+     ],
+     "prompt": "Cria uma ferramenta que redimensiona um vídeo para três formatos: 16:9, 9:16 e 1:1. Mantém o motivo principal centrado em cada formato, mostra uma pré-visualização lado a lado e permite ajustar o enquadramento de cada versão antes de exportar."
+    }
+   ],
+   "fica_de_fora": [],
+   "conceito": {
+    "id": "c-h",
+    "nome": "Bajulação",
+    "lead": "A tendência dos modelos para te dizerem o que queres ouvir, e três hábitos para a contrariar.",
+    "etiquetas": [
+     "conceito",
+     "revisão",
+     "prompt"
+    ]
+   }
+  },
+  {
    "numero": 3,
    "data": "2026-11-06",
    "url": "/edicoes/003",
@@ -199,20 +188,20 @@
      "prompt": "Revê o texto abaixo sem o reescrever. Lista, por ordem de importância, os problemas de clareza, os factos a confirmar e as frases fracas, indicando a frase original e o motivo. Não me dês a versão corrigida; eu faço as alterações.\n\n[texto]"
     },
     {
-     "id": "flow",
-     "tipo": "Notícia",
-     "categoria": "Vídeo",
-     "produto": "Google Flow – Tools",
-     "data_anuncio": "2026-11-03",
-     "titulo": "Descreve a ferramenta de vídeo de que precisas e o Google Flow constrói-a",
-     "lead": "No Flow, o estúdio criativo da Google, crias por descrição uma pequena ferramenta que redimensiona cada vídeo para 16:9, 9:16 e 1:1, e reutiliza-la sempre que precisares.",
+     "id": "regressao",
+     "tipo": "Técnica",
+     "categoria": "Técnica",
+     "produto": "Teste de regressão para prompts",
+     "data_anuncio": "2026-11-06",
+     "titulo": "Antes de mexeres num prompt que funciona, testa-o como um programador",
+     "lead": "Reescrever uma instrução até «soar melhor» pode estragar o que já funcionava. A solução: guardas uma tarefa de teste e voltas a corrê-la depois de cada alteração.",
      "etiquetas": [
-      "google flow",
-      "vídeo",
-      "redes sociais",
-      "pago"
+      "técnica",
+      "prompt",
+      "qualidade",
+      "automação"
      ],
-     "prompt": "Cria uma ferramenta que redimensiona um vídeo para três formatos: 16:9, 9:16 e 1:1. Mantém o motivo principal centrado em cada formato, mostra uma pré-visualização lado a lado e permite ajustar o enquadramento de cada versão antes de exportar."
+     "prompt": "Avalia o resultado contra estes critérios de aceitação: [critérios]. Identifica a primeira instrução do meu prompt que estava em falta, ambígua ou foi ignorada. Propõe uma única alteração mínima a essa instrução e mostra como mudaria a parte que falhou, sem reescrever as regras que não têm relação com o problema."
     },
     {
      "id": "equilibrio",
@@ -231,7 +220,18 @@
      "prompt": "Avalia se vale a pena automatizar este processo.\nTempo manual por execução: [ ]\nTempo de preparação da automação: [ ]\nTempo de revisão por execução: [ ]\nExecuções por mês: [ ]\nCusto de um erro: [ ]\nCalcula o ponto de equilíbrio, o tempo poupado por mês e o risco. Recomenda uma de três opções: automatizar, usar a IA só como assistente, ou manter manual."
     }
    ],
-   "fica_de_fora": [],
+   "fica_de_fora": [
+    {
+     "id": "out-h",
+     "titulo": "Claude Personal Finance (Anthropic, 5 nov.)",
+     "lead": "Ligação de contas bancárias ao Claude, em beta só nos EUA.",
+     "etiquetas": [
+      "claude",
+      "finanças",
+      "só EUA"
+     ]
+    }
+   ],
    "conceito": {
     "id": "c-h",
     "nome": "Agente",

@@ -76,48 +76,45 @@
    ]
   },
   {
-   "id": "flow",
-   "tipo": "Notícia",
-   "categoria": "Vídeo",
-   "produto": "Google Flow – Tools",
-   "data_anuncio": "2026-11-03",
-   "kicker_data": "dica",
-   "titulo": "Descreve a ferramenta de vídeo de que precisas e o Google Flow constrói-a",
-   "lead": "No Flow, o estúdio criativo da Google, crias por descrição uma pequena ferramenta que redimensiona cada vídeo para 16:9, 9:16 e 1:1, e reutiliza-la sempre que precisares.",
-   "svg": "<svg viewBox=\"0 0 640 200\" role=\"img\" aria-label=\"Uma descrição em linguagem natural gera uma ferramenta no Flow; um vídeo horizontal passa por ela e sai em três formatos: 16:9, 9:16 e 1:1.\">\n  <defs><marker id=\"a32\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"12\" fill=\"var(--muted)\"><text x=\"20\" y=\"22\">DESCRIÇÃO</text><text x=\"250\" y=\"22\">FERRAMENTA</text><text x=\"420\" y=\"22\">UM CLIQUE, TRÊS FORMATOS</text></g>\n  <rect x=\"20\" y=\"40\" width=\"200\" height=\"88\" rx=\"10\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\"><text x=\"32\" y=\"64\">«Redimensiona para 16:9,</text><text x=\"32\" y=\"82\">9:16 e 1:1, com</text><text x=\"32\" y=\"100\">pré-visualização e ajuste</text><text x=\"32\" y=\"118\">do enquadramento»</text></g>\n  <path d=\"M226 84 h22\" stroke=\"var(--accent)\" stroke-width=\"2.5\" marker-end=\"url(#a32)\"/>\n  <rect x=\"256\" y=\"58\" width=\"130\" height=\"52\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.5\"/>\n  <text x=\"321\" y=\"81\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\">Ferramenta</text>\n  <text x=\"321\" y=\"98\" text-anchor=\"middle\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"11\" fill=\"var(--muted)\">guardada no projeto</text>\n  <path d=\"M392 84 h22\" stroke=\"var(--accent)\" stroke-width=\"2.5\" marker-end=\"url(#a32)\"/>\n  <g fill=\"var(--surface)\" stroke=\"var(--ink)\" stroke-width=\"1.5\">\n    <rect x=\"424\" y=\"54\" width=\"80\" height=\"45\" rx=\"3\"/><rect x=\"516\" y=\"40\" width=\"40\" height=\"72\" rx=\"3\"/><rect x=\"568\" y=\"52\" width=\"50\" height=\"50\" rx=\"3\"/>\n  </g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\" text-anchor=\"middle\"><text x=\"464\" y=\"124\">16:9</text><text x=\"536\" y=\"124\">9:16</text><text x=\"593\" y=\"124\">1:1</text></g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\"><text x=\"424\" y=\"146\">YouTube · LinkedIn</text><text x=\"424\" y=\"162\">Reels · TikTok · Stories</text><text x=\"424\" y=\"178\">feed Instagram</text></g>\n</svg>",
-   "legenda": "Esquema ilustrativo do processo. Não reproduz o ecrã do Google Flow.",
-   "o_que_e": "O Flow é o estúdio de vídeo e imagem por IA da Google. Desde maio tem uma função chamada Tools: descreves por palavras uma pequena ferramenta (um redimensionador, um filtro, um gerador de grelhas) e o Flow constrói-a. Podes reutilizá-la, partilhá-la ou adaptar as da galeria pública, onde há um redimensionador de vídeo feito pela Google. A newsletter The Neuron recuperou a ideia esta semana como solução para o trabalho repetido de adaptar o mesmo vídeo a cada rede.",
-   "porque": "Se publicas o mesmo vídeo no YouTube, no Instagram, no TikTok e no LinkedIn, refazes o enquadramento três ou quatro vezes. Uma ferramenta tua, com os formatos certos e pré-visualização, transforma isso num clique, sem programar. É o género de automação que se paga ao fim de poucas utilizações.",
+   "id": "regressao",
+   "tipo": "Técnica",
+   "categoria": "Técnica",
+   "produto": "Teste de regressão para prompts",
+   "data_anuncio": "2026-11-06",
+   "kicker_data": "método",
+   "titulo": "Antes de mexeres num prompt que funciona, testa-o como um programador",
+   "lead": "Reescrever uma instrução até «soar melhor» pode estragar o que já funcionava. A solução: guardas uma tarefa de teste e voltas a corrê-la depois de cada alteração.",
+   "svg": "<svg viewBox=\"0 0 640 200\" role=\"img\" aria-label=\"Ciclo do teste de regressão: tarefa fixa com critérios, correr a versão atual, avaliar, mudar uma única instrução, correr a mesma tarefa e comparar; fica a versão que passa.\">\n  <defs><marker id=\"a23\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\">\n    <rect x=\"10\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\"/><rect x=\"170\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\"/><rect x=\"330\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\"/><rect x=\"490\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\" stroke=\"var(--accent)\"/>\n  </g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\" text-anchor=\"middle\">\n    <text x=\"80\" y=\"68\">1. Tarefa fixa</text><text x=\"80\" y=\"86\">+ critérios</text>\n    <text x=\"240\" y=\"68\">2. Corre e</text><text x=\"240\" y=\"86\">avalia</text>\n    <text x=\"400\" y=\"68\">3. Muda UMA</text><text x=\"400\" y=\"86\">instrução</text>\n    <text x=\"560\" y=\"68\">4. Mesma tarefa,</text><text x=\"560\" y=\"86\">compara</text>\n  </g>\n  <g stroke=\"var(--accent)\" stroke-width=\"2\"><path d=\"M150 75 h16\" marker-end=\"url(#a23)\"/><path d=\"M310 75 h16\" marker-end=\"url(#a23)\"/><path d=\"M470 75 h16\" marker-end=\"url(#a23)\"/></g>\n  <path d=\"M560 112 v26 q0 16 -16 16 h-448 q-16 0 -16 -16 v-22\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\" marker-end=\"url(#a23)\"/>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\"><text x=\"320\" y=\"176\" text-anchor=\"middle\">repete até passar em todos os critérios · fica a versão que passa, não a que lê melhor</text></g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"12\"><text x=\"200\" y=\"128\" fill=\"var(--ok)\">✓ 4 de 5</text><text x=\"520\" y=\"128\" fill=\"var(--ok)\">✓ 5 de 5</text></g>\n</svg>",
+   "legenda": "Esquema do método, com resultados ilustrativos.",
+   "o_que_e": "Um teste de regressão é uma verificação que se repete depois de cada alteração, para confirmar que não partiste o que já funcionava. A newsletter The Neuron adaptou a ideia aos prompts a partir de uma ferramenta de código aberto para programadores (Gauge). A versão sem ferramentas é simples: escolhes uma tarefa representativa, escreves o que um bom resultado tem de ter e, sempre que mudas a instrução, voltas a correr exatamente a mesma tarefa e comparas.",
+   "porque": "Quem usa prompts recorrentes (resumo semanal, resposta a clientes, briefing de conteúdos) costuma afiná-los a olho. Uma frase acrescentada para corrigir um erro pode criar outro noutro sítio, e só dás por isso semanas depois. Com uma tarefa de teste e critérios escritos, a decisão passa a ser «passou ou não passou», e não «parece-me melhor».",
    "passos": [
-    "Abre o Flow (labs.google/flow) com a tua conta Google e entra num projeto.",
-    "Vai a Tools e escolhe criar uma ferramenta. Cola a descrição abaixo.",
-    "Testa com um vídeo real, ajusta a descrição se o enquadramento falhar e guarda-a para os próximos projetos. Para usar só ferramentas que já existem, como o redimensionador da Google, chega a conta gratuita."
+    "Escolhe um prompt que usas todas as semanas e guarda um exemplo real de entrada como tarefa de teste.",
+    "Escreve 4 ou 5 critérios verificáveis do resultado (ex.: «menos de 150 palavras», «indica sempre o prazo», «sem jargão»).",
+    "Quando um resultado falhar, usa o prompt abaixo, aplica só a alteração proposta e volta a correr a tarefa de teste."
    ],
-   "prompt_titulo": "Descrição da ferramenta · copiar e adaptar",
-   "prompt": "Cria uma ferramenta que redimensiona um vídeo para três formatos: 16:9, 9:16 e 1:1. Mantém o motivo principal centrado em cada formato, mostra uma pré-visualização lado a lado e permite ajustar o enquadramento de cada versão antes de exportar.",
-   "nota": {
-    "tipo": "Por confirmar",
-    "texto": "a página de preços do Flow diz que as funções variam de país para país. Criar ferramentas pede uma subscrição Google AI paga, a partir do plano Plus; usar as que já existem é gratuito. Confirma na tua conta se o Flow e o plano Plus estão disponíveis em Portugal."
-   },
+   "prompt_titulo": "Prompt · depois de um resultado fraco",
+   "prompt": "Avalia o resultado contra estes critérios de aceitação: [critérios]. Identifica a primeira instrução do meu prompt que estava em falta, ambígua ou foi ignorada. Propõe uma única alteração mínima a essa instrução e mostra como mudaria a parte que falhou, sem reescrever as regras que não têm relação com o problema.",
+   "nota": null,
    "ficha": [
     [
      "Onde",
-     "Google Flow (web)",
+     "Qualquer assistente de IA",
      null
     ],
     [
      "Custo",
-     "Criar: Google AI Plus ou superior. Usar: gratuito",
-     "warn"
+     "Gratuito",
+     "ok"
     ],
     [
      "Em Portugal",
-     "Por confirmar na conta",
-     "warn"
+     "Sim",
+     "ok"
     ],
     [
      "Estado",
-     "Disponível desde maio",
+     "Método, não depende de produto",
      "ok"
     ],
     [
@@ -128,19 +125,19 @@
    ],
    "fontes": [
     [
-     "Google Flow, planos e funções",
-     "https://labs.google/flow"
+     "The Neuron, 6 nov. (AI Skill of the Day)",
+     "https://www.theneurondaily.com/p/openai-released-gpt-6-cyber-a-hacking-ai"
     ],
     [
-     "The Neuron, 3 nov. (Tuesday Tool Tip)",
-     "https://www.theneurondaily.com/p/proton-s-ai-staff-revolt"
+     "Gauge, repositório",
+     "https://github.com/gauge-sh/gauge-cli"
     ]
    ],
    "etiquetas": [
-    "google flow",
-    "vídeo",
-    "redes sociais",
-    "pago"
+    "técnica",
+    "prompt",
+    "qualidade",
+    "automação"
    ]
   },
   {
@@ -155,7 +152,7 @@
    "svg": "<svg viewBox=\"0 0 640 250\" role=\"img\" aria-label=\"Gráfico de tempo acumulado: fazer à mão sobe 50 segundos por vez; automatizar começa em 30 minutos de preparação e sobe 20 segundos por vez; as linhas cruzam-se nas 60 repetições.\">\n  <g stroke=\"var(--line)\" stroke-width=\"1\">\n    <line x1=\"60\" y1=\"200\" x2=\"600\" y2=\"200\"/><line x1=\"60\" y1=\"20\" x2=\"60\" y2=\"200\"/>\n    <line x1=\"60\" y1=\"164\" x2=\"600\" y2=\"164\" stroke-dasharray=\"2 4\"/><line x1=\"60\" y1=\"128\" x2=\"600\" y2=\"128\" stroke-dasharray=\"2 4\"/><line x1=\"60\" y1=\"92\" x2=\"600\" y2=\"92\" stroke-dasharray=\"2 4\"/><line x1=\"60\" y1=\"56\" x2=\"600\" y2=\"56\" stroke-dasharray=\"2 4\"/><line x1=\"60\" y1=\"20\" x2=\"600\" y2=\"20\" stroke-dasharray=\"2 4\"/>\n  </g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\" text-anchor=\"end\">\n    <text x=\"54\" y=\"204\">0</text><text x=\"54\" y=\"168\">17 min</text><text x=\"54\" y=\"132\">33 min</text><text x=\"54\" y=\"96\">50 min</text><text x=\"54\" y=\"60\">67 min</text><text x=\"54\" y=\"24\">83 min</text>\n  </g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\" text-anchor=\"middle\">\n    <text x=\"60\" y=\"218\">0</text><text x=\"168\" y=\"218\">20</text><text x=\"276\" y=\"218\">40</text><text x=\"384\" y=\"218\">60</text><text x=\"492\" y=\"218\">80</text><text x=\"600\" y=\"218\">100</text>\n    <text x=\"330\" y=\"240\">repetições da tarefa</text>\n  </g>\n  <line x1=\"60\" y1=\"200\" x2=\"600\" y2=\"20\" stroke=\"var(--muted)\" stroke-width=\"2.5\"/>\n  <line x1=\"60\" y1=\"135.2\" x2=\"600\" y2=\"63.2\" stroke=\"var(--accent)\" stroke-width=\"2.5\"/>\n  <circle cx=\"384\" cy=\"92\" r=\"6\" fill=\"var(--use)\" stroke=\"var(--use-ink)\" stroke-width=\"2\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\">\n    <text x=\"392\" y=\"114\" fill=\"var(--ink)\">equilíbrio: 60 repetições</text>\n    <line x1=\"76\" y1=\"32\" x2=\"100\" y2=\"32\" stroke=\"var(--muted)\" stroke-width=\"2.5\"/><text x=\"108\" y=\"36\" fill=\"var(--muted)\">à mão: 50 s por vez</text>\n    <line x1=\"76\" y1=\"50\" x2=\"100\" y2=\"50\" stroke=\"var(--accent)\" stroke-width=\"2.5\"/><text x=\"108\" y=\"54\" fill=\"var(--accent)\">automatizado: 30 min de preparação + 20 s de revisão por vez</text>\n  </g>\n</svg>",
    "legenda": "Exemplo com números ilustrativos: tarefa de 50 segundos, 30 minutos de preparação, 20 segundos para rever cada resultado.",
    "o_que_e": "A conta tem três números: quanto demora a tarefa à mão, quanto tempo levas a montar a automação e quanto tempo gastas a rever cada resultado automático. A poupança por repetição é o tempo manual menos o tempo de revisão. Divides a preparação por essa poupança e tens o número de repetições até compensar. No exemplo do gráfico, 1800 segundos de preparação a dividir por 30 segundos poupados dá 60 repetições: duas vezes por semana, são cerca de 30 semanas. A The Neuron chamou-lhe esta semana o «teste dos 50 segundos», a propósito do pouco uso que os agentes de IA ainda têm em tarefas rápidas como chamar um carro.",
-   "porque": "Delegar numa IA tem um custo escondido: explicar a tarefa, dar acessos, esperar, verificar e corrigir quando falha. Se a revisão demorar tanto como fazer a tarefa, a automação nunca compensa; só trocas um trabalho por outro, o de supervisionar. A conta ajuda-te a escolher onde vale a pena investir tempo de configuração (no Make, num agente ou numa ferramenta como a da peça anterior) e onde é melhor continuar a fazer à mão.",
+   "porque": "Delegar numa IA tem um custo escondido: explicar a tarefa, dar acessos, esperar, verificar e corrigir quando falha. Se a revisão demorar tanto como fazer a tarefa, a automação nunca compensa; só trocas um trabalho por outro, o de supervisionar. A conta ajuda-te a escolher onde vale a pena investir tempo de configuração (no Make, num agente ou numa ferramenta como as do Google Flow) e onde é melhor continuar a fazer à mão.",
    "passos": [
     "Cronometra uma execução manual limpa da tarefa, do início ao fim.",
     "Estima com honestidade o tempo de preparação e quanto vais gastar a rever cada resultado.",
@@ -205,7 +202,20 @@
    ]
   }
  ],
- "fica_de_fora": null,
+ "fica_de_fora": {
+  "titulo": "Claude Personal Finance (Anthropic, 5 nov.)",
+  "texto": "Liga contas bancárias, cartões, empréstimos e investimentos ao Claude, através do serviço Plaid, para responder a perguntas como «para onde foi o meu dinheiro este mês?». Está em beta só nos EUA, nos planos Pro, Max e Ultra, e só com bancos norte-americanos. Fora dos EUA nem aparece, mesmo com VPN, e não há data para a Europa.",
+  "lead": "Ligação de contas bancárias ao Claude, em beta só nos EUA.",
+  "fonte": [
+   "Notebookcheck",
+   "https://notebookcheck.net/Claude-Personal-Finance-What-the-AI-sees-in-your-bank-account.1443926.0.html"
+  ],
+  "etiquetas": [
+   "claude",
+   "finanças",
+   "só EUA"
+  ]
+ },
  "conceito": {
   "nome": "Agente",
   "sub": "em inglês, <i>AI agent</i>",
