@@ -5,6 +5,7 @@
  "pecas": [
   {
    "id": "marca-agua",
+   "slug": "marca-de-agua-texto-ia-ue",
    "tipo": "Notícia",
    "categoria": "Regras",
    "produto": "Marca de água em texto gerado por IA (UE)",
@@ -77,6 +78,7 @@
   },
   {
    "id": "regressao",
+   "slug": "testar-prompts-teste-de-regressao",
    "tipo": "Técnica",
    "categoria": "Técnica",
    "produto": "Teste de regressão para prompts",
@@ -142,6 +144,7 @@
   },
   {
    "id": "equilibrio",
+   "slug": "quando-compensa-automatizar",
    "tipo": "Técnica",
    "categoria": "Técnica",
    "produto": "Ponto de equilíbrio da automação",
@@ -218,6 +221,7 @@
  },
  "conceito": {
   "nome": "Agente",
+  "slug": "agente-de-ia",
   "sub": "em inglês, <i>AI agent</i>",
   "liga": "liga à peça 03",
   "lead": "O que distingue um agente de um chatbot, e três hábitos para os usar com segurança.",

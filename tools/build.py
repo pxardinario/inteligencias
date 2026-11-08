@@ -4,7 +4,7 @@
 Uso:  python3 tools/build.py
 Sem dependências externas. Não editar public/ à mão: é sempre regenerado.
 """
-import hashlib, html, json, shutil
+import hashlib, html, json, re, shutil
 from datetime import date, datetime, timezone
 from email.utils import format_datetime
 from pathlib import Path
@@ -34,11 +34,38 @@ def data_ext(iso, cap=True):
     return s[0].upper() + s[1:] if cap else s
 
 
+SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+ORG = {"@type": "Organization", "name": "Inteligências", "url": (URL or "") + "/"}
+
+
+def piece_url(ed, p):
+    return f'/edicoes/{ed["numero"]:03d}/{p["slug"]}'
+
+
+def concept_url(c):
+    return f'/conceitos/{c["slug"]}'
+
+
+def jsonld(obj):
+    return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False).replace("</", "<\\/") + "</script>"
+
+
+def strip_tags(t):
+    return re.sub(r"<[^>]+>", "", t)
+
+
 def load_editions():
     eds = [json.loads(p.read_text()) for p in sorted((SITE / "editions").glob("*.json"))]
     eds.sort(key=lambda x: x["numero"])
     nums = [x["numero"] for x in eds]
     assert nums == list(range(1, len(eds) + 1)), f"numeração com falhas: {nums}"
+    vistos = set()
+    for ed in eds:
+        for x in ed["pecas"] + [ed["conceito"]]:
+            sl = x.get("slug")
+            assert sl and SLUG_RE.match(sl), f'N.º {ed["numero"]}: slug em falta ou inválido em «{x.get("titulo") or x.get("nome")}»'
+            assert sl not in vistos, f"slug repetido: {sl} (os endereços são permanentes; escolhe outro)"
+            vistos.add(sl)
     return eds
 
 
@@ -47,7 +74,7 @@ def pill(v, cls):
     return f'<span class="pill {cls}">{e(v)}</span>' if cls else e(v)
 
 
-def piece(i, p):
+def piece(i, p, url=None, h="h2"):
     passos = "".join(f"<li>{e(s)}</li>" for s in p["passos"])
     ficha = "".join(f"<dt>{e(k)}</dt><dd>{pill(v, c)}</dd>" for k, v, c in p["ficha"])
     fontes = "".join(f'<a href="{e(u)}" rel="noopener">{e(t)}</a>' for t, u in p["fontes"])
@@ -56,7 +83,7 @@ def piece(i, p):
     return f'''
 <article class="story" id="{e(p["id"])}">
   <div class="kicker"><b>{i:02d}</b><span>{e(p["categoria"])} · {e(p["produto"])} · {e(p["kicker_data"])}</span></div>
-  <h2>{e(p["titulo"])}</h2>
+  <{h}>{f'<a class="perma" href="{e(url)}">{e(p["titulo"])}</a>' if url else e(p["titulo"])}</{h}>
   <p class="dek">{e(p["lead"])}</p>
   <div class="grid">
     <div>
@@ -96,13 +123,13 @@ def fora(f):
 </section>'''
 
 
-def conceito(c):
+def conceito(c, url=None, h="h2"):
     hab = "".join(f"<li><b>{e(a)}</b> {e(b)}</li>" for a, b in c["habitos"])
     apro = " · ".join(f'<a href="{e(u)}" rel="noopener">{e(t)}</a>' for t, u in c["aprofundar"])
     return f'''
 <section class="concept" id="c-h" aria-labelledby="c-t">
   <div class="kicker"><b>Conceito do dia</b><span>· {e(c["liga"])}</span></div>
-  <h2 id="c-t">{e(c["nome"])}</h2>
+  <{h} id="c-t">{f'<a class="perma" href="{e(url)}">{e(c["nome"])}</a>' if url else e(c["nome"])}</{h}>
   <p class="pron">{c["sub"]}</p>
   <p>{e(c["intro"])}</p>
   <figure class="figure">{c["svg"]}</figure>
@@ -114,7 +141,7 @@ def conceito(c):
 
 
 # ------------------------------------------------------------------ moldura
-def head(title, desc, path, extra=""):
+def head(title, desc, path, extra="", og_type="website"):
     canon = f'<link rel="canonical" href="{URL}{path}">' if URL else ""
     og_url = f'<meta property="og:url" content="{URL}{path}">' if URL else ""
     rss = '<link rel="alternate" type="application/rss+xml" title="Inteligências" href="/feed.xml">' if URL else ""
@@ -125,7 +152,9 @@ def head(title, desc, path, extra=""):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{og_type}">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <meta property="og:site_name" content="Inteligências">
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
@@ -158,10 +187,10 @@ def masthead(stamp, h1="Inteligências", tag=None, active=None):
     <button class="theme" id="tema" type="button" aria-label="Mudar o tema"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" style="vertical-align:-2px;margin-right:6px"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg>Escuro</button>
   </div>
 </header>
-<div class="wrap mast">
+<div class="wrap mast{'' if h1 else ' slim'}">
   {'' if h1 == "Inteligências" else '<a class="eyebrow" href="/">Inteligências</a>'}
-  <h1>{e(h1)}<span>.</span></h1>
-  <p class="tagline">{e(tag)}</p>
+  {f'<h1>{e(h1)}<span>.</span></h1>' if h1 else ''}
+  {f'<p class="tagline">{e(tag)}</p>' if h1 else ''}
   <div class="stamps">{stamp_html}<a class="badge" href="/sobre/#feito-por-ia">Feito por IA</a></div>
 </div>'''
 
@@ -192,14 +221,65 @@ def toc_style(n):
 def edition_page(ed, eds):
     n = len(ed["pecas"])
     toc = "".join(f'<a href="#{e(p["id"])}"><span class="n">{i:02d} · {e(p["categoria"])}</span><span class="t">{e(p["titulo"])}</span></a>' for i, p in enumerate(ed["pecas"], 1))
-    body = "".join(piece(i, p) for i, p in enumerate(ed["pecas"], 1))
+    body = "".join(piece(i, p, piece_url(ed, p)) for i, p in enumerate(ed["pecas"], 1))
     title = f'Inteligências N.º {ed["numero"]} · {data_ext(ed["data"], False)}'
     desc = " · ".join(p["titulo"] for p in ed["pecas"])
     left = f'N.º {ed["numero"]} · {e(data_ext(ed["data"]))} · {n} peças · {ed["minutos"]} min de leitura'
     active = "edicao" if ed["numero"] == eds[-1]["numero"] else None
-    return (head(title, desc, f'/edicoes/{ed["numero"]:03d}', toc_style(n)) + masthead(left, active=active) +
-            f'\n<nav class="wrap toc" aria-label="Nesta edição">{toc}</nav>\n<main class="wrap">{body}{fora(ed.get("fica_de_fora"))}{conceito(ed["conceito"])}\n</main>' +
+    ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "url": f'{URL}/edicoes/{ed["numero"]:03d}', "inLanguage": "pt-PT", "datePublished": ed["data"], "publisher": ORG,
+          "hasPart": [{"@type": "Article", "headline": p["titulo"], "url": URL + piece_url(ed, p)} for p in ed["pecas"]] + [{"@type": "Article", "headline": ed["conceito"]["nome"], "url": URL + concept_url(ed["conceito"])}]}
+    return (head(title, desc, f'/edicoes/{ed["numero"]:03d}', toc_style(n) + jsonld(ld)) + masthead(left, active=active) +
+            f'\n<nav class="wrap toc" aria-label="Nesta edição">{toc}</nav>\n<main class="wrap">{body}{fora(ed.get("fica_de_fora"))}{conceito(ed["conceito"], concept_url(ed["conceito"]))}\n</main>' +
             footer(eds, ed["numero"]) + '\n<script src="/assets/site.js?v=' + V['site.js'] + '" defer></script>\n</body>\n</html>\n')
+
+
+# ------------------------------------------------------------------ páginas por peça e por conceito
+def crumbs(items):
+    return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": i, "name": n, "item": URL + u} for i, (n, u) in enumerate(items, 1)]}
+
+
+def related(ed, skip=None):
+    links = "".join(f'<li><a href="{piece_url(ed, p)}">{e(p["titulo"])}</a> <span>· {e(p["categoria"])}</span></li>' for p in ed["pecas"] if p is not skip)
+    c = ed["conceito"]
+    if c is not skip:
+        links += f'<li><a href="{concept_url(c)}">{e(c["nome"])}</a> <span>· Conceito do dia</span></li>'
+    return f'''
+<nav class="related" aria-label="Também nesta edição">
+  <h2>Também no N.º {ed["numero"]}</h2>
+  <ul>{links}</ul>
+  <p><a href="/edicoes/{ed["numero"]:03d}">Ler a edição completa →</a> · <a href="/arquivo/">Arquivo</a></p>
+</nav>'''
+
+
+def piece_page(ed, i, p, eds):
+    url = piece_url(ed, p)
+    title = f'{p["titulo"]} · Inteligências'
+    stamp = f'<a href="/edicoes/{ed["numero"]:03d}">N.º {ed["numero"]} · {e(data_ext(ed["data"], False))}</a>'
+    ld = [{"@context": "https://schema.org", "@type": "Article", "headline": p["titulo"], "description": p["lead"], "url": URL + url,
+           "mainEntityOfPage": URL + url, "datePublished": ed["data"], "dateModified": ed["data"], "inLanguage": "pt-PT",
+           "author": ORG, "publisher": ORG, "keywords": ", ".join(p["etiquetas"]), "articleSection": p["categoria"],
+           "isPartOf": {"@type": "CollectionPage", "name": f'Inteligências N.º {ed["numero"]}', "url": f'{URL}/edicoes/{ed["numero"]:03d}'}},
+          crumbs([("Inteligências", "/"), (f'N.º {ed["numero"]}', f'/edicoes/{ed["numero"]:03d}'), (p["titulo"], url)])]
+    extra = "".join(jsonld(x) for x in ld) + f'<meta property="article:published_time" content="{ed["data"]}">' + "".join(f'<meta property="article:tag" content="{e(t)}">' for t in p["etiquetas"])
+    return (head(title, p["lead"], url, extra, "article") + masthead(stamp, h1=None) +
+            f'\n<main class="wrap single">{piece(i, p, h="h1")}{related(ed, p)}\n</main>' + footer(eds) +
+            '\n<script src="/assets/site.js?v=' + V['site.js'] + '" defer></script>\n</body>\n</html>\n')
+
+
+def concept_page(ed, eds):
+    c = ed["conceito"]
+    url = concept_url(c)
+    title = f'Conceito de IA: {c["nome"]} · Inteligências'
+    stamp = f'Conceito · <a href="/edicoes/{ed["numero"]:03d}">N.º {ed["numero"]} · {e(data_ext(ed["data"], False))}</a>'
+    ld = [{"@context": "https://schema.org", "@type": "Article", "headline": f'{c["nome"]}: {c["lead"]}', "description": c["lead"], "url": URL + url,
+           "mainEntityOfPage": URL + url, "datePublished": ed["data"], "inLanguage": "pt-PT", "author": ORG, "publisher": ORG,
+           "keywords": ", ".join(c["etiquetas"]),
+           "about": {"@type": "DefinedTerm", "name": c["nome"], "alternateName": strip_tags(c["sub"]), "description": c["lead"]}},
+          crumbs([("Inteligências", "/"), ("Conceitos", "/arquivo/"), (c["nome"], url)])]
+    return (head(title, c["lead"], url, "".join(jsonld(x) for x in ld), "article") + masthead(stamp, h1=None) +
+            f'\n<main class="wrap single">{conceito(c, h="h1")}{related(ed, c)}\n</main>' + footer(eds) +
+            '\n<script src="/assets/site.js?v=' + V['site.js'] + '" defer></script>\n</body>\n</html>\n')
 
 
 # ------------------------------------------------------------------ outras páginas
@@ -209,9 +289,9 @@ def registo(eds):
         f = ed.get("fica_de_fora")
         out["edicoes"].append({
             "numero": ed["numero"], "data": ed["data"], "url": f'/edicoes/{ed["numero"]:03d}',
-            "pecas": [{k: p[k] for k in ("id", "tipo", "categoria", "produto", "data_anuncio", "titulo", "lead", "etiquetas")} | {"prompt": p["prompt"]} for p in ed["pecas"]],
+            "pecas": [{k: p[k] for k in ("id", "slug", "tipo", "categoria", "produto", "data_anuncio", "titulo", "lead", "etiquetas")} | {"prompt": p["prompt"], "url": piece_url(ed, p)} for p in ed["pecas"]],
             "fica_de_fora": [{"id": "out-h", "titulo": f["titulo"], "lead": f["lead"], "etiquetas": f["etiquetas"]}] if f else [],
-            "conceito": {"id": "c-h", "nome": ed["conceito"]["nome"], "lead": ed["conceito"]["lead"], "etiquetas": ed["conceito"]["etiquetas"]},
+            "conceito": {"id": "c-h", "slug": ed["conceito"]["slug"], "url": concept_url(ed["conceito"]), "nome": ed["conceito"]["nome"], "lead": ed["conceito"]["lead"], "etiquetas": ed["conceito"]["etiquetas"]},
         })
     return out
 
@@ -269,8 +349,14 @@ def rss(eds):
 
 
 def sitemap(eds):
-    urls = ["/", "/arquivo/", "/sobre/", "/redacao/"] + [f'/edicoes/{x["numero"]:03d}' for x in eds]
-    return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{URL}{u}</loc></url>" for u in urls) + "</urlset>\n"
+    last = eds[-1]["data"]
+    urls = [("/", last), ("/arquivo/", last), ("/sobre/", None), ("/redacao/", None)]
+    for x in eds:
+        urls.append((f'/edicoes/{x["numero"]:03d}', x["data"]))
+        urls += [(piece_url(x, p), x["data"]) for p in x["pecas"]]
+        urls.append((concept_url(x["conceito"]), x["data"]))
+    return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(
+        f"<url><loc>{URL}{u}</loc>{f'<lastmod>{d}</lastmod>' if d else ''}</url>" for u, d in urls) + "</urlset>\n"
 
 
 # ------------------------------------------------------------------ main
@@ -282,9 +368,17 @@ def main():
     shutil.copytree(SITE / "assets", PUB / "assets")
     shutil.copy(SITE / "favicon.svg", PUB / "favicon.svg")
     shutil.copy(SITE / "_headers", PUB / "_headers")
+    (PUB / "conceitos").mkdir()
     for ed in eds:
         (PUB / "edicoes" / f'{ed["numero"]:03d}.html').write_text(edition_page(ed, eds))
-    latest = edition_page(eds[-1], eds).replace(f'<link rel="canonical" href="{URL}/edicoes/{eds[-1]["numero"]:03d}">', f'<link rel="canonical" href="{URL}/">') if URL else edition_page(eds[-1], eds)
+        d = PUB / "edicoes" / f'{ed["numero"]:03d}'
+        d.mkdir()
+        for i, p in enumerate(ed["pecas"], 1):
+            (d / f'{p["slug"]}.html').write_text(piece_page(ed, i, p, eds))
+        (PUB / "conceitos" / f'{ed["conceito"]["slug"]}.html').write_text(concept_page(ed, eds))
+    site_ld = jsonld({"@context": "https://schema.org", "@type": "WebSite", "name": "Inteligências", "url": URL + "/", "inLanguage": "pt-PT", "description": CFG["slogan"], "publisher": ORG})
+    latest = edition_page(eds[-1], eds).replace("</head>", site_ld + "\n</head>", 1)
+    latest = latest.replace(f'<link rel="canonical" href="{URL}/edicoes/{eds[-1]["numero"]:03d}">', f'<link rel="canonical" href="{URL}/">') if URL else edition_page(eds[-1], eds)
     (PUB / "index.html").write_text(latest)
     (PUB / "arquivo").mkdir()
     (PUB / "arquivo" / "index.html").write_text(archive_page(eds))

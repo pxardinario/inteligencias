@@ -13,6 +13,7 @@ SHOTS = Path(sys.argv[2]) if len(sys.argv) > 2 else None
 ROOT = Path(__file__).resolve().parent.parent
 reg = json.loads((ROOT / "public/data/registo.json").read_text())
 pages = ["/", "/arquivo/", "/sobre/", "/redacao/"] + [ed["url"] for ed in reg["edicoes"]]
+pages += [p["url"] for ed in reg["edicoes"] for p in ed["pecas"]] + [ed["conceito"]["url"] for ed in reg["edicoes"]]
 erros = []
 with sync_playwright() as p:
     try:

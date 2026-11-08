@@ -5,6 +5,7 @@
  "pecas": [
   {
    "id": "gif",
+   "slug": "chatgpt-images-gifs-memoria-fotografias",
    "tipo": "Notícia",
    "categoria": "Imagem",
    "produto": "ChatGPT Images 2.6",
@@ -74,6 +75,7 @@
   },
   {
    "id": "powerpoint",
+   "slug": "copilot-powerpoint-copia-estilo-apresentacao",
    "tipo": "Notícia",
    "categoria": "Apresentações",
    "produto": "Copilot no PowerPoint",
@@ -139,6 +141,7 @@
   },
   {
    "id": "elogios",
+   "slug": "chatgpt-menos-elogios",
    "tipo": "Notícia",
    "categoria": "Hábitos",
    "produto": "ChatGPT (GPT-6)",
@@ -203,6 +206,7 @@
   },
   {
    "id": "flow",
+   "slug": "google-flow-ferramentas-de-video",
    "tipo": "Notícia",
    "categoria": "Vídeo",
    "produto": "Google Flow – Tools",
@@ -273,6 +277,7 @@
  "fica_de_fora": null,
  "conceito": {
   "nome": "Bajulação",
+  "slug": "bajulacao",
   "sub": "em inglês, <i>sycophancy</i>",
   "liga": "liga à peça 03",
   "lead": "A tendência dos modelos para te dizerem o que queres ouvir, e três hábitos para a contrariar.",

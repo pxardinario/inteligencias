@@ -5,6 +5,7 @@
  "pecas": [
   {
    "id": "ficheiros",
+   "slug": "gemini-edita-ficheiros-que-cria",
    "tipo": "Notícia",
    "categoria": "Documentos",
    "produto": "App Gemini",
@@ -73,6 +74,7 @@
   },
   {
    "id": "sheets",
+   "slug": "google-sheets-celulas-ia-com-fonte",
    "tipo": "Notícia",
    "categoria": "Folhas de cálculo",
    "produto": "Google Sheets",
@@ -142,6 +144,7 @@
   },
   {
    "id": "kapwing",
+   "slug": "legendar-traduzir-dobrar-videos-chatgpt-claude",
    "tipo": "Notícia",
    "categoria": "Vídeo",
    "produto": "Kapwing MCP (ChatGPT e Claude)",
@@ -227,6 +230,7 @@
  },
  "conceito": {
   "nome": "MCP",
+  "slug": "mcp",
   "sub": "Model Context Protocol, «protocolo de contexto do modelo»",
   "liga": "liga à peça 03",
   "lead": "A norma aberta que liga os assistentes de IA a programas externos, e o que deves ver antes de autorizar um conector.",

@@ -11,7 +11,7 @@ class H(http.server.SimpleHTTPRequestHandler):
     def send_head(self):
         path = self.path.split("?")[0].split("#")[0]
         f = PUB / path.lstrip("/")
-        if not f.exists() and (PUB / (path.lstrip("/") + ".html")).exists():
+        if not path.endswith("/") and (PUB / (path.lstrip("/") + ".html")).exists():
             self.path = path + ".html"
         elif not f.exists() and not (f.is_dir()):
             self.path = "/404.html"

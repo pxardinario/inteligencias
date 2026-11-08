@@ -1,6 +1,6 @@
 {
  "publicacao": "Inteligências",
- "gerado": "2026-11-06T17:24:46+00:00",
+ "gerado": "2026-11-08T15:13:12+00:00",
  "edicoes": [
   {
    "numero": 1,
@@ -9,6 +9,7 @@
    "pecas": [
     {
      "id": "ficheiros",
+     "slug": "gemini-edita-ficheiros-que-cria",
      "tipo": "Notícia",
      "categoria": "Documentos",
      "produto": "App Gemini",
@@ -21,10 +22,12 @@
       "grátis",
       "prompt"
      ],
-     "prompt": "Cria um PDF de uma página, em português de Portugal, a apresentar [serviço] a [tipo de cliente]. Estrutura: título, três benefícios concretos com uma frase cada, preços em tabela simples e contacto no rodapé. Tom profissional e direto, sem adjetivos promocionais."
+     "prompt": "Cria um PDF de uma página, em português de Portugal, a apresentar [serviço] a [tipo de cliente]. Estrutura: título, três benefícios concretos com uma frase cada, preços em tabela simples e contacto no rodapé. Tom profissional e direto, sem adjetivos promocionais.",
+     "url": "/edicoes/001/gemini-edita-ficheiros-que-cria"
     },
     {
      "id": "sheets",
+     "slug": "google-sheets-celulas-ia-com-fonte",
      "tipo": "Notícia",
      "categoria": "Folhas de cálculo",
      "produto": "Google Sheets",
@@ -38,10 +41,12 @@
       "verificação",
       "pago"
      ],
-     "prompt": "Preenche a coluna C com o ano de fundação de cada empresa da coluna A, usando apenas o site oficial da empresa ou registos públicos. Se não encontrares uma fonte fiável, escreve «sem fonte» em vez de estimar."
+     "prompt": "Preenche a coluna C com o ano de fundação de cada empresa da coluna A, usando apenas o site oficial da empresa ou registos públicos. Se não encontrares uma fonte fiável, escreve «sem fonte» em vez de estimar.",
+     "url": "/edicoes/001/google-sheets-celulas-ia-com-fonte"
     },
     {
      "id": "kapwing",
+     "slug": "legendar-traduzir-dobrar-videos-chatgpt-claude",
      "tipo": "Notícia",
      "categoria": "Vídeo",
      "produto": "Kapwing MCP (ChatGPT e Claude)",
@@ -55,7 +60,8 @@
       "legendas",
       "redes sociais"
      ],
-     "prompt": "No Kapwing, carrega o vídeo [nome ou ligação], transcreve o áudio em português e adiciona legendas na parte de baixo. Depois cria uma segunda versão com as legendas traduzidas para inglês. Devolve-me a ligação dos dois projetos para eu rever antes de exportar."
+     "prompt": "No Kapwing, carrega o vídeo [nome ou ligação], transcreve o áudio em português e adiciona legendas na parte de baixo. Depois cria uma segunda versão com as legendas traduzidas para inglês. Devolve-me a ligação dos dois projetos para eu rever antes de exportar.",
+     "url": "/edicoes/001/legendar-traduzir-dobrar-videos-chatgpt-claude"
     }
    ],
    "fica_de_fora": [
@@ -73,6 +79,8 @@
    ],
    "conceito": {
     "id": "c-h",
+    "slug": "mcp",
+    "url": "/conceitos/mcp",
     "nome": "MCP",
     "lead": "A norma aberta que liga os assistentes de IA a programas externos, e o que deves ver antes de autorizar um conector.",
     "etiquetas": [
@@ -89,6 +97,7 @@
    "pecas": [
     {
      "id": "gif",
+     "slug": "chatgpt-images-gifs-memoria-fotografias",
      "tipo": "Notícia",
      "categoria": "Imagem",
      "produto": "ChatGPT Images 2.6",
@@ -102,10 +111,12 @@
       "grátis",
       "prompt"
      ],
-     "prompt": "Transforma esta fotografia num GIF em loop de cerca de 2 segundos. Anima apenas o vapor a subir da chávena, com movimento lento e subtil. Mantém tudo o resto exatamente igual: enquadramento, cores, luz e fundo. Formato quadrado, para Instagram."
+     "prompt": "Transforma esta fotografia num GIF em loop de cerca de 2 segundos. Anima apenas o vapor a subir da chávena, com movimento lento e subtil. Mantém tudo o resto exatamente igual: enquadramento, cores, luz e fundo. Formato quadrado, para Instagram.",
+     "url": "/edicoes/002/chatgpt-images-gifs-memoria-fotografias"
     },
     {
      "id": "powerpoint",
+     "slug": "copilot-powerpoint-copia-estilo-apresentacao",
      "tipo": "Notícia",
      "categoria": "Apresentações",
      "produto": "Copilot no PowerPoint",
@@ -119,10 +130,12 @@
       "pago",
       "prompt"
      ],
-     "prompt": "Usando o estilo da apresentação anexada, cria 6 diapositivos sobre [tema] para [público]. Um diapositivo de abertura, quatro com uma ideia cada (título curto e no máximo 3 pontos) e um de próximos passos. Português de Portugal, sem frases promocionais."
+     "prompt": "Usando o estilo da apresentação anexada, cria 6 diapositivos sobre [tema] para [público]. Um diapositivo de abertura, quatro com uma ideia cada (título curto e no máximo 3 pontos) e um de próximos passos. Português de Portugal, sem frases promocionais.",
+     "url": "/edicoes/002/copilot-powerpoint-copia-estilo-apresentacao"
     },
     {
      "id": "elogios",
+     "slug": "chatgpt-menos-elogios",
      "tipo": "Notícia",
      "categoria": "Hábitos",
      "produto": "ChatGPT (GPT-6)",
@@ -135,10 +148,12 @@
       "prompt",
       "grátis"
      ],
-     "prompt": "Quando eu pedir uma revisão ou opinião, começa pelos três problemas mais graves, por ordem de impacto, e explica porquê. Não elogies o que não for excecional; se algo estiver bem, diz numa linha. Se discordares de mim, diz diretamente."
+     "prompt": "Quando eu pedir uma revisão ou opinião, começa pelos três problemas mais graves, por ordem de impacto, e explica porquê. Não elogies o que não for excecional; se algo estiver bem, diz numa linha. Se discordares de mim, diz diretamente.",
+     "url": "/edicoes/002/chatgpt-menos-elogios"
     },
     {
      "id": "flow",
+     "slug": "google-flow-ferramentas-de-video",
      "tipo": "Notícia",
      "categoria": "Vídeo",
      "produto": "Google Flow – Tools",
@@ -151,12 +166,15 @@
       "redes sociais",
       "pago"
      ],
-     "prompt": "Cria uma ferramenta que redimensiona um vídeo para três formatos: 16:9, 9:16 e 1:1. Mantém o motivo principal centrado em cada formato, mostra uma pré-visualização lado a lado e permite ajustar o enquadramento de cada versão antes de exportar."
+     "prompt": "Cria uma ferramenta que redimensiona um vídeo para três formatos: 16:9, 9:16 e 1:1. Mantém o motivo principal centrado em cada formato, mostra uma pré-visualização lado a lado e permite ajustar o enquadramento de cada versão antes de exportar.",
+     "url": "/edicoes/002/google-flow-ferramentas-de-video"
     }
    ],
    "fica_de_fora": [],
    "conceito": {
     "id": "c-h",
+    "slug": "bajulacao",
+    "url": "/conceitos/bajulacao",
     "nome": "Bajulação",
     "lead": "A tendência dos modelos para te dizerem o que queres ouvir, e três hábitos para a contrariar.",
     "etiquetas": [
@@ -173,6 +191,7 @@
    "pecas": [
     {
      "id": "marca-agua",
+     "slug": "marca-de-agua-texto-ia-ue",
      "tipo": "Notícia",
      "categoria": "Regras",
      "produto": "Marca de água em texto gerado por IA (UE)",
@@ -185,10 +204,12 @@
       "escrita",
       "transparência"
      ],
-     "prompt": "Revê o texto abaixo sem o reescrever. Lista, por ordem de importância, os problemas de clareza, os factos a confirmar e as frases fracas, indicando a frase original e o motivo. Não me dês a versão corrigida; eu faço as alterações.\n\n[texto]"
+     "prompt": "Revê o texto abaixo sem o reescrever. Lista, por ordem de importância, os problemas de clareza, os factos a confirmar e as frases fracas, indicando a frase original e o motivo. Não me dês a versão corrigida; eu faço as alterações.\n\n[texto]",
+     "url": "/edicoes/003/marca-de-agua-texto-ia-ue"
     },
     {
      "id": "regressao",
+     "slug": "testar-prompts-teste-de-regressao",
      "tipo": "Técnica",
      "categoria": "Técnica",
      "produto": "Teste de regressão para prompts",
@@ -201,10 +222,12 @@
       "qualidade",
       "automação"
      ],
-     "prompt": "Avalia o resultado contra estes critérios de aceitação: [critérios]. Identifica a primeira instrução do meu prompt que estava em falta, ambígua ou foi ignorada. Propõe uma única alteração mínima a essa instrução e mostra como mudaria a parte que falhou, sem reescrever as regras que não têm relação com o problema."
+     "prompt": "Avalia o resultado contra estes critérios de aceitação: [critérios]. Identifica a primeira instrução do meu prompt que estava em falta, ambígua ou foi ignorada. Propõe uma única alteração mínima a essa instrução e mostra como mudaria a parte que falhou, sem reescrever as regras que não têm relação com o problema.",
+     "url": "/edicoes/003/testar-prompts-teste-de-regressao"
     },
     {
      "id": "equilibrio",
+     "slug": "quando-compensa-automatizar",
      "tipo": "Técnica",
      "categoria": "Técnica",
      "produto": "Ponto de equilíbrio da automação",
@@ -217,7 +240,8 @@
       "agentes",
       "produtividade"
      ],
-     "prompt": "Avalia se vale a pena automatizar este processo.\nTempo manual por execução: [ ]\nTempo de preparação da automação: [ ]\nTempo de revisão por execução: [ ]\nExecuções por mês: [ ]\nCusto de um erro: [ ]\nCalcula o ponto de equilíbrio, o tempo poupado por mês e o risco. Recomenda uma de três opções: automatizar, usar a IA só como assistente, ou manter manual."
+     "prompt": "Avalia se vale a pena automatizar este processo.\nTempo manual por execução: [ ]\nTempo de preparação da automação: [ ]\nTempo de revisão por execução: [ ]\nExecuções por mês: [ ]\nCusto de um erro: [ ]\nCalcula o ponto de equilíbrio, o tempo poupado por mês e o risco. Recomenda uma de três opções: automatizar, usar a IA só como assistente, ou manter manual.",
+     "url": "/edicoes/003/quando-compensa-automatizar"
     }
    ],
    "fica_de_fora": [
@@ -234,6 +258,8 @@
    ],
    "conceito": {
     "id": "c-h",
+    "slug": "agente-de-ia",
+    "url": "/conceitos/agente-de-ia",
     "nome": "Agente",
     "lead": "O que distingue um agente de um chatbot, e três hábitos para os usar com segurança.",
     "etiquetas": [

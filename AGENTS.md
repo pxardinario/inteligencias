@@ -50,9 +50,16 @@ O tema claro é o padrão. O escuro só se ativa pelo botão de tema na barra de
 ## Formato dos ficheiros
 Cada edição é um ficheiro `site/editions/NNN.json` (NNN com 3 dígitos). Copia a estrutura de `site/editions/003.json`:
 - `numero`, `data` (AAAA-MM-DD), `minutos` (tempo de leitura estimado).
-- `pecas`: lista de objetos com `id` (curto, minúsculas, sem acentos, único na edição), `tipo` («Notícia» ou «Técnica»), `categoria`, `produto`, `data_anuncio`, `kicker_data` (ex.: «4 nov.» ou «método»), `titulo`, `lead` (1–2 frases), `svg`, `legenda`, `o_que_e`, `porque`, `passos` (2–3), `prompt_titulo`, `prompt`, `nota` (`{tipo: "Atenção"|"Por confirmar", texto}` ou `null`), `ficha` (5 linhas `[rótulo, valor, classe]` com classe `ok`/`warn`/`no`/`null`: Onde, Custo, Em Portugal, Estado, Testado), `fontes` (`[[título, url], …]`), `etiquetas`.
+- `pecas`: lista de objetos com `id` (curto, minúsculas, sem acentos, único na edição), `slug` (ver abaixo), `tipo` («Notícia» ou «Técnica»), `categoria`, `produto`, `data_anuncio`, `kicker_data` (ex.: «4 nov.» ou «método»), `titulo`, `lead` (1–2 frases), `svg`, `legenda`, `o_que_e`, `porque`, `passos` (2–3), `prompt_titulo`, `prompt`, `nota` (`{tipo: "Atenção"|"Por confirmar", texto}` ou `null`), `ficha` (5 linhas `[rótulo, valor, classe]` com classe `ok`/`warn`/`no`/`null`: Onde, Custo, Em Portugal, Estado, Testado), `fontes` (`[[título, url], …]`), `etiquetas`.
 - `fica_de_fora`: `{titulo, texto, lead, fonte: [título, url], etiquetas}` ou `null`.
-- `conceito`: `{nome, sub, liga, lead, intro, svg, corpo, habitos: [[negrito, resto], …×3], aprofundar: [[título, url], …], etiquetas}`.
+- `conceito`: `{nome, slug, sub, liga, lead, intro, svg, corpo, habitos: [[negrito, resto], …×3], aprofundar: [[título, url], …], etiquetas}`.
+
+### Endereços permanentes (`slug`) e SEO
+Cada peça tem página própria em `/edicoes/NNN/<slug>` e cada conceito em `/conceitos/<slug>`; a edição completa continua em `/edicoes/NNN`.
+- O `slug` é **obrigatório e permanente**: depois de publicado, nunca muda (mesmo que corrijas o título), porque é o endereço que os motores de pesquisa e quem partilhou guardaram. O `build.py` recusa slugs em falta, inválidos ou repetidos em todo o site.
+- Formato: minúsculas, sem acentos, palavras separadas por hífen, 3 a 7 palavras, sem artigos inúteis. Começa pelo produto ou pelo tema e inclui as palavras que alguém escreveria no Google. Ex.: `gemini-edita-ficheiros-que-cria`, `copilot-powerpoint-copia-estilo-apresentacao`, `quando-compensa-automatizar`.
+- Conceitos: o nome do conceito (`mcp`, `bajulacao`, `agente-de-ia`). Se um conceito voltar mais tarde (seguimento), usa um slug diferente (ex.: `rag-2`) ou, melhor, escolhe outro conceito.
+- O `lead` é a descrição que aparece no Google: 1–2 frases que dizem o que a pessoa ganha, até cerca de 160 caracteres.
 
 ### Etiquetas
 3 a 5 por peça, técnica, conceito e «fica de fora», em minúsculas. **Reutiliza as que já existem** (lista em `public/data/registo.json`) para não criar sinónimos. Combina: produto/empresa (chatgpt, gemini, claude, copilot, canva, notion, meta…), área (imagem, vídeo, documentos, folhas de cálculo, apresentações, escrita, automação, agentes, marketing, redes sociais, pesquisa…) e natureza prática (prompt, grátis, pago, técnica, conceito, só EUA, regras UE…). Nada de etiquetas vagas («ia», «novidade»).

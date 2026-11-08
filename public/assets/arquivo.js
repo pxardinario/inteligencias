@@ -11,7 +11,7 @@ function iniciar(reg){
   reg.edicoes.slice().sort(function(a,b){return b.numero-a.numero;}).forEach(function(e){
     var base = {ed:e.numero, data:e.data, ficheiro:e.url, mes:e.data.slice(0,7)};
     (e.pecas||[]).forEach(function(p){
-      itens.push(Object.assign({}, base, {tipo: p.tipo==='Técnica'?'Técnica':'Notícia', titulo:p.titulo, lead:p.lead, cat:p.categoria, produto:p.produto, tags:p.etiquetas||[], id:p.id}));
+      itens.push(Object.assign({}, base, {tipo: p.tipo==='Técnica'?'Técnica':'Notícia', titulo:p.titulo, lead:p.lead, cat:p.categoria, produto:p.produto, tags:p.etiquetas||[], id:p.id, url:p.url}));
     });
     (e.fica_de_fora||[]).forEach(function(f){
       if(typeof f==='string') f={titulo:f};
@@ -19,7 +19,7 @@ function iniciar(reg){
     });
     if(e.conceito){
       var c = typeof e.conceito==='string'?{nome:e.conceito}:e.conceito;
-      itens.push(Object.assign({}, base, {tipo:'Conceito', titulo:c.nome, lead:c.lead, cat:'Conceito do dia', produto:'', tags:c.etiquetas||[], id:c.id||'c-h'}));
+      itens.push(Object.assign({}, base, {tipo:'Conceito', titulo:c.nome, lead:c.lead, cat:'Conceito do dia', produto:'', tags:c.etiquetas||[], id:c.id||'c-h', url:c.url}));
     }
   });
   itens.forEach(function(i){ i.txt = norm([i.titulo,i.lead,i.cat,i.produto,i.tipo,i.tags.join(' ')].join(' ')); });
@@ -84,7 +84,7 @@ function iniciar(reg){
     if(!res.length){ lista.innerHTML='<p class="empty">Nada. Nem o INBOX PONTO ZERO encontrou isto nas newsletters. Experimenta outra palavra ou limpa os filtros.</p>'; return; }
     res.forEach(function(i){
       if(i.ed!==edAtual){ if(edAtual!==null) html+='</section>'; edAtual=i.ed; html+='<section class="group"><h2><a href="'+i.ficheiro+'">N.º '+i.ed+' · '+dataExt(i.data)+'</a></h2>'; }
-      var href = i.ficheiro+'#'+i.id;
+      var href = i.url || (i.ficheiro+'#'+i.id);
       html+='<article class="item"><div class="type '+tipoClasse[i.tipo]+'">'+esc(i.tipo)+'</div><div>'+
         '<h3><a href="'+href+'">'+realca(i.titulo,termos)+'</a></h3>'+
         (i.lead?'<p>'+realca(i.lead,termos)+'</p>':'')+
