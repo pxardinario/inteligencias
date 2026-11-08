@@ -208,6 +208,7 @@ def footer(eds, current=None):
     <ul>{items}</ul>
   </nav>
   <p class="wink">A palavra «revolucionário» não entrou nesta redação. <a href="/redacao/">Conhece a equipa</a>.</p>
+  <p class="sister">Da mesma casa: <a href="https://olhamisto.com/"><b>Olhamisto</b></a>, histórias contadas com dados reais e gráficos, todos os dias úteis. Antes de opinar, olha-me isto.</p>
   <p>Um projeto de <a href="https://pedroxaviersilva.eu/">Pedro Silva</a>.</p>
 </footer>'''
 
