@@ -1,0 +1,236 @@
+{
+ "numero": 4,
+ "data": "2026-11-09",
+ "minutos": 8,
+ "pecas": [
+  {
+   "id": "slides",
+   "slug": "gemini-slides-edita-apresentacao-inteira",
+   "tipo": "Notícia",
+   "categoria": "Apresentações",
+   "produto": "Gemini no Google Slides",
+   "data_anuncio": "2026-10-30",
+   "kicker_data": "30 out.",
+   "titulo": "O Gemini no Google Slides já edita a apresentação inteira com um só pedido",
+   "lead": "Em vez de corrigires slide a slide, pedes uma alteração no painel do Gemini e ele aplica-a a vários slides ou ao conjunto, em slides editáveis.",
+   "svg": "<svg viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Esquema de um pedido único ao Gemini no Google Slides: antes, três slides com tamanhos de título diferentes; o pedido «uniformiza os títulos»; depois, os mesmos três slides com títulos iguais e uma lista de alterações no painel lateral.\">\n  <defs><marker id=\"a41\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\"><text x=\"20\" y=\"22\">ANTES</text><text x=\"440\" y=\"22\">DEPOIS</text></g>\n  <g fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\">\n    <rect x=\"20\" y=\"34\" width=\"110\" height=\"64\" rx=\"6\"/><rect x=\"20\" y=\"106\" width=\"110\" height=\"64\" rx=\"6\"/><rect x=\"140\" y=\"34\" width=\"110\" height=\"64\" rx=\"6\"/>\n    <rect x=\"440\" y=\"34\" width=\"90\" height=\"64\" rx=\"6\"/><rect x=\"540\" y=\"34\" width=\"90\" height=\"64\" rx=\"6\"/><rect x=\"440\" y=\"106\" width=\"90\" height=\"64\" rx=\"6\"/>\n  </g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" fill=\"var(--ink)\">\n    <text x=\"30\" y=\"58\" font-size=\"17\">Resultados</text><text x=\"30\" y=\"130\" font-size=\"11\">Resultados</text><text x=\"150\" y=\"58\" font-size=\"14\">Resultados</text>\n    <text x=\"450\" y=\"58\" font-size=\"13\">Resultados</text><text x=\"550\" y=\"58\" font-size=\"13\">Resultados</text><text x=\"450\" y=\"130\" font-size=\"13\">Resultados</text>\n  </g>\n  <g fill=\"var(--muted)\"><rect x=\"30\" y=\"70\" width=\"80\" height=\"4\" rx=\"2\"/><rect x=\"30\" y=\"142\" width=\"80\" height=\"4\" rx=\"2\"/><rect x=\"150\" y=\"70\" width=\"80\" height=\"4\" rx=\"2\"/><rect x=\"450\" y=\"70\" width=\"70\" height=\"4\" rx=\"2\"/><rect x=\"550\" y=\"70\" width=\"70\" height=\"4\" rx=\"2\"/><rect x=\"450\" y=\"142\" width=\"70\" height=\"4\" rx=\"2\"/></g>\n  <path d=\"M270 100 h140\" stroke=\"var(--accent)\" stroke-width=\"2\" marker-end=\"url(#a41)\"/>\n  <rect x=\"268\" y=\"56\" width=\"146\" height=\"36\" rx=\"8\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\" text-anchor=\"middle\"><text x=\"341\" y=\"71\">Um só pedido no painel:</text><text x=\"341\" y=\"86\">«iguala os títulos»</text></g>\n  <rect x=\"268\" y=\"118\" width=\"146\" height=\"52\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--line)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"11\" fill=\"var(--muted)\" text-anchor=\"middle\"><text x=\"341\" y=\"138\">Painel lateral lista</text><text x=\"341\" y=\"153\">as alterações feitas</text></g>\n</svg>",
+   "legenda": "Esquema ilustrativo, dados fictícios. Não é uma captura de ecrã.",
+   "o_que_e": "Segundo a Google, o Gemini no Slides pode agora editar vários slides, ou uma apresentação completa, a partir de um único pedido no painel lateral. A Google dá como exemplos reestilizar o conjunto, juntar slides («resume os slides 5 a 7 num só»), acrescentar detalhe com base num ficheiro do Drive e uniformizar tipos de letra e cores dos títulos. As alterações são feitas diretamente nos slides nativos, e podes desfazê-las ou vê-las no histórico de versões.",
+   "porque": "Uniformizar uma apresentação feita por várias pessoas, ou refazer o aspeto de um conjunto antigo, é trabalho repetitivo que costuma ocupar uma tarde. Aqui o pedido é um só e a revisão fica contigo. Há duas limitações que contam em Portugal: a Google diz que o lançamento é só em inglês, e a funcionalidade exige um plano Workspace Business ou Enterprise (Standard ou Plus) ou Google AI Pro/Ultra. Segundo a Google, até pelo menos 1 de dezembro os clientes Workspace têm limites mais altos; depois aplicam-se limites por utilizador.",
+   "passos": [
+    "Abre a apresentação no Google Slides e o painel do Gemini, e escreve o pedido em inglês, indicando que slides queres alterar.",
+    "Lê a lista de alterações que o Gemini mostra no painel e abre o slide-chave para confirmar o resultado.",
+    "Se não gostares, desfaz ou volta a uma versão anterior no histórico de versões."
+   ],
+   "prompt_titulo": "Prompt · uniformizar uma apresentação (em inglês)",
+   "prompt": "Make the whole deck consistent: use the same font and size for all slide titles, the same color for headings, and the same alignment for body text. Do not change the wording or the numbers on any slide. When you finish, list the slides you changed and what you changed on each.",
+   "nota": {
+    "tipo": "Atenção",
+    "texto": "o lançamento é só em inglês e a disponibilidade pode demorar mais de 15 dias a chegar à tua conta. Se a opção não aparecer, confirma o plano que tens. Revê sempre o resultado antes de partilhares a apresentação."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "Google Slides, painel do Gemini",
+     null
+    ],
+    [
+     "Custo",
+     "Incluído em Workspace Business/Enterprise (Standard ou Plus) e Google AI Pro/Ultra",
+     "warn"
+    ],
+    [
+     "Em Portugal",
+     "Só em inglês no lançamento",
+     "warn"
+    ],
+    [
+     "Estado",
+     "A chegar aos poucos desde 29 out.",
+     "warn"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Google Workspace Updates, 30 out. (Slides)",
+     "https://workspaceupdates.googleblog.com/2026/10/edit-entire-presentations-with-gemini-in-Google-Slides.html"
+    ]
+   ],
+   "etiquetas": [
+    "gemini",
+    "apresentações",
+    "pago",
+    "produtividade"
+   ]
+  },
+  {
+   "id": "excel",
+   "slug": "copilot-excel-limpa-dados-erros-folha",
+   "tipo": "Notícia",
+   "categoria": "Folhas de cálculo",
+   "produto": "Copilot no Excel",
+   "data_anuncio": "2026-10-30",
+   "kicker_data": "30 out.",
+   "titulo": "O Copilot no Excel passa a limpar dados: procura erros e só corrige o que aprovares",
+   "lead": "Uma competência nova do Copilot procura duplicados, formatos misturados e tipos de dados errados na tua folha e propõe correções que tu aprovas.",
+   "svg": "<svg viewBox=\"0 0 640 220\" role=\"img\" aria-label=\"Esquema da competência de limpar dados no Excel: uma tabela com três problemas assinalados (cliente repetido, data em formato diferente, número guardado como texto); o Copilot lista as correções propostas; só aplicas as que aprovares uma a uma.\">\n  <defs><marker id=\"a42\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\"><text x=\"20\" y=\"22\">TABELA (DADOS FICTÍCIOS)</text><text x=\"370\" y=\"22\">CORREÇÕES PROPOSTAS</text></g>\n  <rect x=\"20\" y=\"32\" width=\"300\" height=\"130\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--line)\"/>\n  <g stroke=\"var(--line)\"><path d=\"M20 62 h300\"/><path d=\"M20 92 h300\"/><path d=\"M20 122 h300\"/><path d=\"M100 32 v130\"/><path d=\"M210 32 v130\"/></g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--muted)\"><text x=\"30\" y=\"52\">N.º cliente</text><text x=\"110\" y=\"52\">Data</text><text x=\"220\" y=\"52\">Valor</text></g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"12\" fill=\"var(--ink)\">\n    <text x=\"30\" y=\"82\">1042</text><text x=\"110\" y=\"82\">03/11/2026</text><text x=\"220\" y=\"82\">120</text>\n    <text x=\"30\" y=\"112\">1042</text><text x=\"110\" y=\"112\">2026-11-04</text><text x=\"220\" y=\"112\">85</text>\n    <text x=\"30\" y=\"142\">1050</text><text x=\"110\" y=\"142\">5 nov. 26</text><text x=\"220\" y=\"142\">«90»</text>\n  </g>\n  <g fill=\"none\" stroke=\"var(--warn)\" stroke-width=\"2\"><rect x=\"24\" y=\"68\" width=\"68\" height=\"20\" rx=\"4\"/><rect x=\"24\" y=\"98\" width=\"68\" height=\"20\" rx=\"4\"/><rect x=\"104\" y=\"98\" width=\"96\" height=\"20\" rx=\"4\"/><rect x=\"214\" y=\"128\" width=\"60\" height=\"20\" rx=\"4\"/></g>\n  <path d=\"M326 97 h36\" stroke=\"var(--accent)\" stroke-width=\"2\" marker-end=\"url(#a42)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\">\n    <rect x=\"370\" y=\"32\" width=\"250\" height=\"34\" rx=\"6\" fill=\"var(--surface)\" stroke=\"var(--line)\"/><text x=\"382\" y=\"54\">Cliente 1042 repetido</text>\n    <rect x=\"370\" y=\"74\" width=\"250\" height=\"34\" rx=\"6\" fill=\"var(--surface)\" stroke=\"var(--line)\"/><text x=\"382\" y=\"96\">Datas em formatos diferentes</text>\n    <rect x=\"370\" y=\"116\" width=\"250\" height=\"34\" rx=\"6\" fill=\"var(--surface)\" stroke=\"var(--line)\"/><text x=\"382\" y=\"138\">Número guardado como texto</text>\n  </g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"11\" text-anchor=\"middle\">\n    <rect x=\"552\" y=\"40\" width=\"60\" height=\"18\" rx=\"4\" fill=\"var(--ok)\"/><text x=\"582\" y=\"53\" fill=\"var(--surface)\">aprovar</text>\n    <rect x=\"552\" y=\"82\" width=\"60\" height=\"18\" rx=\"4\" fill=\"var(--ok)\"/><text x=\"582\" y=\"95\" fill=\"var(--surface)\">aprovar</text>\n    <rect x=\"552\" y=\"124\" width=\"60\" height=\"18\" rx=\"4\" fill=\"none\" stroke=\"var(--line)\" stroke-width=\"2\"/><text x=\"582\" y=\"137\" fill=\"var(--muted)\">ignorar</text>\n  </g>\n</svg>",
+   "legenda": "Só o que aprovares uma a uma é aplicado. Esquema ilustrativo, dados fictícios, não é uma captura de ecrã.",
+   "o_que_e": "No resumo mensal de outubro do Microsoft Copilot, a Microsoft lista no Excel uma competência de «limpar dados» («clean data»). Segundo a Microsoft, encontra duplicados, problemas de formatação e dados com o tipo errado, e recomenda correções que o utilizador aprova antes de serem aplicadas. A mesma publicação indica que ficou disponível em outubro e que o Excel tem ainda um «canvas» interativo (relatórios que se atualizam com os dados) previsto para novembro em todo o mundo.",
+   "porque": "Quem trabalha com listas de clientes, faturas ou inscrições perde muito tempo com datas escritas de três maneiras, números guardados como texto e registos repetidos. Aqui o Copilot aponta os problemas e tu decides um a um. Como é uma folha com dados reais, o passo que importa é o teu: aprova só o que reconheces como erro e guarda uma cópia antes.",
+   "passos": [
+    "Guarda uma cópia do ficheiro e abre o Copilot no Excel, na folha com os dados.",
+    "Pede a limpeza e lê cada problema encontrado, aprovando só os que reconheces como erro.",
+    "Confere o total de linhas e uma soma antes e depois, para veres que nada se perdeu."
+   ],
+   "prompt_titulo": "Prompt · limpar uma tabela",
+   "prompt": "Analisa a tabela desta folha e lista os problemas de qualidade dos dados: registos duplicados, datas em formatos diferentes, números guardados como texto e valores que não fazem sentido para a coluna. Para cada problema, diz em que linhas está e propõe a correção. Não alteres nada até eu aprovar cada correção.",
+   "nota": {
+    "tipo": "Por confirmar",
+    "texto": "a Microsoft não indica, na publicação, planos nem datas por país. A funcionalidade pressupõe o Copilot no Excel (licença Microsoft 365 Copilot). Confirma na tua conta antes de contares com ela."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "Excel com Copilot",
+     null
+    ],
+    [
+     "Custo",
+     "Requer Copilot (licença paga)",
+     "warn"
+    ],
+    [
+     "Em Portugal",
+     "Por confirmar",
+     "warn"
+    ],
+    [
+     "Estado",
+     "Disponível desde outubro, segundo a Microsoft",
+     "ok"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Microsoft, What's new in Microsoft Copilot, outubro 2026",
+     "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what's-new-in-microsoft-copilot--october-2026/4568528"
+    ]
+   ],
+   "etiquetas": [
+    "copilot",
+    "folhas de cálculo",
+    "qualidade",
+    "verificação"
+   ]
+  },
+  {
+   "id": "cetico",
+   "slug": "checklist-e-revisor-cetico-para-resultados-ia",
+   "tipo": "Técnica",
+   "categoria": "Técnica",
+   "produto": "Critérios primeiro, revisor cético depois",
+   "data_anuncio": "2026-11-09",
+   "kicker_data": "método",
+   "titulo": "Põe a IA a tentar estragar o próprio trabalho antes de o veres",
+   "lead": "Escreves uma lista de critérios antes de começar e, depois, um segundo chat tenta provar que o resultado falha. Só reages ao que ele apontar.",
+   "svg": "<svg viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Esquema do método: no primeiro chat escreves a lista de critérios e o trabalho é feito; num chat novo, um revisor cético tenta provar que cada critério falha e marca cada item como falha, passa ou incerto; só as falhas e as incertezas voltam ao primeiro chat para corrigir.\">\n  <defs><marker id=\"a43\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\">\n    <rect x=\"10\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\"/><rect x=\"170\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\"/><rect x=\"330\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\" stroke=\"var(--accent)\"/><rect x=\"490\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\"/>\n  </g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\" text-anchor=\"middle\">\n    <text x=\"80\" y=\"68\">1. Critérios</text><text x=\"80\" y=\"86\">antes do trabalho</text>\n    <text x=\"240\" y=\"68\">2. A IA faz</text><text x=\"240\" y=\"86\">o trabalho</text>\n    <text x=\"400\" y=\"68\">3. Chat novo:</text><text x=\"400\" y=\"86\">revisor cético</text>\n    <text x=\"560\" y=\"68\">4. Corrige só</text><text x=\"560\" y=\"86\">falhas e dúvidas</text>\n  </g>\n  <g stroke=\"var(--accent)\" stroke-width=\"2\"><path d=\"M150 75 h16\" marker-end=\"url(#a43)\"/><path d=\"M310 75 h16\" marker-end=\"url(#a43)\"/><path d=\"M470 75 h16\" marker-end=\"url(#a43)\"/></g>\n  <path d=\"M560 112 v26 q0 16 -16 16 h-448 q-16 0 -16 -16 v-22\" fill=\"none\" stroke=\"var(--accent)\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\" marker-end=\"url(#a43)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" text-anchor=\"middle\">\n    <rect x=\"360\" y=\"122\" width=\"40\" height=\"18\" rx=\"4\" fill=\"var(--no)\"/><text x=\"380\" y=\"135\" fill=\"var(--surface)\">falha</text>\n    <rect x=\"406\" y=\"122\" width=\"40\" height=\"18\" rx=\"4\" fill=\"var(--warn)\"/><text x=\"426\" y=\"135\" fill=\"var(--surface)\">?</text>\n  </g>\n</svg>",
+   "legenda": "Esquema do método, sem resultados reais. Repete até não haver falhas.",
+   "o_que_e": "Um resultado de IA que «parece bom» costuma falhar num requisito que ninguém escreveu. O método tem duas partes: primeiro pedes à IA uma lista de critérios de aceitação, que tu corriges; depois, num chat novo e sem o histórico, pedes-lhe que tente provar que o trabalho falha em cada critério. A newsletter The Neuron apresentou-o a 9 de novembro como adaptação de um estudo sobre agentes de programação. O estudo mediu a diferença entre cumprir quase tudo e cumprir tudo, mas não testou se as listas a resolvem. Por isso, tratamos o método como boa prática e não como resultado comprovado.",
+   "porque": "Um chat novo não tem o apego ao trabalho que acabou de fazer, e um revisor cujo único trabalho é encontrar falhas costuma ser mais exigente do que quem escreveu. Para ti, a vantagem é prática: em vez de leres tudo à procura de erros, lês uma lista de itens marcados com falha, passa ou incerto. É um complemento ao teste de regressão da edição anterior: aquele serve para prompts que repetes, este para um trabalho concreto.",
+   "passos": [
+    "Antes de começares, pede a lista de critérios, corrige-a tu e só depois diz «vai».",
+    "Abre um chat novo e cola a tarefa, a lista e o resultado no prompt abaixo.",
+    "Devolve ao primeiro chat só os itens com falha ou incerteza, e repete o revisor na nova versão."
+   ],
+   "prompt_titulo": "Prompt · o revisor cético (chat novo)",
+   "prompt": "Abaixo estão uma tarefa, a lista de critérios de aceitação e o trabalho feito. A tua função é provar que o trabalho está errado. Para cada critério, procura provas de que falha e aponta a parte exata do trabalho que o mostra. Marca cada item como FALHA, PASSA ou INCERTO. Só marcas PASSA se tentaste quebrar o critério e não conseguiste.\n\nTarefa: [cola aqui]\nCritérios: [cola aqui]\nTrabalho: [cola aqui]",
+   "nota": null,
+   "ficha": [
+    [
+     "Onde",
+     "Qualquer assistente de IA",
+     null
+    ],
+    [
+     "Custo",
+     "Gratuito",
+     "ok"
+    ],
+    [
+     "Em Portugal",
+     "Sim",
+     "ok"
+    ],
+    [
+     "Estado",
+     "Método, não depende de produto",
+     "ok"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "The Neuron, 9 nov. (AI Skill of the Day)",
+     "https://www.theneurondaily.com/p/anthropic-s-ai-cracks-a-puzzle"
+    ]
+   ],
+   "etiquetas": [
+    "técnica",
+    "prompt",
+    "verificação",
+    "qualidade",
+    "revisão"
+   ]
+  }
+ ],
+ "fica_de_fora": null,
+ "conceito": {
+  "nome": "Alucinação",
+  "slug": "alucinacao",
+  "sub": "em inglês, <i>hallucination</i>",
+  "liga": "liga à peça 03",
+  "lead": "Porque é que a IA responde com ar de certeza a coisas que inventou, e três hábitos para te protegeres.",
+  "intro": "Uma alucinação é uma resposta que soa certa e está errada: um número, uma citação, uma lei, um nome que não existem. Não é um «bug» ocasional. Segundo a OpenAI, os modelos aprendem a prever o que vem a seguir e, nos factos raros, que não se deduzem de padrões, acabam por adivinhar. E a forma como são avaliados costuma premiar o palpite em vez de «não sei».",
+  "svg": "<svg viewBox=\"0 0 640 200\" role=\"img\" aria-label=\"Esquema da alucinação: à pergunta sobre um facto raro o modelo escolhe a continuação mais provável e responde com confiança, mesmo sem a informação; o hábito é pedir fonte, verificar e dar-lhe o texto de origem.\">\n  <defs><marker id=\"ah4\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"currentColor\"/></marker></defs>\n  <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\">\n    <rect x=\"10\" y=\"50\" width=\"150\" height=\"60\" rx=\"8\"/><rect x=\"200\" y=\"50\" width=\"200\" height=\"60\" rx=\"8\"/><rect x=\"440\" y=\"50\" width=\"190\" height=\"60\" rx=\"8\" stroke-dasharray=\"4 3\"/>\n    <path d=\"M160 80 h36\" marker-end=\"url(#ah4)\"/><path d=\"M400 80 h36\" marker-end=\"url(#ah4)\"/>\n  </g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"currentColor\" text-anchor=\"middle\">\n    <text x=\"85\" y=\"76\">Pergunta sobre</text><text x=\"85\" y=\"94\">um facto raro</text>\n    <text x=\"300\" y=\"76\">O modelo continua com</text><text x=\"300\" y=\"94\">o que soa mais provável</text>\n    <text x=\"535\" y=\"76\">Resposta confiante,</text><text x=\"535\" y=\"94\">talvez inventada</text>\n  </g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"currentColor\" opacity=\".8\" text-anchor=\"middle\">\n    <text x=\"300\" y=\"36\">sem a informação, adivinha</text>\n    <text x=\"320\" y=\"176\">hábito: dá-lhe o texto de origem, pede a fonte e confirma tu</text>\n  </g>\n  <path d=\"M535 112 v22 q0 12 -12 12 h-30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/>\n</svg>",
+  "corpo": "Por isso, o revisor da peça 03 funciona: um segundo chat, com a tarefa de procurar falhas, apanha com frequência o que o primeiro afirmou sem base. Não é garantia, só um filtro. E o mesmo vale para o Copilot a propor correções no Excel (peça 02): o que importa é a tua aprovação, não a confiança do tom. A regra de bolso: quanto mais raro, recente ou específico o facto (um valor, uma data, um artigo de lei), maior o risco de invenção.",
+  "habitos": [
+   [
+    "Dá-lhe o texto de origem,",
+    "e pede que responda só com base nele, a indicar a frase onde viu cada coisa."
+   ],
+   [
+    "Confirma tu os factos que contam:",
+    "números, datas, nomes, citações e referências legais, na fonte original."
+   ],
+   [
+    "Autoriza que diga «não sei»:",
+    "escreve no prompt que preferes uma dúvida a um palpite."
+   ]
+  ],
+  "aprofundar": [
+   [
+    "OpenAI, Why language models hallucinate (5 set. 2025)",
+    "https://openai.com/index/why-language-models-hallucinate/"
+   ]
+  ],
+  "etiquetas": [
+   "conceito",
+   "verificação",
+   "qualidade"
+  ]
+ }
+}

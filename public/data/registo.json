@@ -1,6 +1,6 @@
 {
  "publicacao": "Inteligências",
- "gerado": "2026-11-08T15:40:49+00:00",
+ "gerado": "2026-11-09T15:18:30+00:00",
  "edicoes": [
   {
    "numero": 1,
@@ -266,6 +266,81 @@
      "conceito",
      "agentes",
      "automação"
+    ]
+   }
+  },
+  {
+   "numero": 4,
+   "data": "2026-11-09",
+   "url": "/edicoes/004",
+   "pecas": [
+    {
+     "id": "slides",
+     "slug": "gemini-slides-edita-apresentacao-inteira",
+     "tipo": "Notícia",
+     "categoria": "Apresentações",
+     "produto": "Gemini no Google Slides",
+     "data_anuncio": "2026-10-30",
+     "titulo": "O Gemini no Google Slides já edita a apresentação inteira com um só pedido",
+     "lead": "Em vez de corrigires slide a slide, pedes uma alteração no painel do Gemini e ele aplica-a a vários slides ou ao conjunto, em slides editáveis.",
+     "etiquetas": [
+      "gemini",
+      "apresentações",
+      "pago",
+      "produtividade"
+     ],
+     "prompt": "Make the whole deck consistent: use the same font and size for all slide titles, the same color for headings, and the same alignment for body text. Do not change the wording or the numbers on any slide. When you finish, list the slides you changed and what you changed on each.",
+     "url": "/edicoes/004/gemini-slides-edita-apresentacao-inteira"
+    },
+    {
+     "id": "excel",
+     "slug": "copilot-excel-limpa-dados-erros-folha",
+     "tipo": "Notícia",
+     "categoria": "Folhas de cálculo",
+     "produto": "Copilot no Excel",
+     "data_anuncio": "2026-10-30",
+     "titulo": "O Copilot no Excel passa a limpar dados: procura erros e só corrige o que aprovares",
+     "lead": "Uma competência nova do Copilot procura duplicados, formatos misturados e tipos de dados errados na tua folha e propõe correções que tu aprovas.",
+     "etiquetas": [
+      "copilot",
+      "folhas de cálculo",
+      "qualidade",
+      "verificação"
+     ],
+     "prompt": "Analisa a tabela desta folha e lista os problemas de qualidade dos dados: registos duplicados, datas em formatos diferentes, números guardados como texto e valores que não fazem sentido para a coluna. Para cada problema, diz em que linhas está e propõe a correção. Não alteres nada até eu aprovar cada correção.",
+     "url": "/edicoes/004/copilot-excel-limpa-dados-erros-folha"
+    },
+    {
+     "id": "cetico",
+     "slug": "checklist-e-revisor-cetico-para-resultados-ia",
+     "tipo": "Técnica",
+     "categoria": "Técnica",
+     "produto": "Critérios primeiro, revisor cético depois",
+     "data_anuncio": "2026-11-09",
+     "titulo": "Põe a IA a tentar estragar o próprio trabalho antes de o veres",
+     "lead": "Escreves uma lista de critérios antes de começar e, depois, um segundo chat tenta provar que o resultado falha. Só reages ao que ele apontar.",
+     "etiquetas": [
+      "técnica",
+      "prompt",
+      "verificação",
+      "qualidade",
+      "revisão"
+     ],
+     "prompt": "Abaixo estão uma tarefa, a lista de critérios de aceitação e o trabalho feito. A tua função é provar que o trabalho está errado. Para cada critério, procura provas de que falha e aponta a parte exata do trabalho que o mostra. Marca cada item como FALHA, PASSA ou INCERTO. Só marcas PASSA se tentaste quebrar o critério e não conseguiste.\n\nTarefa: [cola aqui]\nCritérios: [cola aqui]\nTrabalho: [cola aqui]",
+     "url": "/edicoes/004/checklist-e-revisor-cetico-para-resultados-ia"
+    }
+   ],
+   "fica_de_fora": [],
+   "conceito": {
+    "id": "c-h",
+    "slug": "alucinacao",
+    "url": "/conceitos/alucinacao",
+    "nome": "Alucinação",
+    "lead": "Porque é que a IA responde com ar de certeza a coisas que inventou, e três hábitos para te protegeres.",
+    "etiquetas": [
+     "conceito",
+     "verificação",
+     "qualidade"
     ]
    }
   }
