@@ -1,6 +1,6 @@
 {
  "publicacao": "Inteligências",
- "gerado": "2026-11-09T15:18:30+00:00",
+ "gerado": "2026-11-12T14:06:13+00:00",
  "edicoes": [
   {
    "numero": 1,
@@ -341,6 +341,81 @@
      "conceito",
      "verificação",
      "qualidade"
+    ]
+   }
+  },
+  {
+   "numero": 5,
+   "data": "2026-11-12",
+   "url": "/edicoes/005",
+   "pecas": [
+    {
+     "id": "sheets",
+     "slug": "claude-sheets-whiteboards-folhas-quadros",
+     "tipo": "Notícia",
+     "categoria": "Folhas de cálculo",
+     "produto": "Claude Sheets e Claude Whiteboards",
+     "data_anuncio": "2026-11-10",
+     "titulo": "O Claude passa a fazer folhas de cálculo e quadros brancos que editas com a equipa",
+     "lead": "Dentro da conversa, o Claude cria uma folha com fórmulas visíveis ou um quadro para arrumar ideias, que tu e os colegas editam ao mesmo tempo. Só nos planos pagos, em beta.",
+     "etiquetas": [
+      "claude",
+      "folhas de cálculo",
+      "produtividade",
+      "pago",
+      "prompt"
+     ],
+     "prompt": "Cria uma folha de cálculo para acompanhar as despesas do projeto [nome]. Colunas: data, fornecedor, categoria (lista pendente com: deslocações, materiais, serviços, outros), valor sem IVA, taxa de IVA e valor com IVA calculado por fórmula. Acrescenta um separador de resumo com o total por categoria e um gráfico de barras. Formata valores em euros, com vírgula decimal. Não inventes dados: deixa as linhas vazias para eu preencher.",
+     "url": "/edicoes/005/claude-sheets-whiteboards-folhas-quadros"
+    },
+    {
+     "id": "gmail",
+     "slug": "gmail-resumos-gemini-todos-planos-workspace",
+     "tipo": "Notícia",
+     "categoria": "Email",
+     "produto": "Gemini no Gmail",
+     "data_anuncio": "2026-11-10",
+     "titulo": "Os resumos do Gemini no Gmail chegam a todos os planos Workspace, e vêm ligados",
+     "lead": "Se a tua empresa usa Google Workspace, os resumos de conversas longas e a ajuda a escrever emails passam a aparecer em qualquer plano. Sabe usá-los e onde se desligam.",
+     "etiquetas": [
+      "gemini",
+      "email",
+      "escrita",
+      "privacidade"
+     ],
+     "prompt": "Escreve uma resposta curta e cordial ao [nome] a confirmar a reunião de [dia] às [hora] e a pedir a versão final da proposta até [data]. Português de Portugal, tom profissional, no máximo cinco linhas, sem fórmulas de cortesia exageradas.",
+     "url": "/edicoes/005/gmail-resumos-gemini-todos-planos-workspace"
+    },
+    {
+     "id": "clareza",
+     "slug": "reescrever-texto-linguagem-clara-duas-passagens",
+     "tipo": "Técnica",
+     "categoria": "Técnica",
+     "produto": "Reescrita em duas passagens",
+     "data_anuncio": "2026-11-12",
+     "titulo": "Torna um texto confuso claro sem perder um único facto",
+     "lead": "Uma passagem da IA para frases curtas e ativas, com todos os factos intactos; uma passagem tua para corrigir o que ela assinalar e devolver a voz ao texto.",
+     "etiquetas": [
+      "técnica",
+      "prompt",
+      "escrita",
+      "revisão"
+     ],
+     "prompt": "Reescreve este rascunho em linguagem clara, em português de Portugal. Mantém todos os factos, números, nomes, ressalvas e afirmações atribuídas a fontes. Usa a voz ativa sempre que for correto, uma ideia principal por frase, e troca abstrações vagas por quem faz o quê. Corta conclusões repetidas e transições de enchimento. Não acrescentes factos, adjetivos nem certezas que o original não tem. No fim, lista as três frases que ainda têm ideias a mais.\n\n[cola aqui o rascunho]",
+     "url": "/edicoes/005/reescrever-texto-linguagem-clara-duas-passagens"
+    }
+   ],
+   "fica_de_fora": [],
+   "conceito": {
+    "id": "c-h",
+    "slug": "janela-de-contexto",
+    "url": "/conceitos/janela-de-contexto",
+    "nome": "Janela de contexto",
+    "lead": "Quanto texto a IA consegue ter em conta de uma vez, porque é que se esquece do início das conversas longas e três hábitos para lidar com isso.",
+    "etiquetas": [
+     "conceito",
+     "qualidade",
+     "produtividade"
     ]
    }
   }

@@ -1,0 +1,256 @@
+{
+ "numero": 5,
+ "data": "2026-11-12",
+ "minutos": 8,
+ "pecas": [
+  {
+   "id": "sheets",
+   "slug": "claude-sheets-whiteboards-folhas-quadros",
+   "tipo": "Notícia",
+   "categoria": "Folhas de cálculo",
+   "produto": "Claude Sheets e Claude Whiteboards",
+   "data_anuncio": "2026-11-10",
+   "kicker_data": "10 nov.",
+   "titulo": "O Claude passa a fazer folhas de cálculo e quadros brancos que editas com a equipa",
+   "lead": "Dentro da conversa, o Claude cria uma folha com fórmulas visíveis ou um quadro para arrumar ideias, que tu e os colegas editam ao mesmo tempo. Só nos planos pagos, em beta.",
+   "svg": "<svg viewBox=\"0 0 640 220\" role=\"img\" aria-label=\"Esquema das duas ferramentas novas do Claude: de uma conversa saem um quadro branco, onde as ideias soltas ficam agrupadas por tema, e uma folha de cálculo com fórmulas visíveis; o quadro pode passar a documento ou apresentação e a folha exporta para Excel ou CSV.\">\n  <defs><marker id=\"a51\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <rect x=\"10\" y=\"80\" width=\"140\" height=\"60\" rx=\"8\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\" text-anchor=\"middle\"><text x=\"80\" y=\"106\">Conversa</text><text x=\"80\" y=\"124\">com o Claude</text></g>\n  <g stroke=\"var(--accent)\" stroke-width=\"2\" fill=\"none\"><path d=\"M150 100 L196 60\" marker-end=\"url(#a51)\"/><path d=\"M150 120 L196 160\" marker-end=\"url(#a51)\"/></g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\"><text x=\"210\" y=\"22\">WHITEBOARDS (QUADRO)</text><text x=\"210\" y=\"122\">SHEETS (FOLHA)</text></g>\n  <rect x=\"210\" y=\"30\" width=\"250\" height=\"80\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\"/>\n  <g fill=\"var(--use)\" stroke=\"var(--line)\"><rect x=\"222\" y=\"42\" width=\"66\" height=\"26\" rx=\"4\"/><rect x=\"222\" y=\"74\" width=\"66\" height=\"26\" rx=\"4\"/><rect x=\"302\" y=\"42\" width=\"66\" height=\"26\" rx=\"4\"/><rect x=\"382\" y=\"42\" width=\"66\" height=\"26\" rx=\"4\"/><rect x=\"382\" y=\"74\" width=\"66\" height=\"26\" rx=\"4\"/></g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"11\" fill=\"var(--use-ink)\" text-anchor=\"middle\"><text x=\"255\" y=\"59\">Custos</text><text x=\"255\" y=\"91\">Prazos</text><text x=\"335\" y=\"59\">Equipa</text><text x=\"415\" y=\"59\">Riscos</text><text x=\"415\" y=\"91\">Clientes</text></g>\n  <rect x=\"210\" y=\"130\" width=\"250\" height=\"80\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\"/>\n  <g stroke=\"var(--line)\"><path d=\"M210 156 h250\"/><path d=\"M210 183 h250\"/><path d=\"M300 130 v80\"/><path d=\"M380 130 v80\"/></g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--ink)\"><text x=\"218\" y=\"148\">Item</text><text x=\"308\" y=\"148\">Valor</text><text x=\"388\" y=\"148\">IVA</text><text x=\"218\" y=\"174\">Serviços</text><text x=\"308\" y=\"174\">900</text><text x=\"388\" y=\"174\" fill=\"var(--accent)\">=B2*0,23</text><text x=\"218\" y=\"201\">Material</text><text x=\"308\" y=\"201\">80</text><text x=\"388\" y=\"201\" fill=\"var(--accent)\">=B3*0,23</text></g>\n  <g stroke=\"var(--accent)\" stroke-width=\"2\" fill=\"none\"><path d=\"M462 70 h40\" marker-end=\"url(#a51)\"/><path d=\"M462 170 h40\" marker-end=\"url(#a51)\"/></g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\"><text x=\"510\" y=\"64\">documento ou</text><text x=\"510\" y=\"80\">apresentação; PNG</text><text x=\"510\" y=\"166\">.xlsx ou CSV</text><text x=\"510\" y=\"182\">para o Excel</text></g>\n</svg>",
+   "legenda": "Esquema ilustrativo, dados fictícios. Não é uma captura de ecrã.",
+   "o_que_e": "A Anthropic lançou a 10 de novembro, em beta, dois tipos novos de artefacto no Claude. O Sheets é uma folha de cálculo partilhada: pedes um orçamento ou um registo de tarefas, o Claude cria-o com separadores, fórmulas, formatação condicional, listas pendentes e gráficos, e as fórmulas ficam à vista nas células para as poderes verificar. Importa CSV, Excel ou Google Sheets e exporta para .xlsx ou CSV. O Whiteboards é um quadro branco: escreves ou ditas as ideias soltas e o Claude agrupa-as por tema, transforma-as numa linha temporal ou sugere passos em falta; no fim, o quadro pode passar a documento ou apresentação, ou sair em PNG. Ambos ficam no separador Artefactos e são privados até carregares em «Partilhar».",
+   "porque": "Muitas conversas com IA acabam em «copia isto para o Excel». Aqui a tabela já nasce editável, com fórmulas que podes conferir, e a equipa trabalha sobre o mesmo ficheiro. O quadro serve para reuniões de ideias ou para mapear um processo sem abrir outra ferramenta. Há limites a conhecer: segundo a Anthropic, cada folha vai até 100 000 células, ainda não há tabelas dinâmicas, localizar e substituir nem exportação para PDF, não corre macros, e no telemóvel a folha só se lê. Se o teu trabalho vive num ficheiro Excel ou Google Sheets que já existe, a própria Anthropic aponta para as extensões do Claude nessas aplicações.",
+   "passos": [
+    "Numa conversa, pede uma folha ou um quadro e explica para que serve; se tiveres dados, cola-os ou carrega o ficheiro.",
+    "Na folha, clica nas células com fórmulas e confirma os cálculos antes de confiares nos totais.",
+    "Quando estiver pronto, exporta para .xlsx ou partilha com «Partilhar»; lembra-te de que tudo conta para o limite de utilização do teu plano."
+   ],
+   "prompt_titulo": "Prompt · registo de despesas de um projeto",
+   "prompt": "Cria uma folha de cálculo para acompanhar as despesas do projeto [nome]. Colunas: data, fornecedor, categoria (lista pendente com: deslocações, materiais, serviços, outros), valor sem IVA, taxa de IVA e valor com IVA calculado por fórmula. Acrescenta um separador de resumo com o total por categoria e um gráfico de barras. Formata valores em euros, com vírgula decimal. Não inventes dados: deixa as linhas vazias para eu preencher.",
+   "nota": {
+    "tipo": "Atenção",
+    "texto": "está em beta e não existe no plano gratuito. Nas contas Enterprise, só aparece depois de o administrador o ligar nas definições da organização."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "Claude (web e desktop; o quadro também no telemóvel)",
+     null
+    ],
+    [
+     "Custo",
+     "Planos pagos: Pro, Max, Ultra, Team e Enterprise",
+     "warn"
+    ],
+    [
+     "Em Portugal",
+     "Sem limitação regional indicada pela Anthropic",
+     "ok"
+    ],
+    [
+     "Estado",
+     "Beta desde 10 nov.",
+     "warn"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Anthropic, More ways to work with Claude (10 nov.)",
+     "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors"
+    ],
+    [
+     "Centro de ajuda do Claude: Get started with Claude Sheets",
+     "https://support.claude.com/en/articles/18324300-get-started-with-claude-sheets"
+    ],
+    [
+     "Centro de ajuda do Claude: Get started with Claude Whiteboards",
+     "https://support.claude.com/en/articles/18324319-get-started-with-claude-whiteboards"
+    ]
+   ],
+   "etiquetas": [
+    "claude",
+    "folhas de cálculo",
+    "produtividade",
+    "pago",
+    "prompt"
+   ]
+  },
+  {
+   "id": "gmail",
+   "slug": "gmail-resumos-gemini-todos-planos-workspace",
+   "tipo": "Notícia",
+   "categoria": "Email",
+   "produto": "Gemini no Gmail",
+   "data_anuncio": "2026-11-10",
+   "kicker_data": "10 nov.",
+   "titulo": "Os resumos do Gemini no Gmail chegam a todos os planos Workspace, e vêm ligados",
+   "lead": "Se a tua empresa usa Google Workspace, os resumos de conversas longas e a ajuda a escrever emails passam a aparecer em qualquer plano. Sabe usá-los e onde se desligam.",
+   "svg": "<svg viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Esquema do resumo no Gmail: uma conversa longa com muitas respostas; no topo aparece um cartão de resumo com os pontos principais; a nota lembra que está ligado por omissão e que desligar as funcionalidades inteligentes desliga também a ajuda a escrever.\">\n  <defs><marker id=\"a52\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\"><text x=\"20\" y=\"22\">CONVERSA LONGA (FICTÍCIA)</text><text x=\"370\" y=\"22\">NO TOPO DA CONVERSA</text></g>\n  <g fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\"><rect x=\"20\" y=\"32\" width=\"270\" height=\"30\" rx=\"6\"/><rect x=\"20\" y=\"68\" width=\"270\" height=\"30\" rx=\"6\"/><rect x=\"20\" y=\"104\" width=\"270\" height=\"30\" rx=\"6\"/><rect x=\"20\" y=\"140\" width=\"270\" height=\"30\" rx=\"6\"/></g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\"><text x=\"32\" y=\"52\">Ana: proposta em anexo</text><text x=\"32\" y=\"88\">Rui: e o prazo de entrega?</text><text x=\"32\" y=\"124\">Ana: passa para dia 20</text><text x=\"32\" y=\"160\">Rui: ok, envio a fatura</text></g>\n  <text x=\"155\" y=\"192\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--muted)\" text-anchor=\"middle\">… mais 14 mensagens</text>\n  <path d=\"M300 100 h56\" stroke=\"var(--accent)\" stroke-width=\"2\" marker-end=\"url(#a52)\"/>\n  <rect x=\"370\" y=\"32\" width=\"250\" height=\"110\" rx=\"8\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\"><text x=\"384\" y=\"54\" font-weight=\"600\">Resumo (Gemini)</text><text x=\"384\" y=\"78\">· Proposta enviada pela Ana</text><text x=\"384\" y=\"98\">· Entrega adiada para dia 20</text><text x=\"384\" y=\"118\">· Rui envia a fatura</text></g>\n  <rect x=\"370\" y=\"152\" width=\"250\" height=\"44\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--warn)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"11\" fill=\"var(--ink)\"><text x=\"382\" y=\"170\">Ligado por omissão. Desligar implica</text><text x=\"382\" y=\"187\">desligar também a ajuda a escrever.</text></g>\n</svg>",
+   "legenda": "Esquema ilustrativo, nomes e mensagens fictícios. Não é uma captura de ecrã.",
+   "o_que_e": "Segundo a Google, duas funções do Gemini no Gmail, que estavam reservadas a algumas edições, passam a chegar a todos os clientes Google Workspace e a quem tem Workspace Individual, a partir dos 18 anos: o resumo automático no topo das conversas longas, com os pontos principais e as respostas, e o «Help me write», que escreve um rascunho de email a partir de um pedido curto ou melhora um texto teu. A distribuição começou a 10 de novembro e pode demorar até 15 dias. As duas funções vêm ligadas por omissão. Ambas funcionam em português.",
+   "porque": "Para quem recebe conversas de email com dezenas de respostas, o resumo poupa tempo a perceber o ponto da situação. Mas é um resumo feito por IA: pode omitir uma condição ou trocar quem disse o quê, por isso, antes de decidires com base nele, abre as mensagens que contam. E como está ligado por omissão, convém saber como se desliga: segundo a Google, desligas as «funcionalidades inteligentes» nas definições do Gmail, o que desliga também a ajuda a escrever e outras funções nas restantes aplicações Google. Nas contas Gmail pessoais, segundo a ajuda da Google, os resumos estão disponíveis em todos os países, mas a ajuda a escrever, sem plano pago, continua só nos EUA.",
+   "passos": [
+    "Abre uma conversa longa e lê o resumo no topo (no computador, também o podes pedir com o botão de resumir o email).",
+    "Antes de responderes ou decidires, confirma no email original os prazos, valores e nomes que o resumo indica.",
+    "Se não quiseres estas funções, vai às definições do Gmail e desliga as funcionalidades inteligentes, sabendo que outras funções desligam também."
+   ],
+   "prompt_titulo": "Prompt · rascunho de resposta com o Help me write",
+   "prompt": "Escreve uma resposta curta e cordial ao [nome] a confirmar a reunião de [dia] às [hora] e a pedir a versão final da proposta até [data]. Português de Portugal, tom profissional, no máximo cinco linhas, sem fórmulas de cortesia exageradas.",
+   "nota": {
+    "tipo": "Atenção",
+    "texto": "o administrador do Workspace da tua empresa pode ter desligado estas funções para toda a organização. Se não aparecerem até ao fim de novembro, pergunta-lhe."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "Gmail (web, Android e iOS)",
+     null
+    ],
+    [
+     "Custo",
+     "Todos os planos Google Workspace e Workspace Individual",
+     "ok"
+    ],
+    [
+     "Em Portugal",
+     "Sim, em português",
+     "ok"
+    ],
+    [
+     "Estado",
+     "A chegar aos poucos desde 10 nov. (até 15 dias)",
+     "warn"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Google Workspace Updates, 10 nov. (Gmail)",
+     "https://workspaceupdates.googleblog.com/2026/11/expanding-gemini-in-gmail-to-more-Google-Workspace-users.html"
+    ],
+    [
+     "Ajuda do Gmail: funcionalidades do Gemini no Gmail",
+     "https://support.google.com/mail/answer/16831098?hl=pt"
+    ],
+    [
+     "Ajuda do Gmail: resumos de conversas",
+     "https://support.google.com/mail/answer/16561387?hl=pt"
+    ]
+   ],
+   "etiquetas": [
+    "gemini",
+    "email",
+    "escrita",
+    "privacidade"
+   ]
+  },
+  {
+   "id": "clareza",
+   "slug": "reescrever-texto-linguagem-clara-duas-passagens",
+   "tipo": "Técnica",
+   "categoria": "Técnica",
+   "produto": "Reescrita em duas passagens",
+   "data_anuncio": "2026-11-12",
+   "kicker_data": "método",
+   "titulo": "Torna um texto confuso claro sem perder um único facto",
+   "lead": "Uma passagem da IA para frases curtas e ativas, com todos os factos intactos; uma passagem tua para corrigir o que ela assinalar e devolver a voz ao texto.",
+   "svg": "<svg viewBox=\"0 0 640 200\" role=\"img\" aria-label=\"Esquema da técnica em duas passagens: o rascunho entra; a primeira passagem faz frases curtas, voz ativa e uma ideia por frase, mantendo todos os factos; a IA aponta três frases ainda sobrecarregadas; na segunda passagem és tu que corriges essas frases e devolves a voz ao texto, lendo em voz alta.\">\n  <defs><marker id=\"a53\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\"><rect x=\"10\" y=\"50\" width=\"130\" height=\"70\" rx=\"8\"/><rect x=\"170\" y=\"50\" width=\"160\" height=\"70\" rx=\"8\" stroke=\"var(--accent)\"/><rect x=\"360\" y=\"50\" width=\"120\" height=\"70\" rx=\"8\"/><rect x=\"510\" y=\"50\" width=\"120\" height=\"70\" rx=\"8\"/></g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\" text-anchor=\"middle\"><text x=\"75\" y=\"80\">Rascunho</text><text x=\"75\" y=\"98\">confuso</text><text x=\"250\" y=\"80\">1. A IA reescreve:</text><text x=\"250\" y=\"98\">claro, mesmos factos</text><text x=\"420\" y=\"80\">Aponta 3 frases</text><text x=\"420\" y=\"98\">a rever</text><text x=\"570\" y=\"80\">2. Tu corriges</text><text x=\"570\" y=\"98\">e lês em voz alta</text></g>\n  <g stroke=\"var(--accent)\" stroke-width=\"2\"><path d=\"M140 85 h26\" marker-end=\"url(#a53)\"/><path d=\"M330 85 h26\" marker-end=\"url(#a53)\"/><path d=\"M480 85 h26\" marker-end=\"url(#a53)\"/></g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\" text-anchor=\"middle\"><text x=\"250\" y=\"148\">voz ativa · uma ideia por frase</text><text x=\"250\" y=\"166\">sem acrescentar factos</text><text x=\"570\" y=\"148\">repõe o tom</text><text x=\"570\" y=\"166\">que se perdeu</text></g>\n</svg>",
+   "legenda": "Esquema do método, sem resultados reais.",
+   "o_que_e": "Quando pedes à IA para «melhorar» um texto, ela costuma acrescentar adjetivos, suavizar afirmações e, às vezes, mudar um número. Este método inverte o pedido: a IA reescreve só para clareza, com regras concretas (voz ativa, uma ideia por frase, sujeitos e ações em vez de abstrações) e a obrigação de manter todos os factos, números, nomes e ressalvas. No fim, aponta as três frases que ainda dizem demasiado de uma vez. A segunda passagem é tua. A newsletter The Neuron apresentou-o a 11 de novembro a partir de uma ferramenta gratuita inspirada no inglês técnico simplificado dos manuais de aviação. Adaptámos o prompt ao português.",
+   "porque": "Relatórios, emails para clientes e procedimentos internos ganham com frases curtas e diretas, e quem lê percebe à primeira. A regra de não acrescentar nada protege o conteúdo: comparas o antes e o depois e sabes que só mudou a forma. A leitura em voz alta, no fim, serve para repor o tom: um texto limpo de mais soa a formulário. Não uses em textos onde o estilo é o objetivo, como discursos, ficção ou textos de marca.",
+   "passos": [
+    "Cola o rascunho no prompt abaixo, num chat novo.",
+    "Compara o resultado com o original: os números, nomes e ressalvas têm de estar lá todos.",
+    "Reescreve tu as três frases assinaladas e lê o texto em voz alta para repor a tua voz onde ficou rígido."
+   ],
+   "prompt_titulo": "Prompt · reescrita para linguagem clara",
+   "prompt": "Reescreve este rascunho em linguagem clara, em português de Portugal. Mantém todos os factos, números, nomes, ressalvas e afirmações atribuídas a fontes. Usa a voz ativa sempre que for correto, uma ideia principal por frase, e troca abstrações vagas por quem faz o quê. Corta conclusões repetidas e transições de enchimento. Não acrescentes factos, adjetivos nem certezas que o original não tem. No fim, lista as três frases que ainda têm ideias a mais.\n\n[cola aqui o rascunho]",
+   "nota": null,
+   "ficha": [
+    [
+     "Onde",
+     "Qualquer assistente de IA",
+     null
+    ],
+    [
+     "Custo",
+     "Gratuito",
+     "ok"
+    ],
+    [
+     "Em Portugal",
+     "Sim",
+     "ok"
+    ],
+    [
+     "Estado",
+     "Método, não depende de produto",
+     "ok"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "The Neuron, 11 nov. (AI Skill of the Day)",
+     "https://www.theneurondaily.com/p/3-ai-labs-shipped-for-you"
+    ]
+   ],
+   "etiquetas": [
+    "técnica",
+    "prompt",
+    "escrita",
+    "revisão"
+   ]
+  }
+ ],
+ "fica_de_fora": null,
+ "conceito": {
+  "nome": "Janela de contexto",
+  "slug": "janela-de-contexto",
+  "sub": "em inglês, <i>context window</i>",
+  "liga": "liga às peças 01 e 02",
+  "lead": "Quanto texto a IA consegue ter em conta de uma vez, porque é que se esquece do início das conversas longas e três hábitos para lidar com isso.",
+  "intro": "A janela de contexto é a quantidade de texto que um modelo de IA consegue considerar de uma só vez: as instruções, os ficheiros que carregaste, as mensagens anteriores e a própria resposta que está a escrever. Mede-se em tokens, pedaços de palavras. Tudo o que fica fora da janela simplesmente não existe para o modelo naquele momento.",
+  "svg": "<svg viewBox=\"0 0 640 200\" role=\"img\" aria-label=\"Esquema da janela de contexto: tudo o que está na conversa (instruções, ficheiros, mensagens anteriores e a resposta em curso) tem de caber numa janela de tamanho fixo; quando a conversa cresce de mais, o que fica de fora deixa de ser tido em conta ou é resumido.\">\n  <defs><marker id=\"ah5\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"currentColor\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"currentColor\" opacity=\".8\"><text x=\"20\" y=\"30\">FICA DE FORA OU É RESUMIDO</text><text x=\"250\" y=\"30\">JANELA DE CONTEXTO (TAMANHO FIXO)</text></g>\n  <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\">\n    <rect x=\"20\" y=\"50\" width=\"90\" height=\"70\" rx=\"6\" stroke-dasharray=\"4 3\" opacity=\".6\"/><rect x=\"120\" y=\"50\" width=\"90\" height=\"70\" rx=\"6\" stroke-dasharray=\"4 3\" opacity=\".6\"/>\n    <rect x=\"240\" y=\"40\" width=\"390\" height=\"90\" rx=\"10\" stroke-width=\"2.5\"/>\n    <rect x=\"252\" y=\"52\" width=\"80\" height=\"66\" rx=\"6\"/><rect x=\"342\" y=\"52\" width=\"80\" height=\"66\" rx=\"6\"/><rect x=\"432\" y=\"52\" width=\"80\" height=\"66\" rx=\"6\"/><rect x=\"522\" y=\"52\" width=\"96\" height=\"66\" rx=\"6\"/>\n  </g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"currentColor\" text-anchor=\"middle\">\n    <text x=\"65\" y=\"82\" opacity=\".7\">mensagens</text><text x=\"65\" y=\"98\" opacity=\".7\">antigas</text><text x=\"165\" y=\"82\" opacity=\".7\">início do</text><text x=\"165\" y=\"98\" opacity=\".7\">ficheiro</text>\n    <text x=\"292\" y=\"82\">instruções</text><text x=\"382\" y=\"82\">ficheiros</text><text x=\"472\" y=\"82\">conversa</text><text x=\"472\" y=\"98\">recente</text><text x=\"570\" y=\"82\">resposta</text><text x=\"570\" y=\"98\">em curso</text>\n  </g>\n  <path d=\"M560 160 h-500\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" marker-end=\"url(#ah5)\"/>\n  <text x=\"320\" y=\"185\" font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"currentColor\" opacity=\".8\" text-anchor=\"middle\">a conversa cresce: o mais antigo é empurrado para fora</text>\n</svg>",
+  "corpo": "As janelas cresceram muito, mas continuam a ter limite, e encher a janela não é o mesmo que ler com atenção: a documentação da Anthropic diz que, à medida que o contexto cresce, a precisão e a capacidade de recordar diminuem. Em conversas muito longas, algumas aplicações de chat vão resumindo ou deixando cair as mensagens mais antigas, e é por isso que, ao fim de horas, a IA «esquece» uma regra que lhe deste no início. O resumo do Gmail (peça 02) é o exemplo inverso: comprime uma conversa longa para caber no teu tempo, e o que fica de fora deixa de contar. Nas folhas do Claude (peça 01), o mesmo raciocínio aconselha a dar-lhe só os dados de que a tarefa precisa.",
+  "habitos": [
+   [
+    "Começa um chat novo para cada tarefa,",
+    "em vez de acumular semanas de assuntos diferentes na mesma conversa."
+   ],
+   [
+    "Repete as regras importantes",
+    "perto do pedido, quando a conversa já vai longa, em vez de confiares no que disseste no início."
+   ],
+   [
+    "Dá-lhe só o que importa:",
+    "o capítulo relevante em vez do relatório inteiro, as colunas necessárias em vez da folha toda."
+   ]
+  ],
+  "aprofundar": [
+   [
+    "Anthropic, Context windows (documentação)",
+    "https://platform.claude.com/docs/en/build-with-claude/context-windows"
+   ],
+   [
+    "Google, Long context (documentação do Gemini)",
+    "https://ai.google.dev/gemini-api/docs/long-context"
+   ]
+  ],
+  "etiquetas": [
+   "conceito",
+   "qualidade",
+   "produtividade"
+  ]
+ }
+}
