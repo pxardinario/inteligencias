@@ -1,6 +1,6 @@
 {
  "publicacao": "Inteligências",
- "gerado": "2026-11-12T14:06:13+00:00",
+ "gerado": "2026-11-16T14:02:34+00:00",
  "edicoes": [
   {
    "numero": 1,
@@ -416,6 +416,94 @@
      "conceito",
      "qualidade",
      "produtividade"
+    ]
+   }
+  },
+  {
+   "numero": 6,
+   "data": "2026-11-16",
+   "url": "/edicoes/006",
+   "pecas": [
+    {
+     "id": "reunioes",
+     "slug": "claude-meetings-claude-nas-reunioes-google-meet",
+     "tipo": "Notícia",
+     "categoria": "Reuniões",
+     "produto": "Claude Meetings",
+     "data_anuncio": "2026-11-12",
+     "titulo": "O Claude passa a entrar nas tuas reuniões do Google Meet",
+     "lead": "Entra na chamada como participante visível, toma notas, responde a perguntas e deixa resumo, tarefas e transcrição numa página. Só nos planos Team e Enterprise.",
+     "etiquetas": [
+      "claude",
+      "reuniões",
+      "produtividade",
+      "privacidade",
+      "pago"
+     ],
+     "prompt": "Claude, antes de terminarmos: escreve o resumo desta reunião em português de Portugal. Lista as decisões tomadas, as tarefas com responsável e prazo, e as perguntas que ficaram por responder. Se não tiveres a certeza de quem ficou com uma tarefa ou de um número que foi dito, assinala-o como «a confirmar» em vez de adivinhares.",
+     "url": "/edicoes/006/claude-meetings-claude-nas-reunioes-google-meet"
+    },
+    {
+     "id": "voz",
+     "slug": "chatgpt-voz-avancada-padrao-acabam-gpt-live",
+     "tipo": "Notícia",
+     "categoria": "Voz",
+     "produto": "ChatGPT (voz)",
+     "data_anuncio": "2026-11-10",
+     "titulo": "As vozes antigas do ChatGPT acabam a 11 de dezembro: fica só o GPT-Live",
+     "lead": "A OpenAI vai retirar a voz padrão e a voz avançada do ChatGPT e deixar só o GPT-Live. Se falas com o ChatGPT, tens até 11 de dezembro para te habituares.",
+     "etiquetas": [
+      "chatgpt",
+      "voz",
+      "produtividade",
+      "prompt"
+     ],
+     "prompt": "Nesta conversa, fala em português de Portugal, com frases curtas. Não me interrompas enquanto estou a pensar em voz alta: espera que eu diga «podes responder». Vou ditar-te ideias soltas sobre [assunto]. No fim, quando eu disser «resume», devolve-me por escrito uma lista ordenada das ideias, sem acrescentar nada que eu não tenha dito.",
+     "url": "/edicoes/006/chatgpt-voz-avancada-padrao-acabam-gpt-live"
+    },
+    {
+     "id": "plano",
+     "slug": "dividir-trabalho-grande-plano-por-passos",
+     "tipo": "Técnica",
+     "categoria": "Técnica",
+     "produto": "Plano primeiro, um passo de cada vez",
+     "data_anuncio": "2026-11-16",
+     "titulo": "Num trabalho grande, pede primeiro o plano e executa um passo de cada vez",
+     "lead": "O modelo mais capaz desenha o plano, com um teste rápido para cada passo. Depois executas passo a passo e só voltas atrás no que falhar.",
+     "etiquetas": [
+      "técnica",
+      "prompt",
+      "produtividade",
+      "qualidade"
+     ],
+     "prompt": "Vou executar este trabalho um passo de cada vez, em conversas separadas, por isso escreve o plano para isso.\n\nTrabalho: [descreve o trabalho e como é o resultado final]\n\nDivide-o em passos numerados. Para cada passo, dá-me:\n- uma instrução que se perceba sozinha, sem ler os outros passos;\n- o que o passo precisa dos anteriores;\n- uma verificação de uma linha («está feito quando…») que eu consiga fazer em meio minuto.\n\nAssinala os passos que exigem decisão ou juízo meu, e não só execução. Não comeces a executar: quero só o plano.",
+     "url": "/edicoes/006/dividir-trabalho-grande-plano-por-passos"
+    }
+   ],
+   "fica_de_fora": [
+    {
+     "id": "out-h",
+     "titulo": "ChatGPT Wallet (OpenAI, 13 nov.)",
+     "lead": "Pagamentos feitos por agentes do ChatGPT com aprovação tua, só nos EUA e só no plano Pro.",
+     "etiquetas": [
+      "chatgpt",
+      "agentes",
+      "finanças",
+      "só EUA"
+     ]
+    }
+   ],
+   "conceito": {
+    "id": "c-h",
+    "slug": "multimodalidade",
+    "url": "/conceitos/multimodalidade",
+    "nome": "Multimodalidade",
+    "lead": "O que quer dizer um modelo de IA ser multimodal, porque é que ouvir não é o mesmo que transcrever e três hábitos para usar imagem e voz com cabeça.",
+    "etiquetas": [
+     "conceito",
+     "imagem",
+     "voz",
+     "qualidade"
     ]
    }
   }

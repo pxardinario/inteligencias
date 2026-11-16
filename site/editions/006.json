@@ -1,0 +1,271 @@
+{
+ "numero": 6,
+ "data": "2026-11-16",
+ "minutos": 8,
+ "pecas": [
+  {
+   "id": "reunioes",
+   "slug": "claude-meetings-claude-nas-reunioes-google-meet",
+   "tipo": "Notícia",
+   "categoria": "Reuniões",
+   "produto": "Claude Meetings",
+   "data_anuncio": "2026-11-12",
+   "kicker_data": "12 nov.",
+   "titulo": "O Claude passa a entrar nas tuas reuniões do Google Meet",
+   "lead": "Entra na chamada como participante visível, toma notas, responde a perguntas e deixa resumo, tarefas e transcrição numa página. Só nos planos Team e Enterprise.",
+   "svg": "<svg viewBox=\"0 0 640 220\" role=\"img\" aria-label=\"Esquema do Claude Meetings: numa chamada do Google Meet com três pessoas, o Claude entra como participante visível e avisa no chat; depois da chamada, a página da reunião no Claude junta o resumo e as tarefas, a transcrição, os documentos e quadros criados e as perguntas e respostas. Guarda texto, não áudio.\">\n  <defs><marker id=\"a61\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\"><text x=\"20\" y=\"22\">CHAMADA NO GOOGLE MEET</text><text x=\"370\" y=\"22\">PÁGINA DA REUNIÃO NO CLAUDE</text></g>\n  <rect x=\"20\" y=\"32\" width=\"270\" height=\"130\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\"/>\n  <g fill=\"var(--paper)\" stroke=\"var(--line)\" stroke-width=\"1.5\"><rect x=\"32\" y=\"44\" width=\"118\" height=\"48\" rx=\"6\"/><rect x=\"160\" y=\"44\" width=\"118\" height=\"48\" rx=\"6\"/><rect x=\"32\" y=\"102\" width=\"118\" height=\"48\" rx=\"6\"/></g>\n  <rect x=\"160\" y=\"102\" width=\"118\" height=\"48\" rx=\"6\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\" stroke-width=\"1.5\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\" text-anchor=\"middle\"><text x=\"91\" y=\"73\">Ana</text><text x=\"219\" y=\"73\">Rui</text><text x=\"91\" y=\"131\">Marta</text><text x=\"219\" y=\"124\" font-weight=\"600\">Claude</text></g>\n  <text x=\"219\" y=\"141\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"11\" fill=\"var(--ink)\" text-anchor=\"middle\">visível a todos</text>\n  <path d=\"M300 97 h56\" stroke=\"var(--accent)\" stroke-width=\"2\" marker-end=\"url(#a61)\"/>\n  <rect x=\"370\" y=\"32\" width=\"250\" height=\"130\" rx=\"8\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\"><text x=\"386\" y=\"60\">· Resumo e tarefas</text><text x=\"386\" y=\"86\">· Transcrição</text><text x=\"386\" y=\"112\">· Documentos e quadros</text><text x=\"386\" y=\"138\">· Perguntas e respostas</text></g>\n  <rect x=\"20\" y=\"174\" width=\"600\" height=\"34\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--warn)\"/>\n  <text x=\"320\" y=\"196\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\" text-anchor=\"middle\">Guarda texto, não áudio. Avisa no chat quando entra: combina antes com quem participa.</text>\n</svg>",
+   "legenda": "Esquema ilustrativo, nomes fictícios. Não é uma captura de ecrã.",
+   "o_que_e": "A Anthropic lançou a 12 de novembro, em beta, o Claude Meetings. O Claude junta-se a uma chamada do Google Meet como participante visível, publica um aviso no chat ao entrar e acompanha a conversa. Qualquer colega pode fazer-lhe uma pergunta em voz alta, dizendo «Claude», ou por escrito no chat do Meet; por omissão, ele responde por escrito no chat. Também cria documentos e quadros durante a chamada. No fim, cada reunião fica com uma página no Claude com resumo, tarefas, transcrição e tudo o que foi criado, e as pessoas da organização que estavam no convite recebem um email com a ligação. Segundo a Anthropic, o Claude guarda a transcrição, o resumo e descrições do que foi partilhado no ecrã, mas não o áudio.",
+   "porque": "Se a tua equipa já paga o Claude, deixas de precisar de uma ferramenta à parte para tirar notas, e as tarefas combinadas ficam escritas antes de a chamada acabar. Mas isto é uma transcrição de tudo o que se disse, guardada e partilhável dentro da organização: a própria Anthropic pede que confirmes que toda a gente aceita ser transcrita antes de adicionares o Claude ou de ligares a entrada automática. Em contexto de trabalho, é também um assunto de proteção de dados, por isso fala com quem trata disso na tua empresa. Limites a conhecer: só funciona no Google Meet (a Anthropic diz que outras plataformas chegam em breve), exige o Google Calendar ligado, e a entrada em chamadas com convidados de fora da organização depende do que o administrador definir. As notas e a transcrição estão incluídas no plano; os documentos e quadros criados em reunião são gratuitos até 10 de fevereiro de 2027; se o Claude usar ferramentas ligadas, isso conta para a utilização.",
+   "passos": [
+    "No Claude, abre «Meetings» e liga o teu Google Calendar (um responsável da organização tem de o ter ativado primeiro).",
+    "Avisa os participantes de que a reunião vai ser transcrita; depois escolhe a reunião no calendário e carrega em «Add Claude».",
+    "Antes de desligares, pede o resumo com o prompt abaixo e confirma nomes, datas e valores: uma transcrição automática pode ouvir mal."
+   ],
+   "prompt_titulo": "Prompt · fecho da reunião, no chat do Meet",
+   "prompt": "Claude, antes de terminarmos: escreve o resumo desta reunião em português de Portugal. Lista as decisões tomadas, as tarefas com responsável e prazo, e as perguntas que ficaram por responder. Se não tiveres a certeza de quem ficou com uma tarefa ou de um número que foi dito, assinala-o como «a confirmar» em vez de adivinhares.",
+   "nota": {
+    "tipo": "Por confirmar",
+    "texto": "a Anthropic não indica em que línguas a transcrição funciona. Antes de dependeres dela, experimenta numa reunião interna em português e compara as notas com o que foi dito."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "Claude (web e desktop), em chamadas do Google Meet",
+     null
+    ],
+    [
+     "Custo",
+     "Incluído nos planos Team e Enterprise",
+     "warn"
+    ],
+    [
+     "Em Portugal",
+     "Sem limitação regional indicada; línguas não especificadas",
+     "warn"
+    ],
+    [
+     "Estado",
+     "Beta, a chegar aos poucos desde 12 nov.",
+     "warn"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Anthropic, Introducing Claude Meetings (12 nov.)",
+     "https://claude.com/resources/articles/claude-meetings"
+    ],
+    [
+     "Centro de ajuda do Claude: Use Claude Meetings",
+     "https://support.claude.com/en/articles/18325154-use-claude-meetings"
+    ],
+    [
+     "Notas de versão do Claude",
+     "https://support.claude.com/en/articles/12138966-release-notes"
+    ]
+   ],
+   "etiquetas": [
+    "claude",
+    "reuniões",
+    "produtividade",
+    "privacidade",
+    "pago"
+   ]
+  },
+  {
+   "id": "voz",
+   "slug": "chatgpt-voz-avancada-padrao-acabam-gpt-live",
+   "tipo": "Notícia",
+   "categoria": "Voz",
+   "produto": "ChatGPT (voz)",
+   "data_anuncio": "2026-11-10",
+   "kicker_data": "10 nov.",
+   "titulo": "As vozes antigas do ChatGPT acabam a 11 de dezembro: fica só o GPT-Live",
+   "lead": "A OpenAI vai retirar a voz padrão e a voz avançada do ChatGPT e deixar só o GPT-Live. Se falas com o ChatGPT, tens até 11 de dezembro para te habituares.",
+   "svg": "<svg viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Tabela com os três modos de voz do ChatGPT: a voz padrão e a voz avançada deixam de poder ser escolhidas a 11 de dezembro; a avançada continua apenas a alimentar o vídeo em direto e a partilha de ecrã; o GPT-Live passa a ser a única voz das conversas.\">\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\"><text x=\"20\" y=\"24\">MODO DE VOZ</text><text x=\"200\" y=\"24\">COMO FUNCIONA</text><text x=\"440\" y=\"24\">A PARTIR DE 11 DEZ.</text></g>\n  <g fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\"><rect x=\"10\" y=\"36\" width=\"620\" height=\"50\" rx=\"8\"/><rect x=\"10\" y=\"94\" width=\"620\" height=\"50\" rx=\"8\"/></g>\n  <rect x=\"10\" y=\"152\" width=\"620\" height=\"50\" rx=\"8\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\" stroke-width=\"1.5\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\" font-weight=\"600\"><text x=\"24\" y=\"66\">Voz padrão</text><text x=\"24\" y=\"124\">Voz avançada</text><text x=\"24\" y=\"182\">GPT-Live</text></g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\"><text x=\"200\" y=\"58\">Três passos: ouve, escreve</text><text x=\"200\" y=\"75\">a resposta e lê-a em voz alta</text><text x=\"200\" y=\"116\">Processa o áudio diretamente,</text><text x=\"200\" y=\"133\">mas espera que acabes de falar</text><text x=\"200\" y=\"174\">Ouve e fala ao mesmo tempo,</text><text x=\"200\" y=\"191\">sem turnos rígidos</text></g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\"><text x=\"440\" y=\"66\" fill=\"var(--no)\" font-weight=\"600\">Retirada</text><text x=\"440\" y=\"116\" fill=\"var(--warn)\" font-weight=\"600\">Sai do seletor; fica só</text><text x=\"440\" y=\"133\" fill=\"var(--warn)\" font-weight=\"600\">em vídeo e partilha de ecrã</text><text x=\"440\" y=\"182\" fill=\"var(--ok)\" font-weight=\"600\">Única voz das conversas</text></g>\n</svg>",
+   "legenda": "Quadro-resumo feito a partir da descrição publicada pela imprensa. Não é uma captura de ecrã.",
+   "o_que_e": "A OpenAI anunciou a 10 de novembro que retira do ChatGPT, a 11 de dezembro, os modos de voz padrão e avançada. A partir desse dia, deixam de poder ser escolhidos nas definições de voz e quem os tinha selecionado passa automaticamente para o GPT-Live, o modelo de voz que a empresa lançou em julho. Não tens de fazer nada: as conversas antigas ficam no histórico e podem continuar por texto ou por voz. Há uma exceção: o vídeo em direto e a partilha de ecrã continuam a funcionar com a voz avançada até o GPT-Live os suportar, e a OpenAI não deu data para isso. Segundo a OpenAI, quase todas as pessoas que usam voz no ChatGPT já estão no GPT-Live.",
+   "porque": "As três vozes não se comportam da mesma maneira. Segundo o Interesting Engineering, a voz padrão funcionava em três passos (ouvir, escrever a resposta, lê-la), a avançada esperava que acabasses de falar, e o GPT-Live ouve e fala ao mesmo tempo: pode dar sinais de que está a acompanhar enquanto falas, sem turnos rígidos. Se usas a voz para ditar ideias a caminho do trabalho, ensaiar uma apresentação ou praticar uma língua, o ritmo da conversa muda, e quem preferia respostas mais pausadas vai notar a diferença. Mais vale experimentar agora, enquanto ainda podes comparar, do que descobrir a mudança a meio de uma tarefa. Um conselho que não muda: o que dizes em voz alta ao ChatGPT fica na conversa como qualquer texto, por isso não dites dados de clientes ou de terceiros.",
+   "passos": [
+    "No ChatGPT, abre as definições, entra em «Voz» e vê que modo tens selecionado.",
+    "Se ainda usas a voz padrão ou a avançada, muda para a voz Live e faz uma conversa de teste com uma tarefa tua do dia a dia.",
+    "Começa a conversa com o prompt abaixo, dito em voz alta, para ajustar o ritmo e a língua ao que te serve."
+   ],
+   "prompt_titulo": "Prompt · para dizeres no início de uma conversa por voz",
+   "prompt": "Nesta conversa, fala em português de Portugal, com frases curtas. Não me interrompas enquanto estou a pensar em voz alta: espera que eu diga «podes responder». Vou ditar-te ideias soltas sobre [assunto]. No fim, quando eu disser «resume», devolve-me por escrito uma lista ordenada das ideias, sem acrescentar nada que eu não tenha dito.",
+   "nota": {
+    "tipo": "Por confirmar",
+    "texto": "a página oficial da OpenAI não abriu à redação. A data de 11 de dezembro e a exceção do vídeo e da partilha de ecrã estão confirmadas por dois órgãos independentes (Android Authority e Interesting Engineering); a passagem automática para o GPT-Live e a descrição de como cada voz funciona vêm só do Interesting Engineering. Confirma o que vês na tua conta."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "ChatGPT, nas conversas por voz",
+     null
+    ],
+    [
+     "Custo",
+     "Sem alteração de preço indicada nas fontes consultadas",
+     null
+    ],
+    [
+     "Em Portugal",
+     "Sem exceção regional indicada nas fontes consultadas",
+     "warn"
+    ],
+    [
+     "Estado",
+     "Anunciado a 10 nov.; mudança a 11 dez.",
+     "warn"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Android Authority, 11 nov.",
+     "https://www.androidauthority.com/openai-retiring-chatgpt-advanced-standard-voice-3733978/"
+    ],
+    [
+     "Interesting Engineering, 10 nov.",
+     "https://interestingengineering.com/ai-robotics/chatgpt-drops-two-voice-modes-december-2026"
+    ],
+    [
+     "OpenAI, Retiring Advanced and Standard Voice in ChatGPT (página oficial)",
+     "https://help.openai.com/en/articles/20001638-retiring-advanced-and-standard-voice-in-chatgpt"
+    ]
+   ],
+   "etiquetas": [
+    "chatgpt",
+    "voz",
+    "produtividade",
+    "prompt"
+   ]
+  },
+  {
+   "id": "plano",
+   "slug": "dividir-trabalho-grande-plano-por-passos",
+   "tipo": "Técnica",
+   "categoria": "Técnica",
+   "produto": "Plano primeiro, um passo de cada vez",
+   "data_anuncio": "2026-11-16",
+   "kicker_data": "método",
+   "titulo": "Num trabalho grande, pede primeiro o plano e executa um passo de cada vez",
+   "lead": "O modelo mais capaz desenha o plano, com um teste rápido para cada passo. Depois executas passo a passo e só voltas atrás no que falhar.",
+   "svg": "<svg viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Esquema da técnica: um trabalho grande passa por um plano em passos numerados, cada um com uma verificação; os passos são executados um de cada vez, em conversas separadas; cada resultado é conferido; o que falha volta ao plano, o que passa segue para o passo seguinte.\">\n  <defs><marker id=\"a63\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\"><rect x=\"10\" y=\"40\" width=\"120\" height=\"70\" rx=\"8\"/><rect x=\"160\" y=\"40\" width=\"150\" height=\"70\" rx=\"8\" stroke=\"var(--accent)\"/><rect x=\"340\" y=\"40\" width=\"140\" height=\"70\" rx=\"8\"/><rect x=\"510\" y=\"40\" width=\"120\" height=\"70\" rx=\"8\"/></g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\" text-anchor=\"middle\"><text x=\"70\" y=\"71\">Trabalho</text><text x=\"70\" y=\"89\">grande</text><text x=\"235\" y=\"71\">1. Plano em passos,</text><text x=\"235\" y=\"89\">cada um com teste</text><text x=\"410\" y=\"71\">2. Um passo</text><text x=\"410\" y=\"89\">de cada vez</text><text x=\"570\" y=\"71\">3. Conferes</text><text x=\"570\" y=\"89\">o teste</text></g>\n  <g stroke=\"var(--accent)\" stroke-width=\"2\" fill=\"none\"><path d=\"M130 75 h26\" marker-end=\"url(#a63)\"/><path d=\"M310 75 h26\" marker-end=\"url(#a63)\"/><path d=\"M480 75 h26\" marker-end=\"url(#a63)\"/><path d=\"M570 110 v40 h-335 v-36\" marker-end=\"url(#a63)\"/></g>\n  <text x=\"402\" y=\"170\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\" text-anchor=\"middle\">falhou? só esse passo volta ao plano</text>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\" text-anchor=\"middle\"><text x=\"235\" y=\"28\">MODELO MAIS CAPAZ</text><text x=\"410\" y=\"28\">CHAT NOVO, MODELO RÁPIDO</text><text x=\"320\" y=\"198\">passou? segue para o passo seguinte</text></g>\n</svg>",
+   "legenda": "Esquema do método, sem resultados reais.",
+   "o_que_e": "Pedir um trabalho grande de uma só vez («faz-me o relatório anual a partir destes ficheiros») costuma dar um resultado que parece completo e falha a meio, sem saberes onde. Este método separa quem planeia de quem executa, como um arquiteto e um empreiteiro. Primeiro pedes ao modelo mais capaz que tens que transforme o trabalho em passos numerados, cada um com uma instrução que se perceba sozinha, o que precisa dos passos anteriores e uma verificação de uma linha, que consigas fazer em meio minuto. Depois executas um passo de cada vez, de preferência num chat novo e com um modelo mais rápido, colando o plano e dizendo «faz só o passo 3». Se um passo falhar a verificação, só esse volta ao modelo mais capaz. A newsletter The Neuron apresentou o método a 13 de novembro; adaptámos o prompt ao português.",
+   "porque": "Ganhas três coisas. Sabes sempre onde estás: cada passo tem um teste, e um erro no passo 2 não contamina o passo 6 sem dares por isso. Gastas menos: os modelos mais capazes costumam consumir mais depressa os limites dos planos pagos, e a maior parte dos passos de execução não precisa deles. E o plano fica como documento: podes parar hoje e continuar amanhã, ou entregar um passo a um colega. O método só compensa em trabalhos com vários passos, como um relatório, uma proposta ou a limpeza de uma base de contactos. Para uma pergunta simples, é burocracia a mais. E a verificação é tua: se te limitares a perguntar à IA se o passo correu bem, ela tende a dizer que sim.",
+   "passos": [
+    "Com o modelo mais capaz que tiveres, usa o prompt abaixo e lê o plano: corrige a ordem e as verificações antes de avançares.",
+    "Para cada passo, abre um chat novo, cola o plano completo e escreve «faz só o passo N», com os resultados dos passos anteriores de que ele precisa.",
+    "Faz tu a verificação de cada passo. Se falhar, leva o passo e o resultado de volta ao chat do plano e pede a correção."
+   ],
+   "prompt_titulo": "Prompt · plano por passos com verificação",
+   "prompt": "Vou executar este trabalho um passo de cada vez, em conversas separadas, por isso escreve o plano para isso.\n\nTrabalho: [descreve o trabalho e como é o resultado final]\n\nDivide-o em passos numerados. Para cada passo, dá-me:\n- uma instrução que se perceba sozinha, sem ler os outros passos;\n- o que o passo precisa dos anteriores;\n- uma verificação de uma linha («está feito quando…») que eu consiga fazer em meio minuto.\n\nAssinala os passos que exigem decisão ou juízo meu, e não só execução. Não comeces a executar: quero só o plano.",
+   "nota": null,
+   "ficha": [
+    [
+     "Onde",
+     "Qualquer assistente de IA",
+     null
+    ],
+    [
+     "Custo",
+     "Gratuito",
+     "ok"
+    ],
+    [
+     "Em Portugal",
+     "Sim",
+     "ok"
+    ],
+    [
+     "Estado",
+     "Método, não depende de produto",
+     "ok"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "The Neuron, 13 nov. (AI Skill of the Day)",
+     "https://www.theneurondaily.com/p/jensen-huang-resigned-as-nvidia-ceo"
+    ]
+   ],
+   "etiquetas": [
+    "técnica",
+    "prompt",
+    "produtividade",
+    "qualidade"
+   ]
+  }
+ ],
+ "fica_de_fora": {
+  "titulo": "ChatGPT Wallet (OpenAI, 13 nov.)",
+  "texto": "Uma carteira para os agentes autónomos do ChatGPT (a que a OpenAI chama «dots») pagarem compras em teu nome: guardas um cartão uma vez e aprovas cada compra com a impressão digital ou o rosto, sem que o agente ou a loja vejam o número verdadeiro do cartão. Está a chegar aos poucos apenas a subscritores do plano Pro, maiores de 18 anos, a viver nos EUA e com cartão de crédito emitido lá. A OpenAI não anunciou outros países nem data para a Europa. A página oficial não abriu à redação; os dados vêm de dois órgãos independentes, Notebookcheck e The Paypers.",
+  "lead": "Pagamentos feitos por agentes do ChatGPT com aprovação tua, só nos EUA e só no plano Pro.",
+  "fonte": [
+   "Notebookcheck",
+   "https://www.notebookcheck.net/ChatGPT-Wallet-lets-AI-agents-shop-without-seeing-your-card-number.1450862.0.html"
+  ],
+  "etiquetas": [
+   "chatgpt",
+   "agentes",
+   "finanças",
+   "só EUA"
+  ]
+ },
+ "conceito": {
+  "nome": "Multimodalidade",
+  "slug": "multimodalidade",
+  "sub": "em inglês, <i>multimodality</i>",
+  "liga": "liga às peças 01 e 02",
+  "lead": "O que quer dizer um modelo de IA ser multimodal, porque é que ouvir não é o mesmo que transcrever e três hábitos para usar imagem e voz com cabeça.",
+  "intro": "Um modelo é multimodal quando trabalha com mais do que um tipo de informação: além de texto, aceita imagens, áudio ou vídeo, e alguns também respondem em imagem ou voz. Na prática, é o que te deixa mostrar uma fotografia de um quadro branco, uma captura de um gráfico ou um PDF digitalizado e fazer perguntas sobre eles, em vez de os descreveres por palavras.",
+  "svg": "<svg viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Esquema de um modelo multimodal: texto, imagem, áudio e vídeo entram no mesmo modelo, que responde em texto, imagem ou voz. Por baixo, a alternativa em cadeia: o áudio é primeiro convertido em texto, e só o texto chega ao modelo, perdendo-se o tom e as pausas.\">\n  <defs><marker id=\"ah6\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"currentColor\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"currentColor\" opacity=\".8\"><text x=\"20\" y=\"20\">ENTRA</text><text x=\"270\" y=\"20\">MODELO MULTIMODAL</text><text x=\"520\" y=\"20\">SAI</text></g>\n  <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"20\" y=\"30\" width=\"100\" height=\"24\" rx=\"6\"/><rect x=\"20\" y=\"60\" width=\"100\" height=\"24\" rx=\"6\"/><rect x=\"20\" y=\"90\" width=\"100\" height=\"24\" rx=\"6\"/><rect x=\"20\" y=\"120\" width=\"100\" height=\"24\" rx=\"6\"/><rect x=\"250\" y=\"42\" width=\"160\" height=\"90\" rx=\"10\" stroke-width=\"2.5\"/><rect x=\"520\" y=\"45\" width=\"100\" height=\"24\" rx=\"6\"/><rect x=\"520\" y=\"75\" width=\"100\" height=\"24\" rx=\"6\"/><rect x=\"520\" y=\"105\" width=\"100\" height=\"24\" rx=\"6\"/></g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"currentColor\" text-anchor=\"middle\"><text x=\"70\" y=\"46\">texto</text><text x=\"70\" y=\"76\">imagem</text><text x=\"70\" y=\"106\">áudio</text><text x=\"70\" y=\"136\">vídeo</text><text x=\"330\" y=\"82\">um só modelo</text><text x=\"330\" y=\"100\">para tudo</text><text x=\"570\" y=\"61\">texto</text><text x=\"570\" y=\"91\">imagem</text><text x=\"570\" y=\"121\">voz</text></g>\n  <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M124 87 h120\" marker-end=\"url(#ah6)\"/><path d=\"M414 87 h100\" marker-end=\"url(#ah6)\"/></g>\n  <path d=\"M20 160 h600\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\" opacity=\".5\"/>\n  <text x=\"20\" y=\"182\" font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"currentColor\" opacity=\".8\">EM CADEIA:</text>\n  <text x=\"110\" y=\"182\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"currentColor\">áudio → transcrição → modelo de texto. O tom e as pausas ficam pelo caminho.</text>\n</svg>",
+  "corpo": "Nem tudo o que parece multimodal o é da mesma maneira. Há sistemas em cadeia, que convertem primeiro o áudio ou a imagem em texto e só depois raciocinam sobre esse texto, e há modelos que processam o som ou a imagem diretamente. A diferença nota-se: na voz do ChatGPT (peça 02), o modo padrão que vai ser retirado funcionava, segundo a imprensa, em três passos, ouvir, escrever e ler, enquanto os modos mais recentes trabalham sobre o próprio áudio e por isso conseguem reagir ao ritmo de quem fala. No Claude Meetings (peça 01), o que fica guardado da reunião é texto: a transcrição e descrições do que foi partilhado no ecrã, não o áudio. Em ambos os casos, o que se perde na conversão deixa de existir para o modelo. E ver ou ouvir não é perceber sem falhas: a documentação da Anthropic avisa que o Claude pode errar ou alucinar com imagens de má qualidade, rodadas ou muito pequenas, e que as contagens de objetos são aproximadas.",
+  "habitos": [
+   [
+    "Mostra em vez de descrever:",
+    "dá-lhe a captura do gráfico ou a fotografia do documento, com boa resolução e direita, em vez de copiares os dados à mão."
+   ],
+   [
+    "Confere o que ele leu ou ouviu:",
+    "números, nomes próprios e datas tirados de uma imagem ou de uma gravação são os primeiros a sair trocados."
+   ],
+   [
+    "Olha para o que vai na imagem:",
+    "uma captura de ecrã ou uma gravação leva consigo nomes, emails e valores de outras pessoas que não escreverias num pedido."
+   ]
+  ],
+  "aprofundar": [
+   [
+    "Anthropic, Vision (documentação)",
+    "https://platform.claude.com/docs/en/build-with-claude/vision"
+   ],
+   [
+    "Google, Audio understanding (documentação do Gemini)",
+    "https://ai.google.dev/gemini-api/docs/audio"
+   ]
+  ],
+  "etiquetas": [
+   "conceito",
+   "imagem",
+   "voz",
+   "qualidade"
+  ]
+ }
+}
