@@ -3,10 +3,22 @@
 Uso: python3 tools/check.py [http://127.0.0.1:8791] [pasta_capturas]
 Falha (código 1) se houver erros de JavaScript, ligações internas partidas,
 página mais larga do que o ecrã no telemóvel ou arquivo vazio."""
-import json, sys
+import json, os, shutil, subprocess, sys
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
-from playwright.sync_api import sync_playwright
+try:
+    from playwright.sync_api import sync_playwright
+except ModuleNotFoundError:
+    # O python3 por omissão pode não ter o Playwright; procura outro intérprete que o tenha.
+    if os.environ.get("CHECK_REEXEC"):
+        sys.exit("FALHOU: Playwright não encontrado em nenhum intérprete Python.")
+    for nome in ("python3.13", "python3.12", "python3.11", "python3"):
+        alt = shutil.which(nome)
+        if alt and os.path.realpath(alt) != os.path.realpath(sys.executable) and \
+                subprocess.run([alt, "-c", "import playwright"], capture_output=True).returncode == 0:
+            os.environ["CHECK_REEXEC"] = "1"
+            os.execv(alt, [alt, __file__, *sys.argv[1:]])
+    sys.exit("FALHOU: Playwright não encontrado em nenhum intérprete Python.")
 
 BASE = sys.argv[1] if len(sys.argv) > 1 else "http://127.0.0.1:8791"
 SHOTS = Path(sys.argv[2]) if len(sys.argv) > 2 else None
