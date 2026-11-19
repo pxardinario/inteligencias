@@ -1,0 +1,269 @@
+{
+ "numero": 7,
+ "data": "2026-11-19",
+ "minutos": 7,
+ "pecas": [
+  {
+   "id": "maps",
+   "slug": "google-maps-perguntar-ao-maps-portugal",
+   "tipo": "Notícia",
+   "categoria": "Viagens",
+   "produto": "Perguntar ao Maps (Google Maps)",
+   "data_anuncio": "2026-11-16",
+   "kicker_data": "16 nov.",
+   "titulo": "O Google Maps passa a responder a perguntas em Portugal, e monta itinerários",
+   "lead": "O Perguntar ao Maps, com o Gemini, está a chegar a Portugal: fazes perguntas como a uma pessoa, planeias viagens por dias e pesquisas nas tuas listas guardadas.",
+   "svg": "<svg viewBox=\"0 0 640 230\" role=\"img\" aria-label=\"Tabela de disponibilidade do Perguntar ao Maps: em Portugal, a chegar aos poucos, perguntas em linguagem natural, itinerários de um ou vários dias e pesquisa nas listas guardadas; para já só nos EUA, dicas no percurso de navegação, marcação de serviços e chamadas a negócios feitas pela IA.\">\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\"><text x=\"20\" y=\"22\">EM PORTUGAL (A CHEGAR AOS POUCOS)</text><text x=\"340\" y=\"22\">PARA JÁ, SÓ NOS EUA</text></g>\n  <rect x=\"20\" y=\"32\" width=\"290\" height=\"130\" rx=\"8\" fill=\"var(--accent-soft)\" stroke=\"var(--ok)\" stroke-width=\"1.5\"/>\n  <rect x=\"330\" y=\"32\" width=\"290\" height=\"130\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--no)\" stroke-width=\"1.5\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\"><text x=\"36\" y=\"66\">· Perguntas em linguagem natural</text><text x=\"36\" y=\"102\">· Itinerários de um ou vários dias</text><text x=\"36\" y=\"138\">· Pesquisa nas listas guardadas</text><text x=\"346\" y=\"66\">· Dicas no percurso de navegação</text><text x=\"346\" y=\"102\">· Marcação de serviços</text><text x=\"346\" y=\"138\">· Chamadas a negócios feitas pela IA</text></g>\n  <rect x=\"20\" y=\"178\" width=\"600\" height=\"38\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--warn)\"/>\n  <text x=\"320\" y=\"202\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\" text-anchor=\"middle\">Respostas com base nos dados do Maps e no Gemini. Confirma horários e mesas antes de saíres.</text>\n</svg>",
+   "legenda": "Esquema ilustrativo da disponibilidade anunciada. Não é uma captura de ecrã.",
+   "o_que_e": "A Google anunciou a 16 de novembro que o Perguntar ao Maps (Ask Maps, em inglês) está a chegar a mais de 30 países europeus, incluindo Portugal. É um assistente dentro do Google Maps, baseado nos modelos Gemini, que responde a perguntas sobre o mundo real que uma pesquisa normal não resolve. Os exemplos da Google: onde carregar o telemóvel o mais depressa possível, ou onde há um campo de ténis público iluminado para jogar à noite. A resposta aparece no mapa, com os locais assinalados. Também planeia itinerários de um dia ou de vários, com paragens numeradas e informação em tempo real sobre meteorologia e estacionamento, e pesquisa nas tuas listas guardadas: por exemplo, quais dos restaurantes da tua lista têm mesa para cinco daqui a meia hora. Segundo a Google, apoia-se em informação sobre mais de 300 milhões de locais e em críticas de mais de 500 milhões de utilizadores.",
+   "porque": "Se viajas em trabalho, organizas visitas a clientes ou escolhes sítio para um almoço de equipa, poupas a ronda de pesquisas soltas: descreves as condições (perto da estação, aberto depois das 19h00, com estacionamento) e recebes opções já no mapa. Segundo a Google, os itinerários podem ser partilhados e, no computador, exportados para o Google Docs. Limites a conhecer: a chegada é gradual, por isso a opção pode ainda não aparecer na tua app. As novidades anunciadas na mesma semana para dicas no percurso de navegação e para marcação de serviços (cabeleireiro, oficina, veterinário), incluindo chamadas a negócios feitas pela IA, começam só nos EUA. E as respostas dependem de dados que podem estar desatualizados: horários e mesas livres confirmam-se antes de saíres.",
+   "passos": [
+    "Atualiza a app Google Maps no Android ou no iPhone e procura a opção «Perguntar ao Maps». Se ainda não aparecer, é porque a chegada é gradual.",
+    "Escreve ou dita o pedido com as condições que te interessam: zona, hora, orçamento, estacionamento, acessibilidade.",
+    "Antes de saíres, abre a ficha de cada local proposto e confirma o horário e os contactos."
+   ],
+   "prompt_titulo": "Prompt · dia de reuniões fora, no Perguntar ao Maps",
+   "prompt": "Tenho reuniões em Braga na quinta-feira, às 10h00 junto à Sé e às 15h00 perto da Universidade do Minho, e vou de carro a partir do Porto. Monta-me o dia com os tempos de deslocação, um sítio para estacionar perto de cada reunião e um restaurante para almoçar entre as duas, aberto ao meio-dia e de preferência com prato do dia.",
+   "nota": {
+    "tipo": "Por confirmar",
+    "texto": "a Google não diz em que línguas o Perguntar ao Maps funciona, nem lista todos os países. A página da Google Portugal confirma Portugal; o Público indica que a chegada é feita por fases e que pode não aparecer logo a toda a gente."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "App Google Maps (Android e iOS)",
+     null
+    ],
+    [
+     "Custo",
+     "Grátis",
+     "ok"
+    ],
+    [
+     "Em Portugal",
+     "Sim; dicas no percurso e marcações só nos EUA",
+     "warn"
+    ],
+    [
+     "Estado",
+     "A chegar aos poucos desde 16 nov.",
+     "warn"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Google Portugal, A funcionalidade Perguntar ao Maps vai chegar à Europa, incluindo Portugal (16 nov.)",
+     "https://blog.google/intl/pt-pt/produtos/explore-obtenha-respostas/a-funcionalidade-perguntar-ao-maps-vai-chegar-a-europa-incluindo-portugal/"
+    ],
+    [
+     "Google, novidades do Ask Maps para as viagens de fim de ano",
+     "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/"
+    ],
+    [
+     "Público, Perguntar ao Maps chega a Portugal (16 nov.)",
+     "https://www.publico.pt/2026/11/16/enter/noticia/perguntar-maps-chega-portugal-google-poe-gemini-planear-viagens-2195148"
+    ]
+   ],
+   "etiquetas": [
+    "gemini",
+    "mapas",
+    "pesquisa",
+    "grátis"
+   ]
+  },
+  {
+   "id": "notebook",
+   "slug": "gemini-notebook-cria-sites-interativos",
+   "tipo": "Notícia",
+   "categoria": "Pesquisa",
+   "produto": "Gemini Notebook (sites interativos)",
+   "data_anuncio": "2026-11-16",
+   "kicker_data": "16 nov.",
+   "titulo": "O Gemini Notebook transforma as tuas fontes num pequeno site interativo",
+   "lead": "Pedes um site e o antigo NotebookLM cria um painel, uma cronologia ou um quadro de tarefas a partir dos teus documentos. Na web, para maiores de 18 anos.",
+   "svg": "<svg viewBox=\"0 0 640 200\" role=\"img\" aria-label=\"Esquema: as tuas fontes entram num caderno do Gemini Notebook; um pedido de site gera um site interativo, como um painel, uma cronologia ou um quadro de tarefas; o site pode ser partilhado por ligação, mas quem o vê precisa de acesso ao caderno inteiro.\">\n  <defs><marker id=\"a72\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\" text-anchor=\"middle\"><text x=\"80\" y=\"28\">1. FONTES</text><text x=\"240\" y=\"28\">2. PEDIDO</text><text x=\"400\" y=\"28\">3. SITE</text><text x=\"560\" y=\"28\">4. PARTILHA</text></g>\n  <g fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\"><rect x=\"10\" y=\"40\" width=\"140\" height=\"80\" rx=\"8\"/><rect x=\"170\" y=\"40\" width=\"140\" height=\"80\" rx=\"8\" stroke=\"var(--accent)\"/><rect x=\"490\" y=\"40\" width=\"140\" height=\"80\" rx=\"8\"/></g>\n  <rect x=\"330\" y=\"40\" width=\"140\" height=\"80\" rx=\"8\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\" stroke-width=\"1.5\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\" text-anchor=\"middle\"><text x=\"80\" y=\"76\">PDF, documentos,</text><text x=\"80\" y=\"94\">notas</text><text x=\"240\" y=\"76\">«Faz-me um site</text><text x=\"240\" y=\"94\">que…»</text><text x=\"400\" y=\"68\">painel,</text><text x=\"400\" y=\"86\">cronologia,</text><text x=\"400\" y=\"104\">tarefas</text><text x=\"560\" y=\"76\">ligação ou</text><text x=\"560\" y=\"94\">ficheiro</text></g>\n  <g stroke=\"var(--accent)\" stroke-width=\"2\" fill=\"none\"><path d=\"M150 80 h16\" marker-end=\"url(#a72)\"/><path d=\"M310 80 h16\" marker-end=\"url(#a72)\"/><path d=\"M470 80 h16\" marker-end=\"url(#a72)\"/></g>\n  <rect x=\"10\" y=\"144\" width=\"620\" height=\"38\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--warn)\"/>\n  <text x=\"320\" y=\"168\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\" text-anchor=\"middle\">Quem abre a ligação precisa de acesso ao caderno inteiro, com todas as fontes.</text>\n</svg>",
+   "legenda": "Esquema ilustrativo do fluxo. Não é uma captura de ecrã.",
+   "o_que_e": "O Gemini Notebook é o nome que a Google deu em julho ao NotebookLM: um caderno onde juntas as tuas fontes (documentos, PDF, notas) e fazes perguntas sobre elas. Desde 16 de novembro, no chat do caderno, podes pedir um site interativo construído a partir dessas fontes. A Google dá como exemplos explicadores visuais para estudar, como uma tabela periódica interativa ou uma cronologia histórica, painéis para explorar dados, como as vendas de um trimestre, e quadros para acompanhar tarefas e prazos. O site fica no painel Studio do caderno, abre num separador próprio e guarda o que lá escreves ou selecionas. Pode ser partilhado por ligação ou descarregado como ficheiro.",
+   "porque": "É uma forma rápida de transformar material denso em algo que outra pessoa explora sozinha: o resumo de um relatório para a direção, um guia para quem entra na equipa ou o ponto de situação de um projeto. Está disponível para contas Google pessoais de maiores de 18 anos e para clientes Google Workspace, na web, a chegar aos poucos (nas contas Workspace pode demorar até 15 dias); a app para telemóvel vem depois. Há limites de utilização, que a Google não quantifica. Atenção à partilha: segundo a ajuda da Google, para alguém ver o site por ligação tem de ter acesso ao caderno inteiro, ou seja, a todas as fontes que lá estão, e a partilha pública só existe em contas pessoais. Se o caderno tem documentos internos, cria um caderno só com o que podes mostrar ou envia o ficheiro descarregado. E confere os números: o site é gerado pela IA, e um gráfico bonito não garante que os valores foram bem lidos.",
+   "passos": [
+    "Em notebook.google.com, abre ou cria um caderno e junta só as fontes de que o site precisa.",
+    "No chat do caderno, usa o prompt abaixo. A geração demora, mas podes continuar a trabalhar entretanto.",
+    "Abre o site no painel Studio, confere números e datas contra as fontes e só depois partilha."
+   ],
+   "prompt_titulo": "Prompt · painel de resumo a partir das fontes",
+   "prompt": "Faz-me um site: um painel de uma página que resuma estas fontes para a direção, em português de Portugal. No topo, os cinco números mais importantes, cada um com a indicação da fonte de onde vem. Depois, uma cronologia das decisões e um quadro com os riscos e o responsável por cada um. Usa só informação das fontes; se faltar um dado, escreve «sem dados» em vez de o inventares.",
+   "nota": {
+    "tipo": "Por confirmar",
+    "texto": "a Google não diz em que línguas a funcionalidade funciona, e o exemplo oficial do pedido é em inglês («make me a site»). Se o pedido em português não gerar um site, começa por essas palavras e descreve o resto em português."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "Gemini Notebook na web (notebook.google.com)",
+     null
+    ],
+    [
+     "Custo",
+     "Sem custo nas contas pessoais; com limites de utilização",
+     "ok"
+    ],
+    [
+     "Em Portugal",
+     "Sim, lançamento global na web; línguas não indicadas",
+     "warn"
+    ],
+    [
+     "Estado",
+     "A chegar aos poucos desde 16 nov.; telemóvel em breve",
+     "warn"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Google, Gemini Notebook: interactive sites (16 nov.)",
+     "https://blog.google/innovation-and-ai/products/gemini-notebook/interactive-sites/"
+    ],
+    [
+     "Google Workspace Updates (18 nov.)",
+     "https://workspaceupdates.googleblog.com/2026/11/transform-your-notes-and-research-into-dynamic-tools-with-Gemini-Notebook.html"
+    ],
+    [
+     "Ajuda do Gemini Notebook: gerar sites",
+     "https://support.google.com/gemininotebook/?p=gemininotebooksites"
+    ]
+   ],
+   "etiquetas": [
+    "gemini",
+    "documentos",
+    "pesquisa",
+    "grátis"
+   ]
+  },
+  {
+   "id": "passagem",
+   "slug": "nota-de-passagem-entre-conversas-ia",
+   "tipo": "Técnica",
+   "categoria": "Técnica",
+   "produto": "Nota de passagem entre sessões",
+   "data_anuncio": "2026-11-19",
+   "kicker_data": "método",
+   "titulo": "No fim de cada sessão, pede uma nota de passagem em vez de guardares a conversa",
+   "lead": "Uma nota curta com objetivo, decisões, factos confirmados e próximos passos, conferida antes de fechar, deixa-te retomar um projeto sem colar conversas inteiras.",
+   "svg": "<svg viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Esquema da técnica: no fim da sessão 1, a IA escreve uma nota de passagem com objetivo, decisões, factos com fonte, dúvidas e próximos passos; a IA confere a nota contra a conversa; tu lês e corriges; a sessão 2 começa com a nota colada.\">\n  <defs><marker id=\"a73\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\"><rect x=\"10\" y=\"40\" width=\"110\" height=\"80\" rx=\"8\"/><rect x=\"290\" y=\"40\" width=\"150\" height=\"80\" rx=\"8\"/><rect x=\"520\" y=\"40\" width=\"110\" height=\"80\" rx=\"8\"/></g>\n  <rect x=\"140\" y=\"40\" width=\"130\" height=\"80\" rx=\"8\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\" stroke-width=\"1.5\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\" text-anchor=\"middle\"><text x=\"65\" y=\"76\">Sessão 1</text><text x=\"65\" y=\"94\">termina</text><text x=\"205\" y=\"76\">Nota de</text><text x=\"205\" y=\"94\">passagem</text><text x=\"365\" y=\"68\">IA confere,</text><text x=\"365\" y=\"86\">tu lês</text><text x=\"365\" y=\"104\">e corriges</text><text x=\"575\" y=\"76\">Sessão 2</text><text x=\"575\" y=\"94\">começa</text></g>\n  <g stroke=\"var(--accent)\" stroke-width=\"2\" fill=\"none\"><path d=\"M120 80 h16\" marker-end=\"url(#a73)\"/><path d=\"M270 80 h16\" marker-end=\"url(#a73)\"/><path d=\"M440 80 h76\" marker-end=\"url(#a73)\"/></g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\" text-anchor=\"middle\"><text x=\"205\" y=\"28\">CURTA</text><text x=\"365\" y=\"28\">NOMES, NÚMEROS, DATAS</text><text x=\"575\" y=\"28\">COLA A NOTA</text></g>\n  <text x=\"320\" y=\"152\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\" text-anchor=\"middle\">Objetivo · decisões · factos com fonte · perguntas em aberto · próximos passos</text>\n  <text x=\"320\" y=\"184\" font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\" text-anchor=\"middle\">não é uma transcrição: só o que vais precisar outra vez</text>\n</svg>",
+   "legenda": "Esquema do método, sem resultados reais.",
+   "o_que_e": "Quem trabalha com a IA num projeto que se estende por vários dias costuma fazer uma de duas coisas: ou começa do zero e explica tudo outra vez, ou cola a conversa anterior inteira. A segunda parece mais segura, mas enche a janela de contexto com hesitações, rascunhos abandonados e erros já corrigidos, e o modelo pode agarrar-se a qualquer um deles. A nota de passagem é o meio-termo. No fim da sessão, pedes um resumo curto só com o que vais precisar outra vez: objetivo, decisões, factos confirmados com a fonte, perguntas em aberto e próximos passos. Pedes à IA que confira a nota contra a conversa e assinale o que não consegue confirmar, e lês tu a nota antes de a guardares. Na sessão seguinte, começas por colá-la. A newsletter The Neuron apresentou o método a 17 de novembro; adaptámos o prompt ao português.",
+   "porque": "Uma nota errada é pior do que nenhuma: se ficar escrito que o prazo é dia 12 quando era dia 21, a IA vai repeti-lo com toda a confiança nas sessões seguintes. Por isso a conferência e a tua leitura final não são opcionais, sobretudo em nomes, números e decisões. A nota também te serve a ti: é um registo do projeto que podes guardar numa pasta ou mandar a um colega que pegue no trabalho. Funciona em qualquer assistente e complementa as memórias e os projetos que alguns já têm: em vez de deixares a ferramenta decidir o que guarda, decides tu.",
+   "passos": [
+    "Antes de fechares uma sessão de trabalho, usa o prompt abaixo.",
+    "Lê a nota com atenção a nomes, números, datas e decisões; corrige o que estiver errado e apaga o que não vais precisar.",
+    "Guarda-a num documento do projeto e cola-a no início da conversa seguinte, antes do novo pedido."
+   ],
+   "prompt_titulo": "Prompt · nota de passagem no fim da sessão",
+   "prompt": "Escreve uma nota de passagem curta para retomarmos este trabalho noutra conversa. Inclui: o objetivo; as decisões tomadas; os factos confirmados, cada um com a fonte; as perguntas em aberto; e os próximos passos. Não resumas tudo o que dissemos: só o que vou precisar outra vez. Antes de terminares, confere a nota com esta conversa e marca como «a confirmar» tudo o que não consigas verificar. Português de Portugal, no máximo 200 palavras.",
+   "nota": null,
+   "ficha": [
+    [
+     "Onde",
+     "Qualquer assistente de IA",
+     null
+    ],
+    [
+     "Custo",
+     "Gratuito",
+     "ok"
+    ],
+    [
+     "Em Portugal",
+     "Sim",
+     "ok"
+    ],
+    [
+     "Estado",
+     "Método, não depende de produto",
+     "ok"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "The Neuron, 17 nov. (AI Skill of the Day)",
+     "https://www.theneurondaily.com/p/california-sued-openai-over-rogue-agents"
+    ]
+   ],
+   "etiquetas": [
+    "técnica",
+    "prompt",
+    "produtividade",
+    "qualidade"
+   ]
+  }
+ ],
+ "fica_de_fora": {
+  "titulo": "Tarefas no Gemini, sem pagar (Google, 17 nov.)",
+  "texto": "O modo Tarefas do Gemini, em que descreves um trabalho de vários passos (marcar uma consulta, analisar contas, fazer compras) e a app o executa em segundo plano com as tuas apps Google ligadas, passou a estar disponível sem subscrição. Mas, segundo a Google, só nos EUA, Japão, Coreia, Canadá, Austrália e Índia, e as funções mais avançadas, como chamadas e pagamentos, começam pelos EUA. Portugal e a União Europeia não são mencionados, nem há data anunciada.",
+  "lead": "O modo Tarefas do Gemini passa a ser gratuito, mas só em seis países fora da Europa.",
+  "fonte": [
+   "Google, Tasks in Gemini (17 nov.)",
+   "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+  ],
+  "etiquetas": [
+   "gemini",
+   "agentes",
+   "produtividade"
+  ]
+ },
+ "conceito": {
+  "nome": "RAG",
+  "slug": "rag",
+  "sub": "em inglês, <i>retrieval-augmented generation</i>: geração aumentada por recuperação",
+  "liga": "liga às peças 01 e 02",
+  "lead": "O que é a geração aumentada por recuperação, porque dá respostas mais fiáveis sobre os teus documentos e três hábitos para tirares partido dela.",
+  "intro": "RAG é a técnica de, antes de responder, ir buscar a informação relevante a um conjunto de fontes e entregá-la ao modelo junto com a pergunta. Em vez de responder só com o que aprendeu no treino, que pode estar desatualizado ou nunca ter incluído os teus documentos, o modelo responde com base nos trechos que acabou de recuperar, e muitas vezes indica de onde vieram.",
+  "svg": "<svg viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Esquema de RAG: a pergunta leva primeiro a uma pesquisa nas fontes; os trechos relevantes juntam-se à pergunta e vão para o modelo, que responde indicando as fontes. Por baixo: sem recuperação, o modelo responde só com o que aprendeu no treino.\">\n  <defs><marker id=\"ah7\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"currentColor\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"currentColor\" opacity=\".8\" text-anchor=\"middle\"><text x=\"70\" y=\"22\">PERGUNTA</text><text x=\"235\" y=\"22\">1. RECUPERAR</text><text x=\"405\" y=\"22\">2. GERAR</text><text x=\"570\" y=\"22\">RESPOSTA</text></g>\n  <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"10\" y=\"34\" width=\"120\" height=\"80\" rx=\"8\"/><rect x=\"160\" y=\"34\" width=\"150\" height=\"80\" rx=\"8\"/><rect x=\"340\" y=\"34\" width=\"130\" height=\"80\" rx=\"10\" stroke-width=\"2.5\"/><rect x=\"500\" y=\"34\" width=\"130\" height=\"80\" rx=\"8\"/></g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"currentColor\" text-anchor=\"middle\"><text x=\"70\" y=\"70\">«Qual é o prazo</text><text x=\"70\" y=\"86\">do contrato?»</text><text x=\"235\" y=\"62\">procura nas fontes</text><text x=\"235\" y=\"80\">e traz os trechos</text><text x=\"235\" y=\"98\">mais relevantes</text><text x=\"405\" y=\"70\">modelo lê</text><text x=\"405\" y=\"86\">trechos + pergunta</text><text x=\"565\" y=\"70\">responde e</text><text x=\"565\" y=\"86\">indica a fonte</text></g>\n  <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M130 74 h26\" marker-end=\"url(#ah7)\"/><path d=\"M310 74 h26\" marker-end=\"url(#ah7)\"/><path d=\"M470 74 h26\" marker-end=\"url(#ah7)\"/></g>\n  <path d=\"M20 146 h600\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\" opacity=\".5\"/>\n  <text x=\"20\" y=\"176\" font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"currentColor\" opacity=\".8\">SEM RAG:</text>\n  <text x=\"90\" y=\"176\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"currentColor\">o modelo responde só com o que aprendeu no treino, sem ver os teus documentos.</text>\n</svg>",
+  "corpo": "É o princípio por trás de muitas ferramentas que «leem os teus ficheiros». No Gemini Notebook (peça 02), as respostas e os sites gerados apoiam-se nas fontes que puseste no caderno. No Perguntar ao Maps (peça 01), segundo a Google, o Gemini responde com base na informação do Maps sobre locais e críticas. A recuperação reduz as alucinações, mas não as elimina: se a pesquisa trouxer o trecho errado, ou se a resposta não estiver em nenhuma fonte, o modelo pode preencher o vazio com algo plausível. E a resposta nunca é melhor do que as fontes: um documento desatualizado no caderno dá uma resposta desatualizada, com ar de certeza.",
+  "habitos": [
+   [
+    "Escolhe as fontes a dedo:",
+    "poucas, atuais e relevantes valem mais do que uma pasta inteira cheia de versões antigas."
+   ],
+   [
+    "Pede a fonte de cada afirmação:",
+    "e abre algumas para confirmares que dizem mesmo aquilo."
+   ],
+   [
+    "Autoriza o «não sei»:",
+    "pede que diga «não encontrei nas fontes» em vez de completar com conhecimento geral."
+   ]
+  ],
+  "aprofundar": [
+   [
+    "Google Cloud, What is retrieval-augmented generation",
+    "https://cloud.google.com/use-cases/retrieval-augmented-generation"
+   ],
+   [
+    "Wikipédia, Retrieval-augmented generation",
+    "https://en.wikipedia.org/wiki/Retrieval-augmented_generation"
+   ]
+  ],
+  "etiquetas": [
+   "conceito",
+   "pesquisa",
+   "documentos",
+   "verificação"
+  ]
+ }
+}

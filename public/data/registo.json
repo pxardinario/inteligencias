@@ -1,6 +1,6 @@
 {
  "publicacao": "Inteligências",
- "gerado": "2026-11-16T14:02:34+00:00",
+ "gerado": "2026-11-19T13:59:55+00:00",
  "edicoes": [
   {
    "numero": 1,
@@ -504,6 +504,92 @@
      "imagem",
      "voz",
      "qualidade"
+    ]
+   }
+  },
+  {
+   "numero": 7,
+   "data": "2026-11-19",
+   "url": "/edicoes/007",
+   "pecas": [
+    {
+     "id": "maps",
+     "slug": "google-maps-perguntar-ao-maps-portugal",
+     "tipo": "Notícia",
+     "categoria": "Viagens",
+     "produto": "Perguntar ao Maps (Google Maps)",
+     "data_anuncio": "2026-11-16",
+     "titulo": "O Google Maps passa a responder a perguntas em Portugal, e monta itinerários",
+     "lead": "O Perguntar ao Maps, com o Gemini, está a chegar a Portugal: fazes perguntas como a uma pessoa, planeias viagens por dias e pesquisas nas tuas listas guardadas.",
+     "etiquetas": [
+      "gemini",
+      "mapas",
+      "pesquisa",
+      "grátis"
+     ],
+     "prompt": "Tenho reuniões em Braga na quinta-feira, às 10h00 junto à Sé e às 15h00 perto da Universidade do Minho, e vou de carro a partir do Porto. Monta-me o dia com os tempos de deslocação, um sítio para estacionar perto de cada reunião e um restaurante para almoçar entre as duas, aberto ao meio-dia e de preferência com prato do dia.",
+     "url": "/edicoes/007/google-maps-perguntar-ao-maps-portugal"
+    },
+    {
+     "id": "notebook",
+     "slug": "gemini-notebook-cria-sites-interativos",
+     "tipo": "Notícia",
+     "categoria": "Pesquisa",
+     "produto": "Gemini Notebook (sites interativos)",
+     "data_anuncio": "2026-11-16",
+     "titulo": "O Gemini Notebook transforma as tuas fontes num pequeno site interativo",
+     "lead": "Pedes um site e o antigo NotebookLM cria um painel, uma cronologia ou um quadro de tarefas a partir dos teus documentos. Na web, para maiores de 18 anos.",
+     "etiquetas": [
+      "gemini",
+      "documentos",
+      "pesquisa",
+      "grátis"
+     ],
+     "prompt": "Faz-me um site: um painel de uma página que resuma estas fontes para a direção, em português de Portugal. No topo, os cinco números mais importantes, cada um com a indicação da fonte de onde vem. Depois, uma cronologia das decisões e um quadro com os riscos e o responsável por cada um. Usa só informação das fontes; se faltar um dado, escreve «sem dados» em vez de o inventares.",
+     "url": "/edicoes/007/gemini-notebook-cria-sites-interativos"
+    },
+    {
+     "id": "passagem",
+     "slug": "nota-de-passagem-entre-conversas-ia",
+     "tipo": "Técnica",
+     "categoria": "Técnica",
+     "produto": "Nota de passagem entre sessões",
+     "data_anuncio": "2026-11-19",
+     "titulo": "No fim de cada sessão, pede uma nota de passagem em vez de guardares a conversa",
+     "lead": "Uma nota curta com objetivo, decisões, factos confirmados e próximos passos, conferida antes de fechar, deixa-te retomar um projeto sem colar conversas inteiras.",
+     "etiquetas": [
+      "técnica",
+      "prompt",
+      "produtividade",
+      "qualidade"
+     ],
+     "prompt": "Escreve uma nota de passagem curta para retomarmos este trabalho noutra conversa. Inclui: o objetivo; as decisões tomadas; os factos confirmados, cada um com a fonte; as perguntas em aberto; e os próximos passos. Não resumas tudo o que dissemos: só o que vou precisar outra vez. Antes de terminares, confere a nota com esta conversa e marca como «a confirmar» tudo o que não consigas verificar. Português de Portugal, no máximo 200 palavras.",
+     "url": "/edicoes/007/nota-de-passagem-entre-conversas-ia"
+    }
+   ],
+   "fica_de_fora": [
+    {
+     "id": "out-h",
+     "titulo": "Tarefas no Gemini, sem pagar (Google, 17 nov.)",
+     "lead": "O modo Tarefas do Gemini passa a ser gratuito, mas só em seis países fora da Europa.",
+     "etiquetas": [
+      "gemini",
+      "agentes",
+      "produtividade"
+     ]
+    }
+   ],
+   "conceito": {
+    "id": "c-h",
+    "slug": "rag",
+    "url": "/conceitos/rag",
+    "nome": "RAG",
+    "lead": "O que é a geração aumentada por recuperação, porque dá respostas mais fiáveis sobre os teus documentos e três hábitos para tirares partido dela.",
+    "etiquetas": [
+     "conceito",
+     "pesquisa",
+     "documentos",
+     "verificação"
     ]
    }
   }
