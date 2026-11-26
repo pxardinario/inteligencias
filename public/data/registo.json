@@ -1,6 +1,6 @@
 {
  "publicacao": "Inteligências",
- "gerado": "2026-11-23T14:02:30+00:00",
+ "gerado": "2026-11-26T14:05:57+00:00",
  "edicoes": [
   {
    "numero": 1,
@@ -696,6 +696,109 @@
      "agentes",
      "privacidade",
      "verificação"
+    ]
+   }
+  },
+  {
+   "numero": 9,
+   "data": "2026-11-26",
+   "url": "/edicoes/009",
+   "pecas": [
+    {
+     "id": "apps",
+     "slug": "claude-instalar-artefacto-como-app",
+     "tipo": "Notícia",
+     "categoria": "Produtividade",
+     "produto": "Claude – instalar artefactos como apps",
+     "data_anuncio": "2026-11-24",
+     "titulo": "O Claude passa a instalar as ferramentas que cria como apps no teu computador",
+     "lead": "Pedes uma pequena ferramenta, como um registo de horas, o Claude cria-a e instalas como app no Mac ou no Windows. Em beta, em todos os planos.",
+     "etiquetas": [
+      "claude",
+      "produtividade",
+      "automação",
+      "grátis"
+     ],
+     "prompt": "Cria uma pequena app para eu registar as horas que dedico a cada cliente. Campos: cliente (de uma lista que eu possa editar), data, horas e uma nota curta. Mostra o total da semana e do mês por cliente e deixa-me exportar os registos em CSV. Interface simples, em português de Portugal, com letra legível. A app não precisa de notificações nem de acesso total ao computador.",
+     "url": "/edicoes/009/claude-instalar-artefacto-como-app"
+    },
+    {
+     "id": "ficheiros",
+     "slug": "claude-guardar-ficheiros-apps-ligadas",
+     "tipo": "Notícia",
+     "categoria": "Documentos",
+     "produto": "Claude – ficheiros com conectores",
+     "data_anuncio": "2026-11-24",
+     "titulo": "O Claude já guarda ficheiros nas apps que tens ligadas, e vai buscá-los lá",
+     "lead": "Pedes ao Claude que guarde a apresentação que fez numa pasta da tua nuvem, ou que traga de lá um contrato para rever. Em beta, nos planos pagos.",
+     "etiquetas": [
+      "claude",
+      "documentos",
+      "conectores",
+      "pago"
+     ],
+     "prompt": "Guarda a apresentação que criámos na pasta [nome da pasta] da minha [app ligada], com o nome «[cliente] – proposta – [data]». Antes de enviares, mostra-me o nome final do ficheiro e o caminho completo da pasta e espera pelo meu «sim». Não substituas nenhum ficheiro que já exista com o mesmo nome.",
+     "url": "/edicoes/009/claude-guardar-ficheiros-apps-ligadas"
+    },
+    {
+     "id": "cartoes",
+     "slug": "gemini-notebook-cartoes-estudo-lembretes",
+     "tipo": "Notícia",
+     "categoria": "Aprendizagem",
+     "produto": "Gemini Notebook – cartões de estudo",
+     "data_anuncio": "2026-11-24",
+     "titulo": "Os cartões de estudo do Gemini Notebook passam a ter imagens, cronómetro e lembretes",
+     "lead": "Os cartões que o Gemini Notebook cria a partir das tuas fontes já mostram imagens desses documentos, cronometram a revisão e lembram-te de estudar no telemóvel.",
+     "etiquetas": [
+      "gemini",
+      "estudo",
+      "grátis",
+      "prompt"
+     ],
+     "prompt": "Cria cartões só com o que vem nas fontes deste caderno, para eu me preparar para [exame ou formação]. Uma pergunta por cartão, curta e concreta; a resposta com, no máximo, duas frases e a indicação da secção da fonte de onde vem. Dá prioridade a definições, números, prazos e passos de procedimentos. Não incluas curiosidades nem perguntas de sim ou não. Português de Portugal.",
+     "url": "/edicoes/009/gemini-notebook-cartoes-estudo-lembretes"
+    },
+    {
+     "id": "aprender",
+     "slug": "aprender-tema-novo-ia-de-baixo-para-cima",
+     "tipo": "Técnica",
+     "categoria": "Técnica",
+     "produto": "Explicação de baixo para cima",
+     "data_anuncio": "2026-11-26",
+     "titulo": "Para aprenderes um tema novo, pede à IA que te explique de baixo para cima",
+     "lead": "Dizes o que já sabes, a IA parte do mais básico, explica cada termo novo e no fim faz-te perguntas. Serve para um contrato, uma lei ou uma área nova.",
+     "etiquetas": [
+      "técnica",
+      "prompt",
+      "estudo",
+      "verificação"
+     ],
+     "prompt": "Quero perceber [tema] para [objetivo concreto, por exemplo: discutir um contrato com um fornecedor]. O que já sei: [uma ou duas frases]. Explica-me de baixo para cima: começa pelas ideias mais básicas de que o resto depende e só avança quando essas estiverem claras. Linguagem simples, frases curtas e um exemplo do dia a dia por ideia. Sempre que usares um termo técnico, explica-o da primeira vez. No fim, faz-me cinco perguntas, uma de cada vez, e diz-me o que falhei antes de me dares a resposta. Se não tiveres a certeza de um facto, diz-mo.",
+     "url": "/edicoes/009/aprender-tema-novo-ia-de-baixo-para-cima"
+    }
+   ],
+   "fica_de_fora": [
+    {
+     "id": "out-h",
+     "titulo": "O Muse, o agente pessoal da Meta (Meta, 23 nov.)",
+     "lead": "O agente pessoal da Meta chegou ao Reino Unido, mas não há data para Portugal nem para a União Europeia.",
+     "etiquetas": [
+      "meta",
+      "agentes",
+      "só Reino Unido"
+     ]
+    }
+   ],
+   "conceito": {
+    "id": "c-h",
+    "slug": "tokens",
+    "url": "/conceitos/tokens",
+    "nome": "Tokens",
+    "lead": "Porque é que a IA conta o texto em tokens, o que isso tem a ver com os limites do teu plano e três hábitos para os esticares.",
+    "etiquetas": [
+     "conceito",
+     "tokens",
+     "produtividade"
     ]
    }
   }

@@ -1,0 +1,337 @@
+{
+ "numero": 9,
+ "data": "2026-11-26",
+ "minutos": 8,
+ "pecas": [
+  {
+   "id": "apps",
+   "slug": "claude-instalar-artefacto-como-app",
+   "tipo": "Notícia",
+   "categoria": "Produtividade",
+   "produto": "Claude – instalar artefactos como apps",
+   "data_anuncio": "2026-11-24",
+   "kicker_data": "24 nov.",
+   "titulo": "O Claude passa a instalar as ferramentas que cria como apps no teu computador",
+   "lead": "Pedes uma pequena ferramenta, como um registo de horas, o Claude cria-a e instalas como app no Mac ou no Windows. Em beta, em todos os planos.",
+   "svg": "<svg viewBox=\"0 0 640 236\" role=\"img\" aria-label=\"Esquema: pedes uma ferramenta ao Claude; no menu do artefacto escolhes «Instalar como app» e confirmas; a app fica no Mac ou no Windows com janela e ícone próprios. Cada permissão, como notificações, atalhos ou barra de menus, pede o teu sim. O acesso total ao computador é só para apps feitas por ti, e a Anthropic não revê as apps.\">\n  <defs><marker id=\"a91\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\" text-anchor=\"middle\"><text x=\"95\" y=\"26\">1. ARTEFACTO</text><text x=\"320\" y=\"26\">2. INSTALAR</text><text x=\"545\" y=\"26\">3. APP NO COMPUTADOR</text></g>\n  <g fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\"><rect x=\"10\" y=\"38\" width=\"170\" height=\"86\" rx=\"8\"/><rect x=\"460\" y=\"38\" width=\"170\" height=\"86\" rx=\"8\"/></g>\n  <rect x=\"225\" y=\"38\" width=\"190\" height=\"86\" rx=\"8\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\" stroke-width=\"1.5\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\" text-anchor=\"middle\"><text x=\"95\" y=\"74\">Pedes uma ferramenta</text><text x=\"95\" y=\"92\">ao Claude</text><text x=\"320\" y=\"66\">menu do artefacto ›</text><text x=\"320\" y=\"84\">«Install as app»</text><text x=\"320\" y=\"102\">e confirmas</text><text x=\"545\" y=\"74\">janela e ícone próprios,</text><text x=\"545\" y=\"92\">Mac ou Windows</text></g>\n  <g stroke=\"var(--accent)\" stroke-width=\"2\" fill=\"none\"><path d=\"M180 81 h41\" marker-end=\"url(#a91)\"/><path d=\"M415 81 h41\" marker-end=\"url(#a91)\"/></g>\n  <rect x=\"10\" y=\"146\" width=\"620\" height=\"74\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--warn)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\" text-anchor=\"middle\"><text x=\"320\" y=\"172\">Cada permissão pede o teu «sim»: notificações, atalhos, barra de menus…</text><text x=\"320\" y=\"196\">«Acesso total ao computador» só em apps feitas por ti. A Anthropic não as revê.</text></g>\n</svg>",
+   "legenda": "Esquema ilustrativo do funcionamento descrito pela Anthropic. Não é uma captura de ecrã.",
+   "o_que_e": "A Anthropic anunciou a 24 de novembro, em beta, que os artefactos (as ferramentas, páginas e pequenos programas que o Claude cria ao lado da conversa) podem ser instalados como apps no Mac e no Windows. Abres o artefacto na app Claude para computador, vais ao menu do título (ou clicas com o botão direito) e escolhes «Install as app»; a opção também está em «Share». A app ganha janela e ícone próprios e fica na pasta «Claude Apps» (nas Aplicações, no Mac; no menu Iniciar, no Windows). Continua ligada ao artefacto: se o alterares na conversa, a app atualiza-se. Pode usar o Claude e os teus conectores, como o artefacto, e, se deixares, mostrar notificações, responder a atalhos de teclado, ficar por cima das outras janelas, pôr um ícone na barra de menus ou ter acesso total ao computador. Precisas de estar ligado à internet e com sessão iniciada. Não funciona na web, no telemóvel nem no Linux, e os artefactos de documentos, apresentações e folhas de cálculo do Claude não se instalam.",
+   "porque": "Há muitas ferramentas pequenas que davam jeito e que nenhuma app faz exatamente como precisas: um registo de horas por cliente, uma lista de verificação para o fecho do mês, uma calculadora de orçamentos com os teus preços. Até agora, viviam dentro de uma conversa; assim abrem-se como qualquer outro programa. Três cuidados. Cada pedido que a app faz ao Claude gasta do limite de utilização do teu plano (vê o conceito do dia). Cada permissão aprovada vale só para aquela versão: depois de uma alteração, a app volta a perguntar. E o «acesso total ao computador» deixa a app correr programas e ler, alterar ou apagar ficheiros sem perguntar; segundo a ajuda da Anthropic, as apps não são revistas antes de as instalares, por isso só o dês a apps feitas por ti e que percebes. Nos planos Team, a função vem ligada, mas o acesso total fica desligado até o administrador o permitir; no Enterprise, fica desligada até o dono a ativar.",
+   "passos": [
+    "Atualiza a app Claude para Mac ou Windows (no Mac, Claude › Check for Updates; no Windows, menu ☰ › Help › Check for Updates).",
+    "Pede a ferramenta com o prompt abaixo e experimenta-a primeiro na conversa, como artefacto.",
+    "No menu do título do artefacto, escolhe «Install as app» e «Install». Aceita só as permissões de que a app precisa."
+   ],
+   "prompt_titulo": "Prompt · uma app simples para registar horas por cliente",
+   "prompt": "Cria uma pequena app para eu registar as horas que dedico a cada cliente. Campos: cliente (de uma lista que eu possa editar), data, horas e uma nota curta. Mostra o total da semana e do mês por cliente e deixa-me exportar os registos em CSV. Interface simples, em português de Portugal, com letra legível. A app não precisa de notificações nem de acesso total ao computador.",
+   "nota": {
+    "tipo": "Atenção",
+    "texto": "o «acesso total ao computador» deixa a app correr programas e ler, alterar ou apagar ficheiros sem te perguntar. A Anthropic não revê as apps antes de as instalares."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "App Claude para Mac e Windows (não na web nem no telemóvel)",
+     null
+    ],
+    [
+     "Custo",
+     "Todos os planos, incluindo o gratuito; gasta do limite de utilização",
+     "ok"
+    ],
+    [
+     "Em Portugal",
+     "Não há exclusão anunciada",
+     "warn"
+    ],
+    [
+     "Estado",
+     "Beta, desde 24 nov.",
+     "warn"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Anthropic, notas de versão do Claude (24 nov.)",
+     "https://support.claude.com/en/articles/12138966-release-notes"
+    ],
+    [
+     "Anthropic, ajuda: Install an artifact as an app",
+     "https://support.claude.com/en/articles/18516354-install-an-artifact-as-an-app"
+    ],
+    [
+     "Anthropic, Install as app",
+     "https://claude.com/resources/articles/install-as-app"
+    ]
+   ],
+   "etiquetas": [
+    "claude",
+    "produtividade",
+    "automação",
+    "grátis"
+   ]
+  },
+  {
+   "id": "ficheiros",
+   "slug": "claude-guardar-ficheiros-apps-ligadas",
+   "tipo": "Notícia",
+   "categoria": "Documentos",
+   "produto": "Claude – ficheiros com conectores",
+   "data_anuncio": "2026-11-24",
+   "kicker_data": "24 nov.",
+   "titulo": "O Claude já guarda ficheiros nas apps que tens ligadas, e vai buscá-los lá",
+   "lead": "Pedes ao Claude que guarde a apresentação que fez numa pasta da tua nuvem, ou que traga de lá um contrato para rever. Em beta, nos planos pagos.",
+   "svg": "<svg viewBox=\"0 0 640 226\" role=\"img\" aria-label=\"Esquema: da conversa com o Claude, envias um ficheiro para uma app ligada, como um serviço de armazenamento na nuvem; no sentido inverso, guardas na conversa um ficheiro que está nessa app. O primeiro envio para cada app pede sempre a tua aprovação. Só funciona com apps do diretório de conectores que já aceitem ficheiros.\">\n  <defs><marker id=\"a92\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\" text-anchor=\"middle\"><text x=\"115\" y=\"26\">CONVERSA COM O CLAUDE</text><text x=\"525\" y=\"26\">APP LIGADA</text></g>\n  <rect x=\"10\" y=\"38\" width=\"210\" height=\"96\" rx=\"8\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\" stroke-width=\"1.5\"/>\n  <rect x=\"420\" y=\"38\" width=\"210\" height=\"96\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\" text-anchor=\"middle\"><text x=\"115\" y=\"72\">«Guarda esta</text><text x=\"115\" y=\"90\">apresentação na</text><text x=\"115\" y=\"108\">pasta Propostas»</text><text x=\"525\" y=\"72\">app do diretório</text><text x=\"525\" y=\"90\">de conectores</text><text x=\"525\" y=\"108\">(ex.: nuvem)</text></g>\n  <g stroke=\"var(--accent)\" stroke-width=\"2\" fill=\"none\"><path d=\"M224 70 h192\" marker-end=\"url(#a92)\"/><path d=\"M416 104 h-192\" marker-end=\"url(#a92)\"/></g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\" text-anchor=\"middle\"><text x=\"320\" y=\"60\">ENVIAR</text><text x=\"320\" y=\"124\">GUARDAR</text></g>\n  <rect x=\"10\" y=\"154\" width=\"620\" height=\"58\" rx=\"8\" fill=\"var(--surface)\" stroke=\"var(--warn)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\" text-anchor=\"middle\"><text x=\"320\" y=\"178\">O primeiro envio para cada app pede sempre a tua aprovação.</text><text x=\"320\" y=\"198\">Só apps do diretório que já aceitem ficheiros; até 10 ficheiros de cada vez.</text></g>\n</svg>",
+   "legenda": "Esquema ilustrativo do funcionamento descrito pela Anthropic. Não é uma captura de ecrã.",
+   "o_que_e": "Os conectores são as ligações do Claude a outras apps. A Anthropic anunciou a 24 de novembro, em beta, que o Claude passa a enviar ficheiros para essas apps e a guardá-los a partir delas. Para enviar, anexas ou arrastas um ficheiro, ou pedes ao Claude que envie um que ele próprio criou, e dizes para onde (por exemplo, uma pasta concreta). Para guardar, pedes-lhe que vá buscar um ficheiro à app: fica na conversa, onde o abres ou descarregas. Só funciona com apps do diretório de conectores cujo programador tenha acrescentado suporte para ficheiros; os conectores personalizados não servem. Na conversa, envias até 10 ficheiros de cada vez (500 MB no total) e guardas até 10, com 500 MB cada. Não dá para enviar pastas. Está a chegar aos poucos aos planos Pro, Max e Ultra, na web, na app para computador, no iOS, no Android e no Claude Code; nos planos Team e Enterprise, só se o dono da conta o ativar. O plano gratuito fica para depois.",
+   "porque": "Acaba a dança de descarregar o que o Claude fez e voltar a carregar na pasta certa, ou o contrário, quando queres que ele leia um documento que está na nuvem. Na prática, a apresentação ou o relatório saem da conversa direitinhos para onde a equipa os vai procurar. O controlo está na aprovação: o Claude pede-ta antes do primeiro ficheiro que envia para cada app, mesmo que tenhas escolhido «permitir sempre»; a partir daí, pode enviar sem perguntar, conforme as permissões que definiste. Revê o ficheiro e o destino antes de dizeres que sim. Apagar a conversa não apaga o ficheiro na app. A Anthropic avisa ainda que os ficheiros vindos de uma app podem trazer texto feito para enganar o Claude (é a injeção de prompt, o conceito da edição anterior), por isso liga só apps em que confias. Não funciona em conversas anónimas, em tarefas agendadas, em sessões do Claude Code iniciadas com Remote Control nem em organizações cujo espaço de trabalho guarda os dados fora dos EUA.",
+   "passos": [
+    "Nas definições do Claude, revê os conectores que tens ligados e desliga os que não usas.",
+    "Pede o envio com o prompt abaixo, indicando a pasta e o nome do ficheiro.",
+    "Quando o Claude pedir aprovação, confirma o ficheiro e o destino antes de aceitares."
+   ],
+   "prompt_titulo": "Prompt · guardar um ficheiro no sítio certo",
+   "prompt": "Guarda a apresentação que criámos na pasta [nome da pasta] da minha [app ligada], com o nome «[cliente] – proposta – [data]». Antes de enviares, mostra-me o nome final do ficheiro e o caminho completo da pasta e espera pelo meu «sim». Não substituas nenhum ficheiro que já exista com o mesmo nome.",
+   "nota": {
+    "tipo": "Por confirmar",
+    "texto": "a Anthropic não publica a lista de apps que já aceitam ficheiros (depende de cada programador) nem diz quando a função chega ao plano gratuito."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "Claude na web, no computador, iOS, Android e Claude Code",
+     null
+    ],
+    [
+     "Custo",
+     "Pro, Max e Ultra; Team e Enterprise se o dono ativar",
+     "warn"
+    ],
+    [
+     "Em Portugal",
+     "Não há exclusão anunciada; não funciona em organizações com dados guardados fora dos EUA",
+     "warn"
+    ],
+    [
+     "Estado",
+     "Beta, a chegar aos poucos desde 24 nov.",
+     "warn"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Anthropic, notas de versão do Claude (24 nov.)",
+     "https://support.claude.com/en/articles/12138966-release-notes"
+    ],
+    [
+     "Anthropic, ajuda: file transfers with connectors",
+     "https://support.claude.com/en/articles/18534325"
+    ]
+   ],
+   "etiquetas": [
+    "claude",
+    "documentos",
+    "conectores",
+    "pago"
+   ]
+  },
+  {
+   "id": "cartoes",
+   "slug": "gemini-notebook-cartoes-estudo-lembretes",
+   "tipo": "Notícia",
+   "categoria": "Aprendizagem",
+   "produto": "Gemini Notebook – cartões de estudo",
+   "data_anuncio": "2026-11-24",
+   "kicker_data": "24 nov.",
+   "titulo": "Os cartões de estudo do Gemini Notebook passam a ter imagens, cronómetro e lembretes",
+   "lead": "Os cartões que o Gemini Notebook cria a partir das tuas fontes já mostram imagens desses documentos, cronometram a revisão e lembram-te de estudar no telemóvel.",
+   "svg": "<svg viewBox=\"0 0 640 230\" role=\"img\" aria-label=\"As três novidades dos cartões de estudo do Gemini Notebook: imagens tiradas das tuas fontes ao lado da pergunta; um cronómetro opcional para treinares com tempo, como num exame; e lembretes agendados na app para telemóvel para reveres os cartões. Dados fictícios.\">\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\" text-anchor=\"middle\"><text x=\"110\" y=\"24\">1. IMAGENS DAS FONTES</text><text x=\"320\" y=\"24\">2. CRONÓMETRO</text><text x=\"530\" y=\"24\">3. LEMBRETES</text></g>\n  <g fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\"><rect x=\"15\" y=\"36\" width=\"190\" height=\"140\" rx=\"8\"/><rect x=\"225\" y=\"36\" width=\"190\" height=\"140\" rx=\"8\"/><rect x=\"435\" y=\"36\" width=\"190\" height=\"140\" rx=\"8\"/></g>\n  <rect x=\"35\" y=\"52\" width=\"150\" height=\"60\" rx=\"4\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\"/>\n  <path d=\"M35 112 L80 76 L110 98 L135 82 L185 112 Z\" fill=\"var(--paper)\" stroke=\"var(--accent)\" stroke-width=\"1\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\" text-anchor=\"middle\"><text x=\"110\" y=\"136\">imagem do manual</text><text x=\"110\" y=\"156\">ao lado da pergunta</text></g>\n  <text x=\"320\" y=\"96\" font-family=\"IBM Plex Mono, monospace\" font-size=\"30\" fill=\"var(--ink)\" text-anchor=\"middle\">02:41</text>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\" text-anchor=\"middle\"><text x=\"320\" y=\"136\">treinas com tempo,</text><text x=\"320\" y=\"156\">como num exame</text></g>\n  <rect x=\"455\" y=\"56\" width=\"150\" height=\"50\" rx=\"8\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--ink)\" text-anchor=\"middle\"><text x=\"530\" y=\"77\">Hoje, 19h00</text><text x=\"530\" y=\"95\">Rever 20 cartões</text><text x=\"530\" y=\"136\">só na app para</text><text x=\"530\" y=\"156\">telemóvel</text></g>\n  <text x=\"320\" y=\"210\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--muted)\" text-anchor=\"middle\">Contas pessoais e todas as edições do Workspace. Dados fictícios.</text>\n</svg>",
+   "legenda": "Esquema ilustrativo das três novidades, com dados fictícios. Não é uma captura de ecrã.",
+   "o_que_e": "O Gemini Notebook (o antigo NotebookLM) cria cartões de estudo, os chamados flashcards, a partir das fontes que carregas num caderno: de um lado a pergunta, do outro a resposta. A Google anunciou a 24 de novembro três novidades. Os cartões passam a mostrar imagens relevantes tiradas das tuas fontes, ao lado da pergunta. Há um cronómetro opcional para te cronometrares durante a revisão, por exemplo para simular um exame com tempo. E, na app Gemini Notebook para telemóvel, podes agendar notificações para reveres os cartões que já geraste. Segundo a Google, está disponível para todos os clientes do Google Workspace, do Workspace Individual e para quem tem conta Google pessoal. O resto já existia: no painel Studio, o lápis ao lado de «Flashcards» deixa escolher a dificuldade e escrever um pedido sobre o tipo de cartões; marcas cada cartão como sabido ou falhado, pedes uma explicação e podes rever só os que falhaste ou descarregar o baralho em CSV.",
+   "porque": "Serve a quem tem de decorar matéria a sério: um exame de certificação, a formação de entrada numa empresa, um catálogo de produtos, os procedimentos de um manual de qualidade. Os cartões obrigam-te a lembrar a resposta em vez de releres o resumo, e os lembretes ajudam a criar o hábito de rever um pouco todos os dias. As imagens fazem diferença quando a matéria vive em esquemas, fotografias de produtos ou diagramas. Um limite que convém ter presente: os cartões só são tão bons como as fontes. Se o manual tiver um erro, o cartão repete-o; e se a pergunta te parecer estranha, confirma na fonte. A Google não diz em que línguas nem em que países as novidades estão, nem em que plataformas estão as imagens e o cronómetro. Esta peça é sobre outra função do mesmo produto de que falámos na edição 7.",
+   "passos": [
+    "Abre um caderno no Gemini Notebook e carrega as fontes: o manual, os apontamentos, o PDF da formação.",
+    "No painel Studio, carrega no lápis ao lado de «Flashcards», escolhe a dificuldade e cola o prompt abaixo.",
+    "Liga o cronómetro na revisão e, na app para telemóvel, agenda um lembrete. Revê primeiro os cartões que falhaste."
+   ],
+   "prompt_titulo": "Prompt · cartões para preparar um exame ou formação",
+   "prompt": "Cria cartões só com o que vem nas fontes deste caderno, para eu me preparar para [exame ou formação]. Uma pergunta por cartão, curta e concreta; a resposta com, no máximo, duas frases e a indicação da secção da fonte de onde vem. Dá prioridade a definições, números, prazos e passos de procedimentos. Não incluas curiosidades nem perguntas de sim ou não. Português de Portugal.",
+   "nota": {
+    "tipo": "Por confirmar",
+    "texto": "a Google não indica em que línguas nem em que países estão as novidades, nem em que plataformas estão as imagens e o cronómetro (os lembretes são só na app para telemóvel)."
+   },
+   "ficha": [
+    [
+     "Onde",
+     "Gemini Notebook; lembretes só na app para telemóvel",
+     null
+    ],
+    [
+     "Custo",
+     "Sem custo nas contas pessoais",
+     "ok"
+    ],
+    [
+     "Em Portugal",
+     "Não há exclusão anunciada",
+     "warn"
+    ],
+    [
+     "Estado",
+     "Disponível desde 24 nov.",
+     "ok"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Google Workspace Updates, New study enhancements for flashcards in Gemini Notebook (24 nov.)",
+     "https://workspaceupdates.googleblog.com/2026/11/new-study-enhancements-for-flashcards-in-Gemini-Notebook.html"
+    ],
+    [
+     "Ajuda do Gemini Notebook: gerar cartões de estudo",
+     "https://support.google.com/gemininotebook/answer/16958963?hl=en"
+    ]
+   ],
+   "etiquetas": [
+    "gemini",
+    "estudo",
+    "grátis",
+    "prompt"
+   ]
+  },
+  {
+   "id": "aprender",
+   "slug": "aprender-tema-novo-ia-de-baixo-para-cima",
+   "tipo": "Técnica",
+   "categoria": "Técnica",
+   "produto": "Explicação de baixo para cima",
+   "data_anuncio": "2026-11-26",
+   "kicker_data": "método",
+   "titulo": "Para aprenderes um tema novo, pede à IA que te explique de baixo para cima",
+   "lead": "Dizes o que já sabes, a IA parte do mais básico, explica cada termo novo e no fim faz-te perguntas. Serve para um contrato, uma lei ou uma área nova.",
+   "svg": "<svg viewBox=\"0 0 640 226\" role=\"img\" aria-label=\"Esquema da técnica em três passos: primeiro, dizes o que já sabes e para que precisas; depois, a IA explica de baixo para cima e para em cada termo novo; por fim, faz-te cinco perguntas, uma de cada vez. O que falhares, voltas a pedir.\">\n  <defs><marker id=\"a94\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"var(--accent)\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"var(--muted)\" text-anchor=\"middle\"><text x=\"105\" y=\"26\">1. PONTO DE PARTIDA</text><text x=\"320\" y=\"26\">2. DE BAIXO PARA CIMA</text><text x=\"535\" y=\"26\">3. TESTA-TE</text></g>\n  <g fill=\"var(--surface)\" stroke=\"var(--line)\" stroke-width=\"1.5\"><rect x=\"20\" y=\"38\" width=\"170\" height=\"90\" rx=\"8\"/><rect x=\"450\" y=\"38\" width=\"170\" height=\"90\" rx=\"8\"/></g>\n  <rect x=\"235\" y=\"38\" width=\"170\" height=\"90\" rx=\"8\" fill=\"var(--accent-soft)\" stroke=\"var(--accent)\" stroke-width=\"1.5\"/>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"13\" fill=\"var(--ink)\" text-anchor=\"middle\"><text x=\"105\" y=\"74\">o que já sabes</text><text x=\"105\" y=\"92\">e para que precisas</text><text x=\"320\" y=\"66\">do mais básico</text><text x=\"320\" y=\"84\">ao mais complexo;</text><text x=\"320\" y=\"102\">termo novo, explica</text><text x=\"535\" y=\"74\">5 perguntas,</text><text x=\"535\" y=\"92\">uma de cada vez</text></g>\n  <g stroke=\"var(--accent)\" stroke-width=\"2\" fill=\"none\"><path d=\"M190 83 h41\" marker-end=\"url(#a94)\"/><path d=\"M405 83 h41\" marker-end=\"url(#a94)\"/><path d=\"M535 128 v34 h-215 v-30\" marker-end=\"url(#a94)\"/></g>\n  <text x=\"430\" y=\"182\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--muted)\" text-anchor=\"middle\">o que falhares, voltas a pedir</text>\n  <text x=\"320\" y=\"212\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"var(--muted)\" text-anchor=\"middle\">Funciona em qualquer assistente de IA.</text>\n</svg>",
+   "legenda": "Esquema do método, sem resultados reais.",
+   "o_que_e": "Quando pedes «explica-me X», a resposta costuma vir ao nível de quem já percebe do assunto: termos técnicos sem explicação, passos saltados, conclusões antes das bases. O método corrige isso em três passos. Primeiro, dizes à IA o que já sabes e para que precisas de perceber o tema, para ela saber de onde partir e onde parar. Depois, pedes-lhe que explique de baixo para cima: começa pelas ideias de que tudo o resto depende, em linguagem simples, e explica cada termo técnico na primeira vez que o usa. Por fim, pedes-lhe que te faça perguntas, uma de cada vez, para veres o que ficou mesmo percebido. A newsletter Superhuman destacou a 25 de novembro uma sugestão de Gabriel Petersson, antigo investigador da OpenAI: pedir explicações «de baixo para cima», em linguagem simples. Adaptámo-la e acrescentámos o ponto de partida e o teste final.",
+   "porque": "Percebes um tema quando consegues responder a perguntas sobre ele, não quando acabas de ler uma explicação que parecia clara. As perguntas do fim mostram-te as falhas enquanto ainda estás com o assunto à frente, e o que falhas volta a ser explicado. O ponto de partida poupa tempo: a IA não te explica o que já sabes nem salta o que te falta. Dois cuidados. A IA pode enganar-se com segurança, sobretudo em números, prazos e regras; em temas fiscais, legais ou de saúde, confirma o essencial na fonte oficial. E, se tiveres o documento de que precisas (o contrato, o regulamento, o manual), dá-lho e pede que explique a partir dele. Para fixar o que aprendeste, junta-lhe os cartões de estudo da peça 03.",
+   "passos": [
+    "Escreve em duas linhas o que já sabes sobre o tema e para que precisas de o perceber.",
+    "Cola o prompt abaixo, com o tema e o objetivo, e lê a explicação parte a parte. Quando algo não ficar claro, pede outro exemplo.",
+    "Responde às perguntas sem voltar atrás. O que falhares, pede para te ser explicado de outra forma."
+   ],
+   "prompt_titulo": "Prompt · explicação de baixo para cima com teste no fim",
+   "prompt": "Quero perceber [tema] para [objetivo concreto, por exemplo: discutir um contrato com um fornecedor]. O que já sei: [uma ou duas frases]. Explica-me de baixo para cima: começa pelas ideias mais básicas de que o resto depende e só avança quando essas estiverem claras. Linguagem simples, frases curtas e um exemplo do dia a dia por ideia. Sempre que usares um termo técnico, explica-o da primeira vez. No fim, faz-me cinco perguntas, uma de cada vez, e diz-me o que falhei antes de me dares a resposta. Se não tiveres a certeza de um facto, diz-mo.",
+   "nota": null,
+   "ficha": [
+    [
+     "Onde",
+     "Qualquer assistente de IA (ChatGPT, Gemini, Claude, Copilot…)",
+     null
+    ],
+    [
+     "Custo",
+     "Gratuito",
+     "ok"
+    ],
+    [
+     "Em Portugal",
+     "Sim",
+     "ok"
+    ],
+    [
+     "Estado",
+     "Método, não depende de produto",
+     "ok"
+    ],
+    [
+     "Testado",
+     "Não pela redação",
+     "no"
+    ]
+   ],
+   "fontes": [
+    [
+     "Superhuman, 25 nov. (Simplicity Prompt)",
+     "https://www.superhuman.ai/p/anthropic-lets-you-build-custom-mac-or-pc-apps-with-claude"
+    ],
+    [
+     "Superhuman, Simplicity Prompt (Gabriel Petersson)",
+     "https://archive.superhuman.ai/2125048063224078755"
+    ]
+   ],
+   "etiquetas": [
+    "técnica",
+    "prompt",
+    "estudo",
+    "verificação"
+   ]
+  }
+ ],
+ "fica_de_fora": {
+  "titulo": "O Muse, o agente pessoal da Meta (Meta, 23 nov.)",
+  "texto": "A Meta lançou no Reino Unido o Muse, um agente pessoal que, com a tua aprovação, envia emails, reserva viagens, preenche formulários e faz compras, e que continua a trabalhar depois de fechares a app. Está no iOS, no Android, em muse.ai e no WhatsApp, para maiores de 18 anos, e é gratuito na maior parte dos usos, com planos pagos opcionais. A página da Meta fala só do Reino Unido: Portugal e a União Europeia não são mencionados, nem há data.",
+  "lead": "O agente pessoal da Meta chegou ao Reino Unido, mas não há data para Portugal nem para a União Europeia.",
+  "fonte": [
+   "Meta, Introducing Muse in the UK (23 nov.)",
+   "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/"
+  ],
+  "etiquetas": [
+   "meta",
+   "agentes",
+   "só Reino Unido"
+  ]
+ },
+ "conceito": {
+  "nome": "Tokens",
+  "slug": "tokens",
+  "sub": "a unidade com que a IA lê e escreve texto",
+  "liga": "liga às peças 01 e 02",
+  "lead": "Porque é que a IA conta o texto em tokens, o que isso tem a ver com os limites do teu plano e três hábitos para os esticares.",
+  "intro": "Um token é o pedaço de texto com que um modelo de linguagem trabalha: pode ser uma palavra inteira, parte de uma palavra, um sinal de pontuação ou um espaço. O modelo não lê letra a letra nem palavra a palavra: parte o texto em tokens, processa-os e escreve a resposta também token a token. Segundo a OpenAI, em inglês um token anda pelos quatro caracteres, cerca de três quartos de uma palavra; noutras línguas, a proporção é diferente.",
+  "svg": "<svg viewBox=\"0 0 640 230\" role=\"img\" aria-label=\"Esquema dos tokens. Em cima, a frase «A sebenta sai à quinta-feira» partida em sete pedaços, como um modelo a poderia ler; os espaços aparecem como pontos. Em baixo, o que gasta o teu limite: o pedido, os ficheiros anexados, o histórico da conversa e a resposta, tudo somado em tokens.\">\n  <defs><marker id=\"ah9\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"currentColor\"/></marker></defs>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"11\" fill=\"currentColor\" opacity=\".8\"><text x=\"20\" y=\"26\">COMO O MODELO PODE PARTIR UMA FRASE</text><text x=\"20\" y=\"108\">O QUE CONTA PARA O LIMITE</text></g>\n  <g font-family=\"IBM Plex Mono, monospace\" font-size=\"13\" fill=\"currentColor\"><rect x=\"20\" y=\"40\" width=\"25\" height=\"32\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"32\" y=\"61\" text-anchor=\"middle\">A</text><rect x=\"53\" y=\"40\" width=\"43\" height=\"32\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"74\" y=\"61\" text-anchor=\"middle\">·se</text><rect x=\"104\" y=\"40\" width=\"61\" height=\"32\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"134\" y=\"61\" text-anchor=\"middle\">benta</text><rect x=\"173\" y=\"40\" width=\"52\" height=\"32\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"199\" y=\"61\" text-anchor=\"middle\">·sai</text><rect x=\"233\" y=\"40\" width=\"34\" height=\"32\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"250\" y=\"61\" text-anchor=\"middle\">·à</text><rect x=\"275\" y=\"40\" width=\"79\" height=\"32\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"314\" y=\"61\" text-anchor=\"middle\">·quinta</text><rect x=\"362\" y=\"40\" width=\"70\" height=\"32\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"397\" y=\"61\" text-anchor=\"middle\">-feira</text></g>\n  <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"20\" y=\"120\" width=\"100\" height=\"44\" rx=\"6\"/><rect x=\"140\" y=\"120\" width=\"100\" height=\"44\" rx=\"6\"/><rect x=\"260\" y=\"120\" width=\"100\" height=\"44\" rx=\"6\"/><rect x=\"380\" y=\"120\" width=\"100\" height=\"44\" rx=\"6\"/><rect x=\"530\" y=\"120\" width=\"90\" height=\"44\" rx=\"6\" stroke-width=\"2.5\"/></g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"currentColor\" text-anchor=\"middle\"><text x=\"70\" y=\"146\">o teu pedido</text><text x=\"190\" y=\"146\">ficheiros</text><text x=\"310\" y=\"146\">histórico</text><text x=\"430\" y=\"146\">a resposta</text><text x=\"575\" y=\"146\">tokens</text></g>\n  <g font-family=\"IBM Plex Sans, sans-serif\" font-size=\"14\" fill=\"currentColor\" text-anchor=\"middle\"><text x=\"130\" y=\"147\">+</text><text x=\"250\" y=\"147\">+</text><text x=\"370\" y=\"147\">+</text></g>\n  <path d=\"M484 142 h42\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" marker-end=\"url(#ah9)\"/>\n  <text x=\"20\" y=\"196\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"currentColor\">Quanto mais longa a conversa, mais gasta do limite.</text>\n  <text x=\"20\" y=\"216\" font-family=\"IBM Plex Sans, sans-serif\" font-size=\"12\" fill=\"currentColor\" opacity=\".8\">Divisão ilustrativa: cada modelo parte o texto à sua maneira.</text>\n</svg>",
+  "corpo": "Os tokens são a unidade de medida escondida da IA. A janela de contexto (o conceito da edição 5) mede-se em tokens, e os limites de utilização dos planos dependem do mesmo: não conta só quantas mensagens envias, conta o tamanho de tudo o que o modelo tem de processar. Por isso, uma conversa longa, com ficheiros pesados, gasta muito mais do que uma pergunta curta numa conversa nova. A Anthropic, por exemplo, diz que pesam no limite o comprimento e a complexidade das conversas, as funcionalidades usadas, o modelo e o nível de esforço, e que o uso no claude.ai, no Claude Code e na app para computador conta para o mesmo limite. As apps da peça 01 também gastam desse limite sempre que pedem alguma coisa ao Claude.",
+  "habitos": [
+   [
+    "Uma tarefa, uma conversa:",
+    "quando mudas de assunto, abre uma conversa nova e leva só um resumo da anterior, em vez de arrastares um histórico enorme."
+   ],
+   [
+    "Escolhe o esforço certo:",
+    "nas tarefas de rotina, desliga o raciocínio prolongado ou baixa o nível de esforço, se a ferramenta o permitir."
+   ],
+   [
+    "Desliga o que não usas:",
+    "conectores e pesquisa na web pesam no limite; liga-os só quando fizerem falta e tira dos projetos os ficheiros que já não usas."
+   ]
+  ],
+  "aprofundar": [
+   [
+    "OpenAI, What are tokens and how to count them?",
+    "https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them"
+   ],
+   [
+    "Anthropic, How do usage and length limits work?",
+    "https://support.claude.com/en/articles/11647753"
+   ]
+  ],
+  "etiquetas": [
+   "conceito",
+   "tokens",
+   "produtividade"
+  ]
+ }
+}
